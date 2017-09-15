@@ -1,0 +1,1137 @@
+$bg-color: #323232;
+$pl-color: rgb(31, 31, 31);
+$media-color: #619fa4;
+
+//MISC
+body.page-videos
+{
+    .btn
+    {
+        background-color: darken( desaturate( $media-color, 11 ), 19 );
+        outline: none !important;
+
+        &:hover, &:focus
+        {
+            background-color: $media-color;
+
+        }
+    }
+
+    div.bg-media
+    {
+        //background: darken( desaturate( adjust-hue( $media-color, 5deg ), 21 ), 28 )
+        background: darken( desaturate( adjust-hue( $media-color, 9deg ), 13 ), 26 )
+
+    }
+}
+
+//HEADER
+body.page-videos
+{
+	position: relative;
+    background: #323232;
+
+	header 
+	{
+		position: absolute; 
+		top: 0;
+		left: 0;
+		right: 0;
+		background: transparent;
+		color: white;
+
+        @media screen and (max-width: 767px) {
+            position: relative;
+        }
+
+        .navbar-container 
+        {  
+            @media screen and (max-width: 767px) {
+                    
+                margin-bottom: 0;
+            }
+        }
+
+        .navbar 
+        { 
+            &.affix
+            {
+                 padding-bottom: 8px !important;
+                    padding-top: 12px !important;
+
+                background: rgba(0, 0, 0, .5);
+                @media screen and (max-width: 767px) {
+                    
+                    padding-bottom: 8px !important;
+                    padding-top: 8px !important;
+                }
+            }
+
+            
+             
+        }
+
+        ul.media-nav-left
+        {
+            display: inline-block;
+            float: left; 
+            font-weight: 900;
+            margin-bottom: 0;
+
+            @media screen and (max-width: 767px) {
+                font-size: 16px;
+                margin-top: 7px;
+            }
+
+            li 
+            {
+                float: left;
+
+                img.logo-desktop
+                {
+                    height: 14px;
+                    margin-bottom: 3px; 
+
+                    @media screen and (max-width: 767px) {
+                        display: none;
+                    }
+                }
+
+                 img.logo-mobile
+                {
+                    display: none; 
+                    width: 34px;
+                    height: auto;
+                    margin-top:-6px;
+
+                    @media screen and (max-width: 767px) {
+                        display: block;
+                        margin-top: -7px;
+                        margin-right: 10px;
+                    }
+                }
+
+                &.separator
+                {
+                    font-size: 75%; 
+                    font-weight: 400;
+                    -webkit-font-smoothing: none;
+                    padding-top: 3px;
+
+                    @media screen and (max-width: 767px) {
+                        display: none;;
+                    }
+                }
+
+            }
+        }
+
+        ul.media-nav-right 
+        {
+            display: inline-block;
+            float: right;
+            font-weight: 400;
+            margin-bottom: 0;
+
+            @media screen and (max-width: 767px) {
+                font-size: 16px;
+                margin-top: 7px;
+            }
+
+            li 
+            {
+                float: left;
+
+                &.separator
+                {
+                    font-size: 75%; 
+                    font-weight: 400;
+                    -webkit-font-smoothing: none;
+                    padding-top: 3px;
+                }
+            }
+        }
+
+        a 
+        {
+            color: white;
+
+            &:hover
+            {
+                text-decoration: none;
+            }
+        }
+
+		// ul.navbar-nav 
+		// {
+		// 	font-weight: 900;
+
+  //           &.navbar-not-top
+  //           {
+  //               background: rgb(31, 31, 31);
+  //           }
+
+		// 	li 
+		// 	{
+		// 		margin-right: 9px; 
+
+		// 		a 
+		// 		{
+		// 			color: white;
+		// 			font-size: 19px;
+		// 			padding-top: 5px;
+		// 			margin-right: 0;
+
+		// 			&:hover 
+		// 			{
+		// 				color: white;
+		// 			}
+		// 		}
+
+		// 		img 
+		// 		{
+		// 			width: 100px;
+		// 			height: auto;
+		// 			vertical-align: text-top;
+		// 		}
+
+		// 		&.separator
+		// 		{
+		// 			font-size: 80%;
+  //   				padding-top: 2px;
+  //   				font-weight: 400;
+  //   				-webkit-font-smoothing: none;
+		// 		}
+
+		// 		.fa-search
+		// 		{
+		// 			font-size: 17px;
+		// 			padding-top: 3px;
+		// 		}
+		// 	}
+
+			
+		// }
+
+		// div.navbar-collapse
+		// {
+		// 	background: transparent;
+		// 	border-bottom: none;
+
+  //           @media screen and (max-width: 767px) {
+  //               display: block;
+  //               height: auto;
+  //           }
+		// }
+	}
+}
+
+//OVERLAYS 1 & 2, PLAYLIST
+body.page-videos
+{
+    div.bg-mine-shaft-main-player
+    {
+        position: relative;
+        background: $bg-color;
+        overflow: hidden;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+
+        //FIRST SCREEN WITH TITLE AND BIG PLAY BUTTON
+        div.bg-mine-shaft-main-player-overlay
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+
+            div.bg-mine-shaft-main-player-overlay-container
+            {
+                background: transparent;
+                position: absolute; 
+                bottom: 10%;
+                padding-right: 14em;
+                left: 50%;
+                @include transform(translateX(-50%));
+
+                @media screen and (max-width: 991px) {
+                    padding-right: 6em;
+                }
+            }
+
+            //BIG PLAY BUTTON
+            img 
+            {
+                width: 100px;
+                height: auto;
+                margin-bottom: 20px;
+
+                @media screen and (max-width: 1213px) {
+                    width: 80px;
+                    margin-bottom: 10px;
+                }
+
+                @media screen and (max-width: 991px) {
+                    width: 60px;
+                    margin-bottom: 5px;
+                }
+            }
+
+            //TITLE
+            h1 
+            {
+
+              font-size: 65px;
+              font-family: "Ratio";
+                margin-bottom: 10px;
+              color: rgb(255, 255, 255);
+              line-height: 0.995;
+              text-align: left;
+              text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+
+                @media screen and (max-width: 1213px) {
+                    font-size: 48px;
+                }
+
+                @media screen and (max-width: 991px) {
+                    font-size: 36px;
+                    margin-bottom: 20px;
+                }
+            
+            }
+            
+            //LEAD
+            h2 
+            {
+              font-size: 24px;
+              font-family: "Rooney";
+              margin-top: 0;
+              margin-bottom: 30px;
+              color: rgb(255, 255, 255);
+              line-height: 1.361;
+              text-align: left;
+              text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+
+              @media screen and (max-width: 1213px) {
+                    font-size: 20px
+                }
+
+                @media screen and (max-width: 991px) {
+                    display: none;
+                }
+          
+            }
+
+            //SOCIAL ICONS
+            div.bg-mine-shaft-main-player-overlay-container-social
+            {
+                font-size: 28px;
+                color: white;
+                text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+
+                @media screen and (max-width: 991px) {
+                        font-size: 22px;
+                    }
+
+                i 
+                {
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        //SECOND SCREEN, COMES WHEN VID PAUSED OR ENDED
+        div.bg-mine-shaft-main-player-overlay2
+        {
+            position: absolute;  
+            width: 100%;
+            height: 100%;
+            //background: rgba(0, 255, 0, .2);
+            z-index: 1;
+            display: none;
+
+            div.bg-mine-shaft-main-player-overlay2-container
+            {
+                width: 1025px;
+                background: transparent;
+                position: absolute; 
+                bottom: 23%;
+                //width: 100%;
+                padding-right: 14em;
+                left: 50%;
+                @include transform(translateX(-50%));
+
+                @media screen and (max-width: 1213px) {
+                    width: 970px;
+                    bottom: 25%;
+                }
+
+                @media screen and (max-width: 991px) {
+                    width: 750px;
+                    padding-right: 20em;
+                    bottom: 26%;
+                }
+
+                //TITLE SMALL
+                h3 
+                {
+                    max-width: 500px; 
+                    font-size: 32px;
+                    font-family: "Ratio";
+                    color: rgba(255, 255, 255, 1);
+                    line-height: 1.24;
+                    text-align: left;
+                    text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+                    font-weight: 300;   
+                    margin-bottom: 15px;
+                    // -webkit-font-smoothing: antialiased; 
+                    //   -moz-osx-font-smoothing: grayscale;
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 26px;
+                    }
+                
+
+                }
+                
+                //SOCIAL
+                div.bg-mine-shaft-main-player-overlay-container2-social
+                {
+                    font-size: 28px;
+                    color: white;
+                    text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 22px;
+                    }
+
+                    i 
+                    {
+                        margin-right: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        //PLAYLIST
+        div.bg-mine-shaft-main-player-playlist
+        {
+            position: absolute;
+            z-index: 4;
+            width:100%;
+            height: 165px;
+            background: $pl-color;
+            bottom: 0;
+            @include transform(translateY(100%));
+            transition: all 0.4s;
+
+            @media screen and (max-width: 1213px) {
+                height: 140px;
+            }
+
+            @media screen and (max-width: 991px) {
+                height: 110px;
+            }
+
+            &.is-open { @include transform(translateY(0)); transition: all 0.4s;}
+
+            div.bg-mine-shaft-main-player-playlist-title
+            {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                @include transform(translate(-50%, -100%));
+                background: $pl-color;
+                padding: 2px 10px;
+                cursor: pointer;
+
+                &:hover p { opacity: .8; }
+
+                p 
+                {
+                    margin: 0;
+                    font-family: 'Rooney';
+                    opacity: .6;
+                    font-size: 20px;
+
+                    i { font-size: 90% }
+                }
+
+                div.bg-mine-shaft-main-player-playlist-title-rtriangle
+                {
+                    @include triangle(28px 36px, $pl-color, down-left);
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    @include transform(translateX(98%));
+                }
+
+                div.bg-mine-shaft-main-player-playlist-title-ltriangle
+                {
+                    @include triangle(28px 36px, $pl-color, down-right);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include transform(translateX(-98%));
+                }
+            }
+
+            div.bg-mine-shaft-main-player-playlist-container //#playlist-carousel
+            {
+                //width: 100%;
+                height: 100%;
+                padding: 15px 100px;
+                
+                .carousel-inner
+                {
+                    //background: red;
+                    height: 100%;
+
+                    .item
+                    {
+                        height: 100%;
+                        
+                        li.item-video 
+                        {
+                            //width: 50px;
+                            height: 100%;
+                            width: 25%;
+                            //background: yellow;
+                            float: left;
+                            list-style: none;
+                            padding: 0 10px;
+                            // position: relative;
+
+                            @media screen and (max-width: 991px) {
+                                padding: 0 5px;
+                            }
+                            
+                            &.is-highlighted div.item-video-container-border 
+                            { 
+                                border: 3px solid white; 
+                                border-radius: 2px;
+
+                                @media screen and (max-width: 991px) {
+                                    border: 2px solid white; 
+                                }
+                            }
+                            
+
+
+                            div.item-video-container
+                            {
+                                width: 100%;
+                                height: 100%;
+                                background: yellow;
+                                
+                                position: relative;
+
+                                img
+                                {
+                                    height: 100%;
+                                    width: 100%;
+                                    object-fit: cover; 
+                                }
+
+                                span.caption 
+                                {
+                                    position: absolute;
+                                    width: 100%;
+                                    bottom: 0;
+                                    background: rgba(0, 0, 0, .6);
+                                    border-bottom: 0; 
+                                    font-family: 'Ratio';
+                                    font-weight: 500; 
+                                    font-size: 16px;
+                                    height: 38px;
+                                    padding: 8px;
+                                    z-index:10;
+                                    left:0;
+                                    right: 0;
+
+                                    white-space: nowrap;
+                                      overflow: hidden;
+                                      text-overflow: ellipsis;
+
+
+                                }
+
+                                div.item-video-container-border
+                                {
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    top: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                    //background: red;
+                                    z-index: 11;
+                                }
+                            }
+
+
+
+                        }
+
+                        .carousel-caption
+                        {
+                            display: none;
+                        }
+                    }
+                }
+
+                .carousel-control
+                {
+                    width: 100px ;
+                    background: transparent;
+                }
+            }
+        }
+    }
+}
+
+body.page-videos
+{
+    div.bg-mine-shaft-main-player
+    {
+        div.video-wrapper
+        {
+            width: 100%;
+            max-width: 1600px;
+            margin: auto;
+            position: relative;
+            background: gray;
+
+            &:after 
+            {   /* 16:9 ratio */
+                padding-top: 56.27%;
+                display: block;
+                content: '';
+            }
+
+            div.video-js 
+            {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;  
+                color: white;  
+        
+                video 
+                {
+                    width: 100%;
+                    height: auto;
+                }
+
+                div.vjs-dock-text
+                {
+                    height: 100%;
+                    background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,8) 100%); /* FF3.6-15 */ 
+                    background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,8) 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+                    opacity: 0.5;
+                    transition: opacity 0.4s;
+                }
+
+                div.vjs-control-bar
+                {
+                    z-index: 3;
+                     @include transform(translateY(0) !important); 
+                    // width: 100%;
+                    margin: auto;
+                    max-width: 1035px;
+                    background-color: rgba(0,0,0,0) !important;
+                    color: #ffffff;
+                    font-size: 20px;
+                    font-family: ratio;
+                    bottom: 11%;
+                    transition: opacity 0.4s!important;
+                    opacity: 1;
+
+                    @media screen and (max-width: 1213px) {
+                      max-width: 975px;
+                    }
+
+                    @media screen and (max-width: 991px) {
+                      max-width: 760px;
+                    }
+
+                    &.is-playlist-hidden
+                    {
+                        //@include transform(translateY(-50%)!important) ;
+                        opacity: 0;
+                        transition: opacity 0.4s;
+                    }
+                }
+
+                div.vjs-progress-control
+                {
+                    height: .37em!important;
+
+                    &:hover
+                    {
+                        height: .37em!important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// TOOLTIPS FONT
+.video-js .vjs-progress-control:hover .vjs-time-tooltip, .video-js .vjs-progress-control:hover .vjs-mouse-display:after, .video-js .vjs-progress-control:hover .vjs-play-progress:after
+{ font-family: 'Ratio'; } 
+
+// TOOLTIPS CURSOR + CURRENT TIME
+.video-js .vjs-time-tooltip, .video-js .vjs-mouse-display:after, .video-js .vjs-play-progress:after
+{ background-color: #ffffff; color: $bg-color; }
+
+// TOOLTIP CURSOR
+.vjs-mouse-display .vjs-time-tooltip, .video-js .vjs-progress-control .vjs-mouse-display:after
+{ background-color: $bg-color; color: #ffffff; }
+
+
+
+.bc-player-BJqobDOb6_default.video-js.vjs-playing div.vjs-dock-text
+{ opacity: 0 !important; transition: opacity 0.4s; }
+
+.bc-player-BJqobDOb6_default.video-js.vjs-paused div.vjs-dock-text
+{ opacity: 0.5; transition: opacity 0.4s; }
+
+.bc-player-BJqobDOb6_default.video-js.vjs-user-inactive.vjs-paused div.vjs-dock-text
+{ opacity: 0.5 !important; transition: opacity 0.4s; }
+
+.bc-player-BJqobDOb6_default.video-js.vjs-user-inactive.vjs-paused div.vjs-control-bar
+{ opacity: 1 !important; transition: opacity 0.4s; }
+
+.bc-player-BJqobDOb6_default.video-js.vjs-user-inactive  div.vjs-dock-text
+{ opacity: 0 !important; transition: opacity 0.4s; }
+
+.bc-player-BJqobDOb6_default.video-js.vjs-user-inactive  div.vjs-control-bar
+{ opacity: 0 !important; transition: opacity 0.4s; }
+
+//PLAY BUTTON MASQUE UNE FOIS LA VIDEO TERMINEE
+.bc-player-BJqobDOb6_default.video-js.vjs-ended .vjs-big-play-button
+{ display: none; }
+
+//LAST-VIDEO + MOST VIEWED
+body.page-videos
+{
+    .last-videos
+    {
+        div.row { display: flex;  flex-wrap: wrap; }
+
+        .last-videos-item
+        {
+            //background: red; 
+            padding: 0 15px 0 15px;
+            margin-bottom: 10px;
+
+            @media screen and (max-width: 767px) {
+              margin-bottom: 20px;
+            }
+
+
+            div.row { overflow: auto; }
+            .desktop-visible { @media screen and (max-width: 767px) { display: none; } }
+            .mobile-visible { @media screen and (min-width: 767px) { display: none; } }
+
+            figure.last-videos-header
+            {
+                position: relative;
+
+                span.last-videos-header-gradient 
+                {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0, .5) 100%); /* FF3.6-15 */ 
+                    background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0, .5) 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0, .5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+                    opacity: .5; 
+
+                    @media screen and (max-width: 767px) {
+                      opacity: .5; 
+                    }
+                }
+
+                img.last-videos-header-play
+                {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10px;
+                    width: 30px;
+                    height: auto;
+                    opacity: 0.75;
+
+                    @media screen and (max-width: 767px) {
+                      bottom: 58%;
+                      left: 50%;
+                      @include transform(translate(-50%, 50%));
+                      width: 70px;
+                      opacity: 1;
+                    }
+                }
+
+                h5.last-videos-header-title
+                {
+                    font-size: 20px;
+                    font-family: "Rooney";
+                    color: rgb(255, 255, 255);
+                    line-height: 1.333;
+                    text-align: left;
+                    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.004);
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    margin: 0;
+                    padding: 10px;
+
+
+                    background: -moz-linear-gradient(bottom, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+                }
+            }
+
+            div.last-videos-body
+            {
+                @media screen and (max-width: 767px) {
+                  background: #262626;
+                  padding: 10px;
+                }
+
+                h6.last-videos-body-meta
+                {
+                    font-size: 16px;
+                    font-family: "Rooney";
+                    color: rgba(255, 255, 255, 0.5);
+                    font-weight: 300;
+                    margin-bottom: 8px;
+
+                    @media screen and (max-width: 1213px) {
+                      font-size: 14px;
+                      margin-top: 13px;
+                      margin-bottom: 6px;
+                    }
+
+                    @media screen and (max-width: 991px) {
+                      margin-top: 10px;
+                    }
+
+                    @media screen and (max-width: 767px) {
+                      margin-top: 0;
+                    }
+
+                    span 
+                    {
+                        color: $media-color;
+                        font-weight: 600;
+                    }
+                }
+
+                p.last-videos-body-title
+                {
+                    color: rgba(255, 255, 255, 1);
+                    -webkit-font-smoothing: antialiased; 
+                    opacity: 0.75;
+                      font-size: 19px;
+                      font-weight: 400;
+                      line-height: 30px;
+
+                    @media screen and (max-width: 1213px) {
+                      font-size: 17px;
+                      line-height: 27px;
+                    }
+
+                    @media screen and (max-width: 991px) {
+                      font-size: 16px;
+                      line-height: 23px;
+                    }
+
+                    // font-size: 22px;
+                    // font-weight: 300;
+                    // line-height: 35px;
+                   
+                    // @media screen and (max-width: 1213px) {
+                    //   font-size: 18px;
+                    //   font-weight: 400;
+                    //   line-height: 30px;
+                    // }
+                }
+
+                p.last-videos-body-lead
+                {
+                    line-height: 1.485;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .most-viewed
+    {
+        li 
+        {
+            &:before
+            {
+                font-family: Tungsten, Tungsten-Medium, Arial,sans-serif;
+            }
+
+            a
+            {
+                &:hover
+                {
+                    color: $media-color;
+                }
+            }
+        }
+    }
+}
+
+body.page-videos
+{
+    div.makeyourown-mobile
+    {
+        display: none;
+        width: 100%;
+
+        @media screen and (max-width: 767px) {
+          display: block;
+        }
+
+        select 
+        {
+            padding: 2px 10px;
+            width: 100%;
+            border: none;
+            font-size: 16px;
+            height: 34px;
+            margin-bottom: 15px;
+            font-family: 'Helvetica Neue', 'Arial', sans-serif;
+            font-weight: 400;
+            color: #555;
+
+            &.makeyourown-mobile-rubrique
+            {
+                
+            }
+        }
+
+        hr 
+        {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border-top: 1px solid #6f7072;
+        }
+
+       
+    } 
+}
+
+body.page-videos
+{
+    div.makeyourown-desktop
+    {
+        padding-bottom: 45px;
+
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+            .btn 
+            {
+                padding-bottom: 5px;
+                padding-top: 5px;
+
+                &.is-selected
+                {
+                    background-color: $media-color;
+                }
+            }
+
+            div.makeyourown-desktop-rubrique
+            {
+                margin-bottom: 25px;
+
+                div.btn-group
+                {
+                    width: 100%;
+
+                    .btn 
+                    {
+                        text-transform: initial;
+                        font-family: Rooney;
+                        width: calc(100% / 8 - 8px);
+                        margin-right: 10px;
+
+                        @media screen and (max-width: 991px) {
+                          width: calc(100% / 4 - 8px);
+
+                          &:nth-child(-n+4)
+                          {
+                            margin-bottom: 8px;
+                          }
+
+                          &:nth-child(4)
+                          {
+                            margin-right: 0;
+                          }
+
+                          &:nth-child(5)
+                          {
+                            margin-left: 0;
+                          }
+                        }
+
+                        &:last-child { margin-right: 0; }
+                    }
+                }
+            }
+
+            div.makeyourown-desktop-time
+            {
+                div.btn-group
+                {
+                    width: 100%;
+
+                    .btn 
+                    {
+                        text-transform: initial;
+                        font-family: Rooney;
+                        width: calc(100% / 6 - 8px);
+                        margin-right: 10px;
+
+                        &:last-child { margin-right: 0; }
+                    }
+                }
+            }
+    }
+}
+
+body.page-videos
+{
+    div.series
+    {
+        padding-bottom: 70px; 
+        div.series-item
+        {
+            .series-item-header
+            {
+                position: relative;
+
+                .series-item-header-gradient
+                {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,8) 100%); /* FF3.6-15 */ 
+                    background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,8) 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+                    opacity: 0.6;
+
+
+
+
+                }
+
+                .series-item-header-container
+                {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    //background: yellow;
+                    padding: 35px 25px;
+
+                    @media screen and (max-width: 1213px) {
+                      padding: 20px 15px;
+                    } 
+
+                    .series-item-header-title
+                    {
+                        font-size: 37.5px;
+                        font-family: "Ratio";
+                        color: white;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        line-height: 1.1;
+                        text-shadow: 0px 1px 0.97px rgba(0, 0, 0, 1);
+                        margin-bottom: -5px;
+                         
+                        @media screen and (max-width: 1213px) {
+                          font-size: 30px;
+                        }   
+
+                    }
+
+                     .series-item-header-count
+                    {
+                        background: $media-color;
+                        font-family: 'Rooney';
+                        color: white;
+                        font-weight: 900;
+                        padding:1px 5px 3px 5px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer 
+{
+    background: darken( desaturate( adjust-hue( $media-color, 9deg ), 13 ), 26 ) !important;
+
+    .onoffswitch-label {
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
+        border: 3px solid #FFFFFF;
+        border-radius: 20px;
+
+        .onoffswitch-inner
+        {
+            &:after
+            {
+                background-color: #262626;
+            }
+        }
+}
+
+    .footer-bottom 
+    {
+        background: #262626;
+
+        .logo 
+        {
+            width: 200px;
+        }
+
+        .btn 
+        {
+            color: darken( desaturate( adjust-hue( $media-color, 9deg ), 13 ), 26 ) !important;;
+            background-color: white !important; 
+        }
+    }
+}
+

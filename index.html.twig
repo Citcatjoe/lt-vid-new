@@ -1,0 +1,933 @@
+{% use '_blocks.html.twig' %}
+
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+		{{ block('head_brand') }}
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- <link rel="stylesheet" href="https://assets.letemps.ch/sites/default/files/css/css_7Fu0DHZnBxpzx8m0HVRxYhAjRWo70DFw_1ppU5X3gkg.css?oq5gwo" media="all" />
+		<link rel="stylesheet" href="https://assets.letemps.ch/sites/default/files/css/css_Wv5CGFAW8OCesN_Pa3qkPQ34vR5T_McfX1EHTaWHWkE.css?oq5gwo" media="all" />
+		<link rel="stylesheet" href="https://assets.letemps.ch/sites/default/files/css/css_aCyCd5AYM-HrKeknLk1O9A7XRoR7rKSAk5hgWeDVI-E.css?oq5gwo" media="print" />
+		<link rel="stylesheet" href="https://assets.letemps.ch/sites/default/files/css/css_D70P1xPFir4mvGGlzrN86QYaPi8iQswrsCWD8pzmyPo.css?oq5gwo" media="all" /> -->
+
+		<link rel="stylesheet" href="https://assets.letemps.ch/sites/default/files/css/css_63ihkxUqpfw0bfC4k2Ye8u3OJMbbLsP6Q5zw_9PKEF4.css?ott2ji" media="all">
+		<link rel="stylesheet" href="https://assets.letemps.ch/sites/default/files/css/css_qOpZlfPnHlYajwkpOYnr8e2kZIFoieRoV1k05sCRpOI.css?ott2ji" media="all">
+		<link rel="stylesheet" href="https://assets.letemps.ch/sites/default/files/css/css_aCyCd5AYM-HrKeknLk1O9A7XRoR7rKSAk5hgWeDVI-E.css?ott2ji" media="print">
+		<link rel="stylesheet" href="https://assets.letemps.ch/sites/default/files/css/css_QrtoclsmWipdI6aIhWC80WK8HWh_ojj0d1_nr6S4dNo.css?ott2ji" media="all">
+
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+		
+		
+	</head>
+
+	<body style="padding-top: {{ navBarOffset }};">
+		{{ block('bar_brand') }}
+
+		<body itemscope itemtype="http://schema.org/WebPage" class="page-videos">
+		    <a href="#main-content" class="visually-hidden focusable">Aller au contenu principal</a>
+		    <script>
+		        dataLayer = [{
+		            'ad': ltx8
+		        }];
+		    </script>
+		    <script>
+		        utag_data = [];
+		    </script>
+		    <script type="text/javascript">
+		        var wemf_url = (('https:' == document.location.protocol) ? 'https://temp-ssl.wemfbox.ch/cgi-bin/ivw/CP/' : 'http://letemps.wemfbox.ch/cgi-bin/ivw/CP/');
+		        var wemf_path = "images";
+		        // Minified version of isMobile https://github.com/kaimallea/isMobile.
+		        ! function(a) {
+		            var b = /iPhone/i,
+		                c = /iPod/i,
+		                d = /iPad/i,
+		                e = /(?=.*\bAndroid\b)(?=.*\bMobile\b)/i,
+		                f = /Android/i,
+		                g = /IEMobile/i,
+		                h = /(?=.*\bWindows\b)(?=.*\bARM\b)/i,
+		                i = /BlackBerry/i,
+		                j = /BB10/i,
+		                k = /Opera Mini/i,
+		                l = /(?=.*\bFirefox\b)(?=.*\bMobile\b)/i,
+		                m = new RegExp("(?:Nexus 7|BNTV250|Kindle Fire|Silk|GT-P1000)", "i"),
+		                n = function(a, b) {
+		                    return a.test(b)
+		                },
+		                o = function(a) {
+		                    var o = a || navigator.userAgent;
+		                    return this.apple = {
+		                        phone: n(b, o),
+		                        ipod: n(c, o),
+		                        tablet: n(d, o),
+		                        device: n(b, o) || n(c, o) || n(d, o)
+		                    }, this.android = {
+		                        phone: n(e, o),
+		                        tablet: !n(e, o) && n(f, o),
+		                        device: n(e, o) || n(f, o)
+		                    }, this.windows = {
+		                        phone: n(g, o),
+		                        tablet: n(h, o),
+		                        device: n(g, o) || n(h, o)
+		                    }, this.other = {
+		                        blackberry: n(i, o),
+		                        blackberry10: n(j, o),
+		                        opera: n(k, o),
+		                        firefox: n(l, o),
+		                        device: n(i, o) || n(j, o) || n(k, o) || n(l, o)
+		                    }, this.seven_inch = n(m, o), this.any = this.apple.device || this.android.device || this.windows.device || this.other.device || this.seven_inch, this.phone = this.apple.phone || this.android.phone || this.windows.phone, this.tablet = this.apple.tablet || this.android.tablet || this.windows.tablet, "undefined" == typeof window ? this : void 0
+		                },
+		                p = function() {
+		                    var a = new o;
+		                    return a.Class = o, a
+		                };
+		            "undefined" != typeof module && module.exports && "undefined" == typeof window ? module.exports = o : "undefined" != typeof module && module.exports && "undefined" != typeof window ? module.exports = p() : "function" == typeof define && define.amd ? define("isMobile", [], a.isMobile = p()) : a.isMobile = p()
+		        }(this);
+		        if (isMobile.phone) {
+		            wemf_path = "mobilesite/" + wemf_path;
+		        }
+		        var NETMX = wemf_url + wemf_path;
+		        document.write("<img class=\"wemf\" src=\"" + NETMX + "?r=" + escape(document.referrer) + "&d=" + (Math.random() * 100000) + "&x=" + screen.width + "x" + screen.height + "\" width=\"1\" height=\"1\" alt=\"\" />");
+		    </script>
+		    <noscript><img src="https://temp-ssl.wemfbox.ch/cgi-bin/ivw/CP/images" width="1" height="1" alt="" />
+		    </noscript>
+		    <!-- Google Tag Manager -->
+		    <noscript>
+		        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-TQ2B8Q&nojs=true" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		    </noscript>
+		    <script>
+		        (function(w, d, s, l, i) {
+		            w[l] = w[l] || [];
+		            w[l].push({
+		                'gtm.start': new Date().getTime(),
+		                event: 'gtm.js'
+		            });
+		            var f = d.getElementsByTagName(s)[0],
+		                j = d.createElement(s),
+		                dl = l != 'dataLayer' ? '&l=' + l : '';
+		            j.async = true;
+		            j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+		            f.parentNode.insertBefore(j, f);
+		        })(window, document, 'script', 'dataLayer', 'GTM-TQ2B8Q');
+		    </script>
+		    <!-- End Google Tag Manager -->
+		    <script type="text/javascript">
+		        (function(a, b, c, d) {
+		            a = '//tags.tiqcdn.com/utag/axelspringer/rasch-romandie-letemps/prod/utag.js';
+		            b = document;
+		            c = 'script';
+		            d = b.createElement(c);
+		            d.src = a;
+		            d.type = 'text/java' + c;
+		            d.async = true;
+		            a = b.getElementsByTagName(c)[0];
+		            a.parentNode.insertBefore(d, a);
+		        })();
+		    </script>
+		    <!-- SZMFRABO VERSION="1.1" -->
+		    <script>
+		        var szmvars = "letemps//CP//";
+		        if (isMobile.phone) {
+		            var szmopt = {
+		                mobile: true
+		            };
+		        }
+		    </script>
+		    <script src="https://temp-ssl.wemfbox.ch/2004/01/survey.js"></script>
+		    <!-- /SZMFRABO -->
+
+		    <header class="header" id="top">
+		        <div>
+		            <div class="navbar-container">
+		                <nav class="navbar navbar-default" id="main-navbar">
+		                    <div class="navbar-sticky">
+		                        <div class="container">
+		                            <div class="row">
+		                                <div class="col-lg-offset-1 col-lg-10">
+		                                	<div class="js-priority-wrapper-letemps nav-inner"></div>
+											 <ul class="media-nav-left">
+		                                    	<li>
+		                                    		<img src="img/logo-lt-blanc.svg" alt="Logo Le Temps" class="logo-desktop">
+		                                    		<img src="img/logo-square-media.svg" alt="Logo Le Temps" class="logo-mobile">
+		                                    	</li>
+		                                    	<li class="separator">
+		                                    		&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+		                                    	</li>
+		                                    	<li>
+		                                    		VIDÉOS
+		                                    	</li>
+		                                    </ul>
+		                                    <ul class="media-nav-right">
+		                                    	<li>
+		                                    		<a href="/search">SE CONNECTER<span class="fa sr-hidden"></span></a>
+		                                    	</li>
+		                                    	<li class="separator">
+		                                    		&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+		                                    	</li>
+		                                    	<li>
+		                                    		<a href="/search"><span class="fa fa-search sr-hidden"></span></a>
+		                                    	</li>
+		                                    </ul>
+		                                    <!-- <div class="clearfix"></div> -->
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </nav>
+		            </div>
+		        </div>
+
+		        <!-- <div class="region region-top-right">
+		            <div id="block-adtechblock-2" class="block block-np8-adtech">
+		                <div id="adtech-5923f5ec0dceb" class="adtech adtech__02desktopskyscraper adtech__5819903"></div>
+		            </div>
+		        </div>
+
+		        <div class="bg-mine-shaft">
+		            <div class="spacer spacer-sm"></div>
+		            <div>
+		                <div id="block-adtechblock" class="block block-np8-adtech">
+		                    <div id="adtech-5923f5ec0d86b" class="adtech adtech__01desktopwideboard adtech__5819906"></div>
+		                </div>
+		            </div>
+		        </div> -->
+		    </header> 
+
+		    <div class="bg-mine-shaft bg-mine-shaft-main-player">
+		    	<div class="bg-mine-shaft-main-player-overlay">
+		    		<div class="bg-mine-shaft-main-player-overlay-container container">
+		    			<img src="img/play-button.png" alt="">
+		    			<h1>Le «self-branding» selon l'artiste-tatoueur Maxime Büchi</h1>
+		    			<h2>Dans le cadre d'un workshop donné à l'ECAL, le Lausannois installé à Londres explique à de jeunes créatifs comment promouvoir leur image sur les réseaux sociaux</h2>
+		    			<div class="bg-mine-shaft-main-player-overlay-container-social">
+		    				<i class="fa fa-facebook share-facebook" aria-hidden="true"></i>
+		    				<i class="fa fa-twitter share-twitter" aria-hidden="true"></i>
+		    				<i class="fa fa-linkedin share-linkedin" aria-hidden="true"></i>
+		    				<i class="fa fa-paper-plane share-email" aria-hidden="true"></i>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="bg-mine-shaft-main-player-overlay2">
+		    		<div class="bg-mine-shaft-main-player-overlay2-container container">
+		    			<h3>Le «self-branding» selon l'artiste-tatoueur Maxime Büchi</h3>
+		    			<div class="bg-mine-shaft-main-player-overlay-container2-social">
+		    				<i class="fa fa-facebook share-facebook" aria-hidden="true"></i>
+		    				<i class="fa fa-twitter share-twitter" aria-hidden="true"></i>
+		    				<i class="fa fa-linkedin share-linkedin" aria-hidden="true"></i>
+		    				<i class="fa fa-paper-plane share-email" aria-hidden="true"></i>
+		    			</div>
+		    		</div>
+		    	</div>
+
+		    	<div class="video-wrapper">
+		    		<video 	id="mainplayer"
+		    				poster="img/_maxime.jpg"
+		    				data-account="5104226614001" 
+							data-player="BJqobDOb6" 
+							data-embed="default" 
+							data-application-id 
+							preload="auto"
+							class="video-js" 
+							controls>
+							<source src="https://player.vimeo.com/external/216199557.hd.mp4?s=d81bc6fb098d190f94234ba22871230095053f65&profile_id=119" type="video/mp4">
+					</video>
+					<script src="//players.brightcove.net/5104226614001/BJqobDOb6_default/index.min.js"></script>
+		    	</div>
+
+				<div class="bg-mine-shaft-main-player-playlist">
+					<div class="bg-mine-shaft-main-player-playlist-title">
+						<p>Booktubes&nbsp;<i class="fa fa-caret-up" aria-hidden="true"></i></p>
+						<div class="bg-mine-shaft-main-player-playlist-title-rtriangle"></div>
+						<div class="bg-mine-shaft-main-player-playlist-title-ltriangle"></div>
+					</div>
+
+					<div id="playlist-carousel" class="bg-mine-shaft-main-player-playlist-container container carousel slide"  data-ride="carousel">
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+
+						<div class="item active">
+							<li class="item-video" title="Les romans culinaires d'Éléonore Sulser">
+								<div class="item-video-container">
+									<img src="img/_jaguar_sm.png" alt="">
+									<span class="caption">
+										Les romans culinaires d'Éléonore Sulser
+									</span>
+									<div class="item-video-container-border"></div>
+								</div>
+							</li>
+							<li class="item-video is-highlighted" title="Le «self-branding» selon l'artiste-tatoueur Maxime Büchi">
+								<div class="item-video-container">
+									<img src="img/_maxime_sm.jpg" alt="">
+									<span class="caption">
+										Le «self-branding» selon l'artiste-tatoueur Maxime Büchi
+									</span>
+									<div class="item-video-container-border"></div>
+								</div>
+							</li>
+							<li class="item-video" title="Nous avons testé le Samsung Galaxy S8">
+								<div class="item-video-container">
+									<img src="img/_fabien_sm.jpg" alt="">
+									<span class="caption">
+										Nous avons testé le Samsung Galaxy S8
+									</span>
+									<div class="item-video-container-border"></div>
+								</div>
+							</li>
+							<li class="item-video" title="Wrong neighbourhood pigeon">
+								<div class="item-video-container">
+									<img src="img/_pigeon_sm.jpg" alt="">
+								<span class="caption">
+									Wrong neighbourhood pigeon
+								</span>
+								<div class="item-video-container-border"></div>
+								</div>
+							</li>
+							<div class="carousel-caption"></div>
+						</div>
+
+						<div class="item">
+							<li class="item-video" title="Wrong neighbourhood pigeon">
+								<div class="item-video-container">
+									<img src="img/_chicken_sm.gif" alt="">
+									<span class="caption">
+										Wrong neighbourhood pigeon
+									</span>
+									<div class="item-video-container-border"></div>
+								</div>
+							</li>
+							<div class="carousel-caption">
+							</div>
+						</div>
+
+						
+
+					</div>
+
+
+					<a class="left carousel-control" href="#playlist-carousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#playlist-carousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+					
+					</div>
+					</div>
+
+					</div>
+
+
+
+		    <div class="bg-mine-shaft">
+		        <main class="container">
+		        	<div class="spacer spacer-sm"></div>
+		        	<div class="row">
+		        		<div class="col-lg-9 last-videos">
+		                    <h2 class="section-title">Dernières vidéos</h2>
+		                    <div class="row">
+
+		                    	<div class="col-sm-6 col-md-6 last-videos-item">
+		                    		<figure class="picture picture-card last-videos-header">
+									    <img src="img/_poster-placeholde-1.jpg" width="481" height="273" alt="" title="n/a">
+									    <span class="last-videos-header-gradient"></span>
+									    <img src="img/play-button.png" alt="" class="last-videos-header-play">
+									    <h5 class="last-videos-header-title mobile-visible">Le «self-branding» selon l'artiste-tatoueur Maxime Büchi</h5>
+									</figure>
+									<div class="last-videos-body">
+										<h6 class="last-videos-body-meta"><span>Science</span> – 01:45</h6>
+										<p class="last-videos-body-title desktop-visible">Le «self-branding» selon l'artiste-tatoueur Maxime Büchi</p>
+										<p class="last-videos-body-lead mobile-visible">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard.</p>
+									</div>
+		                    	</div>
+
+		                    	<div class="col-sm-6 col-md-6 last-videos-item">
+		                    		<figure class="picture picture-card last-videos-header">
+									    <img src="img/_poster-placeholder-2.jpg" width="481" height="273" alt="" title="n/a">
+									    <span class="last-videos-header-gradient"></span>
+									    <img src="img/play-button.png" alt="" class="last-videos-header-play">
+									    <h5 class="last-videos-header-title mobile-visible">5 entreprises suisses à la conquête de l'espace</h5>
+									</figure>
+									<div class="last-videos-body">
+										<h6 class="last-videos-body-meta"><span>Sport</span> – 01:45</h6>
+										<p class="last-videos-body-title desktop-visible">5 entreprises suisses à la conquête de l'espace</p>
+										<p class="last-videos-body-lead mobile-visible">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard.</p>
+									</div>
+		                    	</div>
+
+		                    	<div class="col-sm-6 col-md-6 last-videos-item makeyourown-mobile bg-media">
+									<h2 class="section-title"><i class="fa fa-list" aria-hidden="true" style="font-size: 60%; opacity: 0.75;"></i> Votre playliste sur mesure</h2>
+		                    		<p>Composez votre playlist en sélectionnant une rubrique puis une durée</p>
+										<!-- <div class="spacer spacer-sm"></div> -->
+										<!-- <p>Quelle rubrique vous intéresse?</p> -->
+										<select class="makeyourown-mobile-rubrique">
+											<option selected disabled hidden>Choix de la rubrique</option>
+											<option value="monde">Monde</option>
+											<option value="suisse">Suisse</option>
+											<option value="economie">Économie</option>
+											<option value="culture">Culture</option>
+											<option value="science">Science</option>
+											<option value="sport">Sport</option>
+											<option value="societe">Société</option>
+											<option value="lifestyle">Lifestyle</option>
+										</select>
+										<hr>
+										<!-- <p>Combien de temps avez-vous à disposition?</p> -->
+										<select class="makeyourown-mobile-time">
+											<option selected disabled hidden>Choix de la durée</option>
+											<option value="monde">5 minutes</option>
+											<option value="suisse">10 minutes</option>
+											<option value="economie">15 minutes</option>
+											<option value="culture">20 minutes</option>
+											<option value="science">25 minutes</option>
+											<option value="sport">30 minutes</option>
+										</select>
+
+										<div class="text-center">
+			                                <div class="spacer spacer-sm"></div>
+			                                <a class="btn btn-primary" href="/images/video">Composer</a>
+			                                <div class="spacer spacer-md"></div>
+			                            </div>
+		                    	</div>
+
+		                    	<!-- <div class="clearfix visible-sm-block"></div> -->
+
+		                    	<div class="col-sm-6 col-md-6 last-videos-item">
+		                    		<figure class="picture picture-card last-videos-header">
+									    <img src="img/_poster-placeholder-3.jpg" width="481" height="273" alt="" title="n/a">
+									    <span class="last-videos-header-gradient"></span>
+									    <img src="img/play-button.png" alt="" class="last-videos-header-play">
+									    <h5 class="last-videos-header-title mobile-visible">L'élection d'Emmanuel Macron dans l’œil de Thomas Wiesel</h5>
+									</figure>
+									<div class="last-videos-body">
+										<h6 class="last-videos-body-meta"><span>Monde</span> – 01:45</h6>
+										<p class="last-videos-body-title desktop-visible">L'élection d'Emmanuel Macron dans l’œil de Thomas Wiesel</p>
+										<p class="last-videos-body-lead mobile-visible">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard.</p>
+									</div>
+		                    	</div>
+								
+		                    	<!-- <div class="clearfix visible-lg-block"></div> -->
+
+		                    	<div class="col-sm-6 col-md-6 last-videos-item">
+		                    		<figure class="picture picture-card last-videos-header">
+									    <img src="img/_poster-placeholder-4.jpg" width="481" height="273" alt="" title="n/a">
+									    <span class="last-videos-header-gradient"></span>
+									    <img src="img/play-button.png" alt="" class="last-videos-header-play">
+									    <h5 class="last-videos-header-title mobile-visible">«Les nouvelles technologies permettront de prévenir des maladies»</h5>
+									</figure>
+									<div class="last-videos-body">
+										<h6 class="last-videos-body-meta"><span>Science</span> – 01:45</h6>
+										<p class="last-videos-body-title desktop-visible">«Les nouvelles technologies permettront de prévenir des maladies»</p>
+										<p class="last-videos-body-lead mobile-visible">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard.</p>
+									</div>
+		                    	</div>
+
+		                    	<div class="col-sm-6 col-md-6 last-videos-item">
+		                    		<figure class="picture picture-card last-videos-header">
+									    <img src="img/_poster-placeholder-5.jpg" width="481" height="273" alt="" title="n/a">
+									    <span class="last-videos-header-gradient"></span>
+									    <img src="img/play-button.png" alt="" class="last-videos-header-play">
+									    <h5 class="last-videos-header-title mobile-visible">La crise des barrages suisses vue de l’intérieur</h5>
+									</figure>
+									<div class="last-videos-body">
+										<h6 class="last-videos-body-meta"><span>Sport</span> – 01:45</h6>
+										<p class="last-videos-body-title desktop-visible">La crise des barrages suisses vue de l’intérieur</p>
+										<p class="last-videos-body-lead mobile-visible">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard.</p>
+									</div>
+		                    	</div>
+
+		                    	<div class="col-sm-6 col-md-6 last-videos-item">
+		                    		<figure class="picture picture-card last-videos-header">
+									    <img src="img/_poster-placeholder-6.jpg" width="481" height="273" alt="" title="n/a">
+									    <span class="last-videos-header-gradient"></span>
+									    <img src="img/play-button.png" alt="" class="last-videos-header-play">
+									    <h5 class="last-videos-header-title mobile-visible">Attentat de Londres: «Huit minutes» d'horreur en plein cœur de la ville</h5>
+									</figure>
+									<div class="last-videos-body">
+										<h6 class="last-videos-body-meta"><span>Monde</span> – 01:45</h6>
+										<p class="last-videos-body-title desktop-visible">Attentat de Londres: «Huit minutes» d'horreur en plein cœur de la ville</p>
+										<p class="last-videos-body-lead mobile-visible">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard.</p>
+									</div>
+		                    	</div>
+
+		                    	<div class="col-sm-6 col-md-6 last-videos-item">
+		                    		<figure class="picture picture-card last-videos-header">
+									    <img src="img/_poster-placeholder-7.jpg" width="481" height="273" alt="" title="n/a">
+									    <span class="last-videos-header-gradient"></span>
+									    <img src="img/play-button.png" alt="" class="last-videos-header-play">
+									    <h5 class="last-videos-header-title mobile-visible">Nous avons testé la Switch, la nouvelle console de Nintendo</h5>
+									</figure>
+									<div class="last-videos-body">
+										<h6 class="last-videos-body-meta"><span>Science</span> – 01:45</h6>
+										<p class="last-videos-body-title desktop-visible">Nous avons testé la Switch, la nouvelle console de Nintendo</p>
+										<p class="last-videos-body-lead mobile-visible">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard.</p>
+									</div>
+		                    	</div>
+
+		                    	<div class="col-sm-6 col-md-6 last-videos-item">
+		                    		<figure class="picture picture-card last-videos-header">
+									    <img src="img/_poster-placeholder-8.jpg" width="481" height="273" alt="" title="n/a">
+									    <span class="last-videos-header-gradient"></span>
+									    <img src="img/play-button.png" alt="" class="last-videos-header-play">
+									    <h5 class="last-videos-header-title mobile-visible">Nous avons testé la Switch, la nouvelle console de Nintendo</h5>
+									</figure>
+									<div class="last-videos-body">
+										<h6 class="last-videos-body-meta"><span>Sport</span> – 01:45</h6>
+										<p class="last-videos-body-title desktop-visible">Nous avons testé la Switch, la nouvelle console de Nintendo</p>
+										<p class="last-videos-body-lead mobile-visible">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard.</p>
+									</div>
+		                    	</div>
+
+		                    	<div class="col-sm-6 col-md-6 last-videos-item">
+		                    		<figure class="picture picture-card last-videos-header">
+									    <img src="img/_poster-placeholder-9.jpg" width="481" height="273" alt="" title="n/a">
+									    <span class="last-videos-header-gradient"></span>
+									    <img src="img/play-button.png" alt="" class="last-videos-header-play">
+									    <h5 class="last-videos-header-title mobile-visible">Nous avons testé la Switch, la nouvelle console de Nintendo</h5>
+									</figure>
+									<div class="last-videos-body">
+										<h6 class="last-videos-body-meta"><span>Monde</span> – 01:45</h6>
+										<p class="last-videos-body-title desktop-visible">Nous avons testé la Switch, la nouvelle console de Nintendo</p>
+										<p class="last-videos-body-lead mobile-visible">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard.</p>
+									</div>
+		                    	</div>
+		                    	
+		                    </div>
+		                    <div class="text-center">
+                                <div class="spacer spacer-sm"></div>
+                                <a class="btn btn-primary" href="/images/video">Charger plus de vidéos</a>
+                                <div class="spacer spacer-md"></div>
+                            </div>
+		        		</div>
+		        		<div class="col-lg-3 most-viewed">
+							<div class="block block-lt-custom">
+							    <h2 class="section-title">Les plus vues</h2>
+								<div class="top-news-container">
+									<ol class="rating-list">
+										<li>
+										  	<a href="https://www.letemps.ch/node/94772" class="h4 top-internal-link">Les quincados, génération pathétique?</a>
+										</li>
+										<li>
+										  	<a href="https://www.letemps.ch/node/1053916" class="h4 top-internal-link">Emmanuel Macron: «L’Europe n’est pas un supermarché. L’Europe est un destin commun»</a>
+										</li>
+										<li>
+										  	<a href="https://www.letemps.ch/node/1054441" class="h4 top-internal-link">Que faire avec un demi-million de francs?</a>
+										</li>
+										<li>
+										  	<a href="https://www.letemps.ch/node/1054264" class="h4 top-internal-link">La lente réhabilitation du clitoris</a>
+										</li>
+										<li>
+										  	<a href="https://blogs.letemps.ch/xavier-comtesse/2017/06/26/et-maintenant-linversion-du-net/" class="h4 top-internal-link">L’inversion du WEB! C’est quoi encore cette histoire? – Un tsunami numérique révolutionne la santé</a>
+										</li>
+										<li>
+										  	<a href="https://www.letemps.ch/node/1053691" class="h4 top-internal-link">Comment réduire ses frais de roaming cet été</a>
+										</li>
+										<li>
+										  	<a href="https://www.letemps.ch/node/1054027" class="h4 top-internal-link">La Suisse est devenue&nbsp;l’eldorado incontesté des&nbsp;contrats sportifs</a>
+										</li>
+									</ol>
+								</div>
+							  </div> 
+		        		</div>
+		        		<!-- <div class="col-xs-9">
+                            <div class="text-center">
+                                <div class="spacer spacer-md"></div>
+                                <a class="btn btn-primary" href="/images/video">Charger plus de vidéos</a>
+                                <div class="spacer spacer-lg"></div>
+                            </div>
+                        </div> -->
+		        	</div>
+		        </main>
+		    </div>
+
+		    <div class="bg-mine-shaft bg-media makeyourown-desktop">
+		        <main class="container">
+		        	<div class="spacer spacer-sm"></div>
+		        	<div class="row">
+		        		<div class="col-sm-12 last-videos">
+		                    <h2 class="section-title"><i class="fa fa-list" aria-hidden="true" style="font-size: 60%; opacity: 0.75;"></i> Votre playliste sur mesure</h2>
+		                    <p>Composez votre playlist en sélectionnant une rubrique puis une durée</p>
+			                    <div class="row makeyourown-desktop-rubrique">
+			                    	<div class="col-sm-12">
+			                    		<div class="btn-group" role="group" aria-label="...">
+					                    	<button class="btn btn-primary" type="submit">MONDE</button>
+					                    	<button class="btn btn-primary" type="submit">SUISSE</button>
+					                    	<button class="btn btn-primary" type="submit">ÉCONOMIE</button>
+					                    	<button class="btn btn-primary" type="submit">CULTURE</button>
+					                    	<button class="btn btn-primary" type="submit">SCIENCES</button>
+					                    	<button class="btn btn-primary" type="submit">SPORT</button>
+					                    	<button class="btn btn-primary" type="submit">SOCIÉTÉ</button>
+					                    	<button class="btn btn-primary" type="submit">LIFESTYLE</button>
+				                    	</div>
+				                    </div>
+			                    </div>
+			                    <div class="row makeyourown-desktop-time">
+			                    	<div class="col-sm-12">
+			                    		<div class="btn-group" role="group" aria-label="...">
+					                    	<button class="btn btn-primary" type="submit">5 minutes</button>
+					                    	<button class="btn btn-primary" type="submit">10 minutes</button>
+					                    	<button class="btn btn-primary" type="submit">15 minutes</button>
+					                    	<button class="btn btn-primary" type="submit">20 minutes</button>
+					                    	<button class="btn btn-primary" type="submit">25 minutes</button>
+					                    	<button class="btn btn-primary" type="submit">30 minutes</button>
+					                    </div>
+				                    </div>
+			                    </div>
+		                </div>
+		        	</div>
+		        </main>
+		    </div>
+
+		    <div class="bg-mine-shaft">
+		        <main class="container">
+		        	<div class="spacer spacer-sm"></div>
+		        	<div class="row">
+		        		<div class="col-sm-12 series">
+		                    <h2 class="section-title">Nos séries</h2>
+		                    <div class="row">
+
+		                    	<div class="col-xs-12 col-md-4 col-lg-4 series-item">
+		                    		<figure class="picture picture-card series-item-header">
+									    <img src="img/_lisbeth.jpg" width="481" height="273" alt="" title="n/a">
+									    <span class="series-item-header-gradient"></span>
+									    <div class="series-item-header-container">
+											<h5 class="series-item-header-title">Booktubes</h5>
+											<span class="series-item-header-count">6 épisodes</span>
+										</div>
+									</figure>
+		                    	</div>
+
+		                    	<div class="col-xs-12 col-md-4 col-lg-4 series-item">
+		                    		<figure class="picture picture-card series-item-header">
+									    <img src="img/_medgeno.png" width="481" height="273" alt="" title="n/a">
+									    <span class="series-item-header-gradient"></span>
+									    <div class="series-item-header-container">
+											<h5 class="series-item-header-title">Médecine génomique</h5>
+											<span class="series-item-header-count">5 épisodes</span>
+										</div>
+									</figure>
+		                    	</div>
+
+		                    	<div class="col-xs-12 col-md-4 col-lg-4 series-item">
+		                    		<figure class="picture picture-card series-item-header">
+									    <img src="img/_esport.png" width="481" height="273" alt="" title="n/a">
+									    <span class="series-item-header-gradient"></span>
+									    <div class="series-item-header-container">
+											<h5 class="series-item-header-title">E-sport suisse</h5>
+											<span class="series-item-header-count">27 épisodes</span>
+										</div>
+									</figure>
+		                    	</div>
+
+		                    	
+		                    </div>
+		                   
+		        		</div>
+		        		
+		        	</div>
+		        </main>
+		    </div>
+
+		    <!-- <div class="bg-mine-shaft bg-media makeyourown">
+		        <main class="container">
+		        	<div class="spacer spacer-sm"></div>
+		        	<div class="row">
+		        		<div class="col-sm-12 last-videos">
+		                    <h2 class="section-title"><i class="fa fa-list" aria-hidden="true" style="font-size: 60%; opacity: 0.75;"></i> Votre playliste sur mesure</h2>
+							<div class="makeyourown-desktop">
+			                    <div class="row makeyourown-desktop-rubrique">
+			                    	<div class="col-sm-12">
+			                    		<div class="btn-group" role="group" aria-label="...">
+					                    	<button class="btn btn-primary" type="submit">MONDE</button>
+					                    	<button class="btn btn-primary" type="submit">SUISSE</button>
+					                    	<button class="btn btn-primary" type="submit">ÉCONOMIE</button>
+					                    	<button class="btn btn-primary" type="submit">CULTURE</button>
+					                    	<button class="btn btn-primary" type="submit">SCIENCES</button>
+					                    	<button class="btn btn-primary" type="submit">SPORT</button>
+					                    	<button class="btn btn-primary" type="submit">SOCIÉTÉ</button>
+					                    	<button class="btn btn-primary" type="submit">LIFESTYLE</button>
+				                    	</div>
+				                    </div>
+			                    </div>
+			                    <div class="row makeyourown-desktop-time">
+			                    	<div class="col-sm-12">
+			                    		<div class="btn-group" role="group" aria-label="...">
+					                    	<button class="btn btn-primary" type="submit">5 minutes</button>
+					                    	<button class="btn btn-primary" type="submit">10 minutes</button>
+					                    	<button class="btn btn-primary" type="submit">15 minutes</button>
+					                    	<button class="btn btn-primary" type="submit">20 minutes</button>
+					                    	<button class="btn btn-primary" type="submit">25 minutes</button>
+					                    	<button class="btn btn-primary" type="submit">30 minutes</button>
+					                    </div>
+				                    </div>
+			                    </div>
+							</div>
+							<div class="makeyourown-mobile">
+								<div class="spacer spacer-sm"></div>
+								<p>Quelle rubrique vous intéresse?</p>
+								<select class="makeyourown-mobile-rubrique">
+									<option selected disabled hidden>Choix de la rubrique</option>
+									<option value="monde">Monde</option>
+									<option value="suisse">Suisse</option>
+									<option value="economie">Économie</option>
+									<option value="culture">Culture</option>
+									<option value="science">Science</option>
+									<option value="sport">Sport</option>
+									<option value="societe">Société</option>
+									<option value="lifestyle">Lifestyle</option>
+								</select>
+								<hr>
+								<p>Combien de temps avez-vous à disposition?</p>
+								<select class="makeyourown-mobile-time">
+									<option selected disabled hidden>Choix de la durée</option>
+									<option value="monde">5 minutes</option>
+									<option value="suisse">10 minutes</option>
+									<option value="economie">15 minutes</option>
+									<option value="culture">20 minutes</option>
+									<option value="science">25 minutes</option>
+									<option value="sport">30 minutes</option>
+								</select>
+
+								<div class="text-center">
+	                                <div class="spacer spacer-sm"></div>
+	                                <a class="btn btn-primary" href="/images/video">Composer</a>
+	                                <div class="spacer spacer-md"></div>
+	                            </div>
+							</div>
+		                </div>
+		        	</div>
+		        </main>
+		    </div> -->
+
+		    <div>
+		        <div id="block-letemps-socialmedialinks" class="block block-block-content">
+
+
+
+		            <div>
+		                <div class="bg-gray-lighter">
+		                    <div class="container">
+		                        <div class="row text-center">
+		                            <div class="col-md-10 col-md-offset-1">
+		                                <div class="spacer spacer-sm"> </div>
+
+		                                <h2 class="h4 section-title text-center">Suivez toute l'actualité du Temps sur les réseaux sociaux</h2>
+
+		                                <ul class="list-inline social-networks">
+		                                    <li><a class="facebook" href="https://www.facebook.com/letemps.ch" target="_blank">Facebook</a>
+		                                    </li>
+		                                    <li><a class="twitter" href="https://twitter.com/letemps" target="_blank">Twitter</a>
+		                                    </li>
+		                                    <li><a class="youtube" href="https://www.youtube.com/letemps" target="_blank">Youtube</a>
+		                                    </li>
+		                                    <li><a class="instagram" href="https://www.instagram.com/letemps.ch/" target="_blank">Instagram</a>
+		                                    </li>
+		                                </ul>
+		                                <div class="spacer spacer-sm"> </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    <!-- /container -->
+		                </div>
+		            </div>
+
+		        </div>
+
+		    </div>
+
+
+		    <footer class="footer">
+		       <div class="container">
+    <div class="row">
+      <div class="col-sm-5 col-md-4 col-md-offset-1">
+  <div class="media">
+    <div class="media-left">
+      <i class="media-object ltpsicon ltpsicon-newspaper"></i>
+    </div>
+    <div class="media-body">
+      <a href="/newsletters" style="text-decoration:none">
+        <h4 class="media-heading h5">Vos newsletters</h4>
+        <p>Inscrivez-vous et recevez les newsletters de votre choix. <b>Voir la liste</b>.</p>
+      </a>
+    </div>
+
+  </div>
+</div>
+<div class="col-sm-7 col-md-6">
+  <div class="spacer spacer-xxs"></div>
+  <div class="nl-subscription-container-footer"><div><form class="mailchimp-profile-form" data-drupal-selector="mailchimp-profile-form-4rldi69adso" action="/nl_subscription/?email=cesar.greppin%40ringier.ch" method="post" id="mailchimp-profile-form--4rldi69aDso" accept-charset="UTF-8">
+  <div class="newsletter-intro">
+  Abonnez-vous à cette newsletter  <a class="float-right" href="/newsletters">Toutes nos infolettres</a><span class="clearfix"></span>
+</div>
+
+<div class="step step-1"><span class="bullet">1</span>Entrez votre adresse mail</div>
+<span class="user-email-valid-message"></span>
+<div class="form-group js-form-item form-item js-form-type-email form-item-user-email js-form-item-user-email form-no-label">
+        <input placeholder="Votre adresse mail" data-drupal-selector="edit-user-email" type="email" id="edit-user-email--tHbdtljYQ74" name="user_email" value="cesar.greppin@ringier.ch" size="60" maxlength="254" class="form-email required form-control" required="required" aria-required="true">
+
+        <span style="opacity: 1; left: 428px; top: 20px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAANCAYAAABLjFUnAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarZG9SsNQGIaf04qCQxAJbsLBQVzEn61j0pYiONQokmRrkkMVbXI4Of508ia8CAcXR0HvoOIgOHkJboI4ODgECU4i+EzP9w4vL3zQWPE6frcxB6PcmqDnyzCK5cwj0zQBYJCW2uv3twHyIlf8RMD7MwLgadXr+F3+xmyqjQU+gc1MlSmIdSA7s9qCuATc5EhbEFeAa/aCNog7wBlWPgGcpPIXwDFhFIN4BdxhGMXQAHCTyl3AtercArQLPTaHwwMrN1qtlvSyIlFyd1xaNSrlVp4WRhdmYFUGVPuq3Z7Wx0oGPZ//JYxiWdnbDgIQC5M6q0lPzOn3D8TD73fdMb4HL4Cp2zrb/4DrNVhs1tnyEsxfwI3+AvOlUD7FY+VVAAAAIGNIUk0AAHolAACAgwAA9CUAAITRAABtXwAA6GwAADyLAAAbWIPnB3gAAAECSURBVHjapNK9K8UBFIfxD12im8LEYLgZjcpgUFgUCUlZTJRkMpqUxR+hDFIGhWwGwy0MFiUxSCbZ5DXiYjnqdvvpvnim0+mcZ/ieU9U6tySBNEbQjBpMoANZnGIdl4VLKcm8YCPqbgzhAT1ox1mSrFpxjtCHLdygH5tJgymlMYhhtKH+r6FishYsYBpN0dvFHu5wi9okWToC/0AmcpqM+pd7PKMRDajDNb5xlS97Qyem0BsL8IT9uOAhXpGLvL/wGXO5fFkOO7FwHvJtLOOilGALM8vE1d6xiFVlkP8aXTjAI8bKFeXLBuJ3shjFiQpIYR6zWMFaXFOlsnHM4Ng/+RkAdVE2mEeC7WYAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
+
+
+<span class="user-email-checkmailbox-message"></span>
+<div class="step step-2"><span class="bullet">2</span>Sélectionnez vos newsletters</div>
+
+  
+  <div class="nl-subscription-box-wrapper">
+    <div class="nl-a-la-une anonymous noabo for-non-members nl-subscription-box notsub" data-interest-id="b12cbd0b12">
+
+      <a target="_blank" href="https://labs.letemps.ch/newsletters/samples/a_la_une.html">
+        <img class="nl_thumb" src="https://assets.letemps.ch/sites/default/files/styles/compact/public/2017-05/test.jpg?itok=DS877Ju3">
+      </a>
+      <div class="nl-subscription-box-header">
+        <h2 class="newsletter-title">A la Une</h2>
+      </div>
+      <div class="newsletter-description">
+        <p>A 7h tous les matins, sept&nbsp;articles sélectionnés par la rédaction du Temps</p>
+
+      </div>
+
+      <div class="nl-subscription-box-footer">
+                          <div class="onoffswitch float-right nl-subscription-submit">
+            <span class="onoffswitch-label" for="chk_b12cbd0b12">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch ajax-progress ajax-progress-throbber"><span class=""><span class="throbber">&nbsp;</span></span>&nbsp;</span>
+            </span>
+          </div>
+        
+        <span class="newsletter-teaser-link"><a target="_blank" href="https://labs.letemps.ch/newsletters/samples/a_la_une.html">exemple</a></span>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="form-group js-form-item form-item js-form-type-checkbox form-item-chk-b12cbd0b12 js-form-item-chk-b12cbd0b12 form-no-label">
+        <input class="onoffswitch-checkbox form-checkbox" interest_id="b12cbd0b12" data-drupal-selector="edit-chk-b12cbd0b12" type="checkbox" id="edit-chk-b12cbd0b12--iUewYj5I6hs" name="chk_b12cbd0b12" value="1">
+
+        </div>
+<input data-drupal-selector="edit-user-status" type="hidden" name="user_status" value="subscribed">
+<input data-drupal-selector="form-ghaeudk15-vxhl-gx-wtvisu59umpo1hrybsas8mf1c" type="hidden" name="form_build_id" value="form-ghaEUDk15-VXhL-gX-wtvISU59UmPo1hRybSaS8mF1c">
+<input data-drupal-selector="edit-mailchimp-profile-form-form-token-fclgwjtp9xw" type="hidden" name="form_token" value="Yq_jIrFQeFpfuaRBDWaDMIzsHRG_g7LeNGu4wugFZic">
+<input data-drupal-selector="edit-mailchimp-profile-form-azya4dcnlya" type="hidden" name="form_id" value="mailchimp_profile_form">
+
+
+</form>
+</div></div>
+  <div class="spacer spacer-xxs"></div>
+</div>
+    </div>
+  </div>
+		        <div class="footer-bottom">
+		            <div class="container">
+		                <div class="row">
+		                    <div class="col-lg-10 col-lg-offset-1 footer-credits">
+		                        <img class="logo" src="img/logo-media.svg" alt="" />
+
+		                        <ul class="list-inline">
+		                            <li class="hidden-xs"> <a href="/a-propos" class="">À propos</a>
+		                            </li>
+		                            <li> <a href="https://www.letemps.ch/abos" class="">Abonnements</a>
+		                            </li>
+		                            <li> <a href="http://www.admeira.ch/fr/brands/digital/letemps-ch" class="">Publicité</a>
+		                            </li>
+		                            <li> <a href="http://www.letempsarchives.ch" class="">Archives</a>
+		                            </li>
+		                            <li> <a href="/faq" class="">FAQ</a>
+		                            </li>
+		                            <li> <a href="/abonnes/services" class="">Services</a>
+		                            </li>
+		                            <li> <a href="/contact" class="">Contact</a>
+		                            </li>
+		                            <li> <a href="/" class="">© 2017 Le Temps SA</a>
+		                            </li>
+		                        </ul>
+
+
+
+
+		                        <a class="btn btn-default btn-top pull-right" href="#top"><i class="fa fa-chevron-up"></i></a>
+		                    </div>
+		                </div>
+
+		                <div class="row text-center">&nbsp;</div>
+
+		                <div class="spacer spacer-sm"></div>
+
+		            </div>
+		        </div>
+		    </footer>
+
+		    <script type="text/javascript">
+		        /** CONFIGURATION START **/
+		        var _sf_async_config = _sf_async_config || {};
+		        var _cbq = window._cbq || [];
+		        _cbq.push(["_acct", "anon"]);
+
+		        _sf_async_config.uid = 61154;
+		        _sf_async_config.domain = "letemps.ch";
+		        _sf_async_config.useCanonical = true;
+
+		        _sf_async_config.sections = ""; //CHANGE THIS
+		        _sf_async_config.authors = "";
+		        /** CONFIGURATION END **/
+		        (function() {
+		            function loadChartbeat() {
+		                window._sf_endpt = (new Date()).getTime();
+		                var e = document.createElement("script");
+		                e.setAttribute("language", "javascript");
+		                e.setAttribute("type", "text/javascript");
+		                e.setAttribute("src", "//static.chartbeat.com/js/chartbeat.js");
+		                document.body.appendChild(e);
+		            }
+		            var oldonload = window.onload;
+		            window.onload = (typeof window.onload != "function") ?
+		                loadChartbeat : function() {
+		                    oldonload();
+		                    loadChartbeat();
+		                };
+		        })();
+		    </script>
+		    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"images\/video","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"fr"},"pluralDelimiter":"\u0003","ajaxPageState":{"libraries":"core\/html5shiv,letemps\/newsletter,letemps\/video,lt_adtech\/lt_adtech,lt_gtm\/ad,np8_adtech\/lt_adtech_783897,np8_embed\/np8_embed,np8_subscription\/replacements,np8_user\/login-destination,system\/base,views\/views.module","theme":"letemps","theme_token":null},"ajaxTrustedUrl":{"\/search":true},"np8_embed":{"twitter":{"dialog_add":"Embed Twitter","dialog_edit":"Edit Embedded Twitter"},"facebook":{"app_id":2147483647,"langcode":"de_DE","dialog_add":"Embed Facebook","dialog_edit":"Edit Embedded Facebook","loading":"Loading Facebook Post..."}},"np8_adtech":{"site_config":{"params":{"loc":"100"},"network":"780.2","pageid":783897,"siteid":1170166,"urlTargeting":{"doTargeting":true}},"positions":{"adtech-5923f5ec0d86b":{"placement":5819906,"kv":{"url1":"images","url2":"video"},"adContainerId":"adtech-5923f5ec0d86b"},"adtech-5923f5ec0dceb":{"placement":5819903,"kv":{"url1":"images","url2":"video"},"adContainerId":"adtech-5923f5ec0dceb"}}},"user":{"uid":0,"permissionsHash":"aee7cb70dfaf22e698bc64f2cd164d4f265946eaad60e9b720b4df46428819a3"}}</script>
+		    <script src="https://assets.letemps.ch/sites/default/files/js/js_hDQdDO6Zz4RoFLTnV_WInDeHUSutKdpZoPMIA0SNEtM.js"></script>
+		    <script src="https://aka-cdn.adtech.de/dt/common/DAC.js"></script>
+		    <script src="https://aka-cdn.adtech.de/dac/780.2/w1170166.js"></script>
+		    <script src="https://assets.letemps.ch/sites/default/files/js/js_EevaDEZP3o77IiAtmDN5Z_iDonsO6AXXGxIEGnpFMc4.js"></script>
+		    <script src="https://aka-cdn.adtech.de/dac/780.2/1170166/p783897.js"></script>
+		    <script src="https://assets.letemps.ch/sites/default/files/js/js_1Ul35_KGKL0vEeL0winHr8ij7w0yEXIINNMLuIoCKc4.js"></script>
+
+		    <script type="text/javascript">
+		        window.NREUM || (NREUM = {});
+		        NREUM.info = {
+		            "beacon": "bam.nr-data.net",
+		            "licenseKey": "0d3c09e20d",
+		            "applicationID": "8284479",
+		            "transactionName": "ZlZTY0pZCxBVBRJQC18cckJLTAoOGxAPXBMfX0VoTlEBBlsVOV8WXl1FaEhZAgYaFgdeAW4C",
+		            "queueTime": 0,
+		            "applicationTime": 204,
+		            "atts": "ShFQFQJDGB4=",
+		            "errorBeacon": "bam.nr-data.net",
+		            "agent": ""
+		        }
+		    </script>
+
+		    <script src="js/main.js"></script>
+		</body>
+		
+		<!-- //=====================================================================// -->
+		<!-- // FIX -->
+		<!-- //=====================================================================// -->
+		
+		
+		
+
+		{{ block('footer_brand') }}
+	</body>
+	
+</html>

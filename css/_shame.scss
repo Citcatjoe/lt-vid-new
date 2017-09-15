@@ -1,0 +1,16 @@
+div.brand-nav
+{
+	display: none;
+}
+
+.glyphicon-chevron-left:before, .pswp__button--arrow--left:after
+{
+	font-family: FontAwesome;
+	content: "\f053";
+}
+
+.glyphicon-chevron-right:before, .pswp__button--arrow--right:after
+{
+	font-family: FontAwesome;
+	content: "\f054";
+}
