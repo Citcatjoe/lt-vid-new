@@ -115,4 +115,11 @@ jQuery(document).ready(function($)
 
 	});
 
+	/////////////////////////////////////////////////////////////////
+	// MINI-PLAYERS
+	/////////////////////////////////////////////////////////////////
+	$('.last-videos-item-header').click(function(e) { 
+		$(this).find('.picture-wrapper').hide();
+		$(this).find('.video-wrapper').show();
+	});
 });

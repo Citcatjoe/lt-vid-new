@@ -734,7 +734,7 @@ body.page-videos
         {
             //background: red; 
             padding: 0 15px 0 15px;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
 
             @media screen and (max-width: 767px) {
               margin-bottom: 20px;
@@ -745,69 +745,250 @@ body.page-videos
             .desktop-visible { @media screen and (max-width: 767px) { display: none; } }
             .mobile-visible { @media screen and (min-width: 767px) { display: none; } }
 
-            figure.last-videos-header
-            {
-                position: relative;
 
-                span.last-videos-header-gradient 
+            .last-videos-item-header
+            {
+                div.video-wrapper
+                {
+                    width: 100%;
+                    margin: auto;
+                    position: relative;
+                    background: black;
+                    display: none;
+
+                   .video-wrapper-loader
+                   {
+                    position: absolute;
+                   left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                   }
+
+                    &:after 
+                    {   /* 16:9 ratio */
+                        padding-top: 56.25%;
+                        display: block;
+                        content: '';
+                    }
+
+                    div.video-js 
+                    {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;  
+                        color: white;  
+                
+                        video 
+                        {
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        div.vjs-dock-text
+                        {
+                            height: 100%;
+                            background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,8) 100%); /* FF3.6-15 */ 
+                            background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,8) 100%); /* Chrome10-25,Safari5.1-6 */
+                            background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+                            opacity: 0.5;
+                            transition: opacity 0.4s;
+                        }
+                    }
+                }
+
+                .last-videos-item-gradient
                 {
                     position: absolute;
+                    width: 100%;
+                    height: 100%;
                     top: 0;
                     right: 0;
                     bottom: 0;
                     left: 0;
-                    width: 100%;
-                    height: 100%;
                     background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0, .5) 100%); /* FF3.6-15 */ 
                     background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0, .5) 100%); /* Chrome10-25,Safari5.1-6 */
                     background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0, .5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
                     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-                    opacity: .5; 
-
-                    @media screen and (max-width: 767px) {
-                      opacity: .5; 
-                    }
+                    opacity: 1; 
                 }
 
-                img.last-videos-header-play
+                .last-videos-item-play-button
                 {
                     position: absolute;
-                    bottom: 10px;
-                    left: 10px;
                     width: 30px;
-                    height: auto;
-                    opacity: 0.75;
-
+                    bottom: 32px;
+                    left: 15px;
+                    // width: 80px;
+                    // top: 50%;
+                    // left: 50%;
+                    // transform: translate(-50%, -50%);
                     @media screen and (max-width: 767px) {
-                      bottom: 58%;
-                      left: 50%;
-                      @include transform(translate(-50%, 50%));
-                      width: 70px;
-                      opacity: 1;
+                        width: 50px;
+                        bottom: 50%;
+                        left: 50%;
+                        transform: translate(-50%, 50%);
+                    }
+                }
+                
+                .label 
+                {
+                    background: $media-color;
+
+                    span 
+                    {
+                        font-family: 'Ratio';
+                        font-size: 115%;
+                        // -webkit-font-smoothing: antialiased; 
+                        // -moz-osx-font-smoothing: grayscale;
+                        font-weight: 400;
+                        opacity: 0.8;
+                        //color: lighten($media-color, 40%);
                     }
                 }
 
-                h5.last-videos-header-title
+
+            }
+
+            .last-videos-item-excerpt
+            {
+                @media screen and (max-width: 767px) {
+                    background: #262626;
+                    padding: 0 15px 15px 15px;
+                }
+
+                h3 
                 {
-                    font-size: 20px;
-                    font-family: "Rooney";
-                    color: rgb(255, 255, 255);
-                    line-height: 1.333;
-                    text-align: left;
-                    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.004);
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
+                    //font-family: 'Rooney';
+                    font-weight: 400;
+                    line-height: 1.4;
                     margin: 0;
-                    padding: 10px;
+                    //-webkit-font-smoothing: antialiased; 
 
+                    @media screen and (max-width: 1213px) {
+                        font-size: 21px;
+                        line-height: 1.4;
+                    }
 
-                    background: -moz-linear-gradient(bottom, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-                    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-                    background: linear-gradient(to top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+                    @media screen and (max-width: 991px) {
+                        font-size: 19px;
+                        line-height: 1.4;
+                    }
+
+                    @media screen and (max-width: 767px) {
+                        //padding-bottom: 10px;
+                    }
+
+                    span 
+                    {
+                        color: $media-color;
+                         //font-weight: 600;
+                    }
                 }
             }
+
+            .last-videos-item-share
+            {
+                text-align: center;
+                display: none;
+                color: white;
+                margin-left: 0;
+                margin-right: 0;
+                border-top: 1px solid #1d2023;
+                box-shadow: inset 0 1px 0 0 #333333;
+
+                @media screen and (max-width: 767px) {
+                    background: #262626;
+                    display: block;
+                }
+
+                .last-videos-item-share-box
+                {
+                    padding: 5px 0 2px 0;
+                    border-right: 1px solid #1d2023;
+                    box-shadow: inset 1px 0 0 0 #333333;
+
+                    &:first-child
+                    {
+                        box-shadow: none;
+                    }
+
+                    &:last-child
+                    {
+                        border-right: 0;
+                    }
+
+                    .fa { opacity: 0.5; }
+                }
+            }
+
+            // figure.last-videos-header
+            // {
+            //     position: relative;
+
+            //     span.last-videos-header-gradient 
+            //     {
+            //         position: absolute;
+            //         top: 0;
+            //         right: 0;
+            //         bottom: 0;
+            //         left: 0;
+            //         width: 100%;
+            //         height: 100%;
+            //         background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0, .5) 100%); /* FF3.6-15 */ 
+            //         background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0, .5) 100%); /* Chrome10-25,Safari5.1-6 */
+            //         background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0, .5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            //         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            //         opacity: .5; 
+
+            //         @media screen and (max-width: 767px) {
+            //           opacity: .5; 
+            //         }
+            //     }
+
+            //     img.last-videos-header-play
+            //     {
+            //         position: absolute;
+            //         bottom: 10px;
+            //         left: 10px;
+            //         width: 30px;
+            //         height: auto;
+            //         opacity: 0.75;
+
+            //         @media screen and (max-width: 767px) {
+            //           bottom: 58%;
+            //           left: 50%;
+            //           @include transform(translate(-50%, 50%));
+            //           width: 70px;
+            //           opacity: 1;
+            //         }
+            //     }
+
+            //     h5.last-videos-header-title
+            //     {
+            //         font-size: 20px;
+            //         font-family: "Rooney";
+            //         color: rgb(255, 255, 255);
+            //         line-height: 1.333;
+            //         text-align: left;
+            //         text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.004);
+            //         position: absolute;
+            //         bottom: 0;
+            //         left: 0;
+            //         margin: 0;
+            //         padding: 10px;
+
+
+            //         background: -moz-linear-gradient(bottom, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+            //         background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+            //         background: linear-gradient(to top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            //         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+            //     }
+            // }
 
             div.last-videos-body
             {

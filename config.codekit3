@@ -107,6 +107,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/css\/_loader.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/css\/_loader.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/css\/_print.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1160,15 +1173,15 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/loader.css": {
+	"\/css\/loader-min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/loader-min.css",
+		"oAP": "\/css\/loader-min-min.css",
 		"oF": 0,
-		"oS": 0
+		"oS": 3
 		},
 	"\/css\/main.css": {
 		"aP": 1,
@@ -1208,6 +1221,16 @@
 		"oAP": "\/css\/style-min.css",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/css\/untitled-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/untitled-min-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"\/css\/untitled.css": {
 		"aP": 1,
@@ -1770,6 +1793,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/play-button-01.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/play-button-01.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/play-button.png": {
 		"ft": 32768,
 		"iS": 5483,
@@ -1983,6 +2016,179 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/prod\/couleurs.ai",
+		"oF": 0
+		},
+	"\/prod\/maquettes\/bloc-home.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/prod\/maquettes\/bloc-home.psd",
+		"oF": 0
+		},
+	"\/prod\/maquettes\/Capture d’écran 2017-01-05 à 15.44.48.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/prod\/maquettes\/Capture d’écran 2017-01-05 à 15.44.48.psd",
+		"oF": 0
+		},
+	"\/prod\/maquettes\/old\/bloc-home.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/prod\/maquettes\/old\/bloc-home.psd",
+		"oF": 0
+		},
+	"\/prod\/maquettes\/old\/bloc-home2.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/prod\/maquettes\/old\/bloc-home2.psd",
+		"oF": 0
+		},
+	"\/prod\/maquettes\/old\/bloc-home3.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/prod\/maquettes\/old\/bloc-home3.psd",
+		"oF": 0
+		},
+	"\/prod\/maquettes\/old\/dossier sans titre\/bloc-home.jpg": {
+		"ft": 16384,
+		"iS": 160284,
+		"oA": 0,
+		"oAP": "\/prod\/maquettes\/old\/dossier sans titre\/bloc-home.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/prod\/maquettes\/old\/dossier sans titre\/bloc-home2.jpg": {
+		"ft": 16384,
+		"iS": 158365,
+		"oA": 0,
+		"oAP": "\/prod\/maquettes\/old\/dossier sans titre\/bloc-home2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/prod\/maquettes\/old\/dossier sans titre\/bloc-home22.jpg": {
+		"ft": 16384,
+		"iS": 133904,
+		"oA": 0,
+		"oAP": "\/prod\/maquettes\/old\/dossier sans titre\/bloc-home22.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/prod\/maquettes\/Output\/bloc-home.jpg": {
+		"ft": 16384,
+		"iS": 8914592,
+		"oA": 0,
+		"oAP": "\/prod\/maquettes\/Output\/bloc-home.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/prod\/maquettes\/Output\/video-mobile-1.jpg": {
+		"ft": 16384,
+		"iS": 951670,
+		"oA": 0,
+		"oAP": "\/prod\/maquettes\/Output\/video-mobile-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/prod\/maquettes\/Output\/video-mobile-2.jpg": {
+		"ft": 16384,
+		"iS": 1696746,
+		"oA": 0,
+		"oAP": "\/prod\/maquettes\/Output\/video-mobile-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/prod\/maquettes\/Output\/videos.jpg": {
+		"ft": 16384,
+		"iS": 1901797,
+		"oA": 0,
+		"oAP": "\/prod\/maquettes\/Output\/videos.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/prod\/maquettes\/play.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/prod\/maquettes\/play.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/prod\/maquettes\/player-elements-individual.ai": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/prod\/maquettes\/player-elements-individual.ai",
+		"oF": 0
+		},
+	"\/prod\/maquettes\/player-elements.ai": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/prod\/maquettes\/player-elements.ai",
+		"oF": 0
+		},
+	"\/prod\/maquettes\/screencapture-letemps-ch-1484054127253.png": {
+		"ft": 32768,
+		"iS": 14300714,
+		"oA": 0,
+		"oAP": "\/prod\/maquettes\/screencapture-letemps-ch-1484054127253.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/prod\/maquettes\/test.jpg": {
+		"ft": 16384,
+		"iS": 545580,
+		"oA": 0,
+		"oAP": "\/prod\/maquettes\/test.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/prod\/maquettes\/thumbz.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/prod\/maquettes\/thumbz.psd",
+		"oF": 0
+		},
+	"\/prod\/maquettes\/video-color2.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/prod\/maquettes\/video-color2.psd",
+		"oF": 0
+		},
+	"\/prod\/maquettes\/video-mobile.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/prod\/maquettes\/video-mobile.psd",
+		"oF": 0
+		},
+	"\/prod\/maquettes\/wireframe-alt.ai": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/prod\/maquettes\/wireframe-alt.ai",
+		"oF": 0
+		},
+	"\/prod\/maquettes\/wireframe.ai": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/prod\/maquettes\/wireframe.ai",
 		"oF": 0
 		},
 	"\/prod\/thumb-inandout.psd": {
