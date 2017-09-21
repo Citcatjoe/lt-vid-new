@@ -161,3 +161,60 @@
 // {
 //     display: none !important;
 // }
+
+.last-videos .vjs-play-progress
+{
+    background-color: #00becc !important;
+}
+
+.last-videos .vjs-progress-control
+{
+    padding-left: 10px;
+    height: .3em !important;
+}
+
+.last-videos .video-js .vjs-progress-holder .vjs-play-progress, .video-js .vjs-progress-holder .vjs-load-progress, .video-js .vjs-progress-holder .vjs-load-progress div
+{
+    background: #769496;
+    //opacity: 0.3;
+}
+
+.last-videos .vjs-volume-bar .vjs-volume-level
+{
+     background-color: #00becc !important;
+}
+
+
+// TOOLTIPS FONT (BIG AND SMALL PLAYERS)
+.video-js .vjs-progress-control:hover .vjs-time-tooltip, .video-js .vjs-progress-control:hover .vjs-mouse-display:after, .video-js .vjs-progress-control:hover .vjs-play-progress:after
+{ font-family: 'Ratio'; } 
+
+// TOOLTIPS CURSOR + CURRENT TIME (BIG AND SMALL PLAYERS)
+.video-js .vjs-time-tooltip, .video-js .vjs-mouse-display:after, .video-js .vjs-play-progress:after
+{ background-color: #ffffff; color: $bg-color; }
+
+// TOOLTIP CURSOR (BIG AND SMALL PLAYERS)
+.vjs-mouse-display .vjs-time-tooltip, .video-js .vjs-progress-control .vjs-mouse-display:after
+{ background-color: $bg-color; color: #ffffff; }
+
+// ELEMENTS STATES RESTYLE (BIG AND SMALL PLAYERS)
+.bc-player-BJqobDOb6_default.video-js.vjs-playing div.vjs-dock-text
+{ opacity: 0 !important; transition: opacity 0.4s; }
+
+.bc-player-BJqobDOb6_default.video-js.vjs-paused div.vjs-dock-text
+{ opacity: 0.5; transition: opacity 0.4s; }
+
+.bc-player-BJqobDOb6_default.video-js.vjs-user-inactive.vjs-paused div.vjs-dock-text
+{ opacity: 0.5 !important; transition: opacity 0.4s; }
+
+.bc-player-BJqobDOb6_default.video-js.vjs-user-inactive.vjs-paused div.vjs-control-bar
+{ opacity: 1 !important; transition: opacity 0.4s; }
+
+.bc-player-BJqobDOb6_default.video-js.vjs-user-inactive  div.vjs-dock-text
+{ opacity: 0 !important; transition: opacity 0.4s; }
+
+.bc-player-BJqobDOb6_default.video-js.vjs-user-inactive  div.vjs-control-bar
+{ opacity: 0 !important; transition: opacity 0.4s; }
+
+.bc-player-BJqobDOb6_default.video-js.vjs-ended .vjs-big-play-button
+{ display: none; }

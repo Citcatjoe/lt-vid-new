@@ -119,7 +119,18 @@ jQuery(document).ready(function($)
 	// MINI-PLAYERS
 	/////////////////////////////////////////////////////////////////
 	$('.last-videos-item-header').click(function(e) { 
-		$(this).find('.picture-wrapper').hide();
-		$(this).find('.video-wrapper').show();
+		
+		if ($(window).width() > 752 )
+		{
+			alert('Reaload page');
+		} 
+		else
+		{
+			$(this).find('.picture-wrapper').hide();
+			$(this).find('.video-wrapper').show();
+		}
+
 	});
+
+	
 });
