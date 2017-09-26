@@ -1,150 +1,32 @@
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-progress-control.vjs-control {
-	width: 100% !important;
+/////////////////////////////////////////////////////////////////
+// VALABLE POUR TOUS LES PLAYERS
+/////////////////////////////////////////////////////////////////
+.bc-player-BJqobDOb6_default.video-js .vjs-big-play-button {
+    height: 2em !important;
+    width: 2em !important;
+    line-height: 1.9em !important;
+    margin-top: -1em !important;
+    margin-left: -1em !important;
+    border: 2px solid white !important;
+    display: none;
 }
 
 .bc-player-BJqobDOb6_default .vjs-progress-control {
-	position: relative;
-	top:1.3em !important;
-}
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-menu-button-inline.vjs-slider-active,.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-menu-button-inline:focus,.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-menu-button-inline:hover,.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js.vjs-no-flex .vjs-menu-button-inline {
-    width: 10em !important;
-}
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-controls-disabled .vjs-big-play-button {
-    display: none!important
-}
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-control {
-    width: 3em !important;
-}
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-menu-button-inline:before {
-    width: 1.5em !important;
+    position: relative;
+    top:1.3em !important;
 }
 
 .bc-player-BJqobDOb6_default.vjs-menu-button-inline .vjs-menu {
     left: 3em !important;
 }
 
-.bc-player-BJqobDOb6_default.vjs-paused.vjs-has-started.video-js .vjs-big-play-button,.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js.vjs-ended .vjs-big-play-button,.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js.vjs-paused .vjs-big-play-button {
+.bc-player-BJqobDOb6_default.vjs-paused.vjs-has-started.video-js .vjs-big-play-button,.main-content .bc-player-BJqobDOb6_default.video-js.vjs-ended .vjs-big-play-button,.main-content .bc-player-BJqobDOb6_default.video-js.vjs-paused .vjs-big-play-button {
     display: block
-}
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-load-progress div,.bc-player-BJqobDOb6_default.vjs-seeking .vjs-big-play-button,.bc-player-BJqobDOb6_default.vjs-waiting .vjs-big-play-button {
-    display: none!important
-}
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-mouse-display:after,.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-play-progress:after {
-    padding: 0 .4em .3em !important;
-}
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js.vjs-ended .vjs-loading-spinner {
-    display: none !important;
-}
-
-// .bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js.vjs-ended .vjs-big-play-button {
-//     display: block !important;
-// }
-
-
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js.vjs-ended .vjs-big-play-button,.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js.vjs-paused .vjs-big-play-button,.bc-player-BJqobDOb6_default.vjs-paused.vjs-has-started.video-js .vjs-big-play-button {
-    // display: block;
-    display: none;
-}
-
-// .bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js.vjs-paused .vjs-big-play-button, 
-// {
-//     display: none;
-// }
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-big-play-button {
-    top: 50% !important;
-    left: 50% !important;
-    margin-left: -1.5em !important;
-    margin-top: -1em !important;
-}
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-big-play-button {
-    background-color: rgba(0,0,0,0.35) !important;
-    font-size: 3.5em !important;
-    border-radius: 50% !important;
-    height: 2em !important;
-    line-height: 2em !important;
-    margin-top: -1em !important
-}
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js:hover .vjs-big-play-button,.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-big-play-button:focus,.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-big-play-button:active {
-    background-color: rgba(0,0,0,0.35) !important;
-}
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-loading-spinner {
-    border-color: rgba(255,255,255,0.7) !important;
-}
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-control-bar2 {
-    background-color: transparent !important;
-}
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-control-bar {
-    background-color: rgba(0,0,0,0) !important;
-    color: #ffffff !important;
-    font-size: 18px !important;
-}
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-play-progress,.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js  .vjs-volume-level {
-    // background-color: #619fa4 !important;
-    background-color: white !important;
-}
-
-
-    //S'APPLIQUE A TOUT LES PLAY BUTTON, GRAND ET PETITS PLAYERS
-    .bc-player-BJqobDOb6_default.video-js .vjs-big-play-button {
-        height: 2em !important;
-        width: 2em !important;
-        line-height: 1.9em !important;
-        margin-top: -1em !important;
-        margin-left: -1em !important;
-        border: 2px solid white !important;
-        display: none;
-    }
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-icon-play:before, .video-js .vjs-big-play-button:before {
-    font-size: 50px !important;
-}
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js  .vjs-progress-holder {
-    font-size: 1.7em !important;
-    
-    width: 100% !important;
-}
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-progress-holder .vjs-play-progress, .video-js .vjs-progress-holder .vjs-load-progress, .video-js .vjs-progress-holder .vjs-load-progress div, .video-js .vjs-slider,.bc-player-BJqobDOb6_default.vjs-volume-level {
-    
-}
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-load-progress {
-    background: rgba(255,255,255,0.5) !important;
-}
-
-
- .bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-control:focus:before, .video-js .vjs-control:hover:before, .video-js .vjs-control:focus {
-    text-shadow: 0em 0em .7em white;
 }
 
 .bc-player-BJqobDOb6_default.vjs-menu-button-inline .vjs-menu
 {
     left: 3em;
-}
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-time-control
-{
-    padding: 0;  
-}
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-time-control.vjs-duration
-{
-    margin-right: 20px;
 }
 
 .bc-player-BJqobDOb6_default .vjs-time-control.vjs-current-time
@@ -156,34 +38,6 @@
 {
     background-color: transparent;
 }
-
-// .last-videos-item .bc-player-BJqobDOb6_default.video-js .vjs-controls-disabled .vjs-big-play-button 
-// {
-//     display: none !important;
-// }
-
-.last-videos .vjs-play-progress
-{
-    background-color: #00becc !important;
-}
-
-.last-videos .vjs-progress-control
-{
-    padding-left: 10px;
-    height: .3em !important;
-}
-
-.last-videos .video-js .vjs-progress-holder .vjs-play-progress, .video-js .vjs-progress-holder .vjs-load-progress, .video-js .vjs-progress-holder .vjs-load-progress div
-{
-    background: #769496;
-    //opacity: 0.3;
-}
-
-.last-videos .vjs-volume-bar .vjs-volume-level
-{
-     background-color: #00becc !important;
-}
-
 
 // TOOLTIPS FONT (BIG AND SMALL PLAYERS)
 .video-js .vjs-progress-control:hover .vjs-time-tooltip, .video-js .vjs-progress-control:hover .vjs-mouse-display:after, .video-js .vjs-progress-control:hover .vjs-play-progress:after
@@ -218,3 +72,138 @@
 
 .bc-player-BJqobDOb6_default.video-js.vjs-ended .vjs-big-play-button
 { display: none; }
+
+/////////////////////////////////////////////////////////////////
+// BIG PLAYER ONLY
+/////////////////////////////////////////////////////////////////
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-progress-control.vjs-control {
+	width: 100% !important;
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-menu-button-inline.vjs-slider-active,.main-content .bc-player-BJqobDOb6_default.video-js .vjs-menu-button-inline:focus,.main-content .bc-player-BJqobDOb6_default.video-js .vjs-menu-button-inline:hover,.main-content .bc-player-BJqobDOb6_default.video-js.vjs-no-flex .vjs-menu-button-inline {
+    width: 10em !important;
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-controls-disabled .vjs-big-play-button {
+    display: none!important
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-play-control
+{
+    margin-right: -1em !important;
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-control .vjs-mute-control {
+     margin-right: -0.5em;
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-menu-button-inline:before {
+    width: 1.5em !important;
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-load-progress div,.bc-player-BJqobDOb6_default.vjs-seeking .vjs-big-play-button,.bc-player-BJqobDOb6_default.vjs-waiting .vjs-big-play-button {
+    display: none!important
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-mouse-display:after,.main-content .bc-player-BJqobDOb6_default.video-js .vjs-play-progress:after {
+    padding: 0 .4em .3em !important;
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js.vjs-ended .vjs-loading-spinner {
+    display: none !important;
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js.vjs-ended .vjs-big-play-button,.main-content .bc-player-BJqobDOb6_default.video-js.vjs-paused .vjs-big-play-button,.bc-player-BJqobDOb6_default.vjs-paused.vjs-has-started.video-js .vjs-big-play-button {
+    // display: block;
+    display: none;
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-big-play-button {
+    top: 50% !important;
+    left: 50% !important;
+    margin-left: -1.5em !important;
+    margin-top: -1em !important;
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-big-play-button {
+    background-color: rgba(0,0,0,0.35) !important;
+    font-size: 3.5em !important;
+    border-radius: 50% !important;
+    height: 2em !important;
+    line-height: 2em !important;
+    margin-top: -1em !important
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js:hover .vjs-big-play-button,.main-content .bc-player-BJqobDOb6_default.video-js .vjs-big-play-button:focus,.main-content .bc-player-BJqobDOb6_default.video-js .vjs-big-play-button:active {
+    background-color: rgba(0,0,0,0.35) !important;
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-loading-spinner {
+    border-color: rgba(255,255,255,0.7) !important;
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-control-bar2 {
+    background-color: transparent !important;
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-control-bar {
+    background-color: rgba(0,0,0,0) !important;
+    color: #ffffff !important;
+    font-size: 18px !important;
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-play-progress,.main-content .bc-player-BJqobDOb6_default.video-js  .vjs-volume-level {
+    background-color: white !important;
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-icon-play:before, .video-js .vjs-big-play-button:before {
+    font-size: 50px !important;
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js  .vjs-progress-holder {
+    font-size: 1.7em !important;
+    width: 100% !important;
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-load-progress {
+    background: rgba(255,255,255,0.5) !important;
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-control:focus:before, .video-js .vjs-control:hover:before, .video-js .vjs-control:focus {
+    text-shadow: 0em 0em .7em white;
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-time-control
+{
+    padding: 0;  
+}
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-time-control.vjs-duration
+{
+    margin-right: 20px;
+}
+
+/////////////////////////////////////////////////////////////////
+// MINI-PLAYERS ONLY
+/////////////////////////////////////////////////////////////////
+.last-contents .vjs-play-progress
+{
+    background-color: #00becc !important;
+}
+
+.last-contents .vjs-progress-control
+{
+    padding-left: 10px;
+    height: .3em !important;
+}
+
+.last-contents .video-js .vjs-progress-holder .vjs-play-progress, .video-js .vjs-progress-holder .vjs-load-progress, .video-js .vjs-progress-holder .vjs-load-progress div
+{
+    background: #769496;
+    //opacity: 0.3;
+}
+
+.last-contents .vjs-volume-bar .vjs-volume-level
+{
+     background-color: #00becc !important;
+}

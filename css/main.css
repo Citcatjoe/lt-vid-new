@@ -2,6 +2,9 @@
 /*Boxes settings*/
 /*Colors, breakpoints...*/
 /*text relatives*/
+*:focus {
+  outline: 0; }
+
 /*/HTML5 Boilerplate) Clearfix, hidden, visuallyhidden, invisible...*/
 .sk-fading-circle {
   width: 40px;
@@ -138,16 +141,16 @@
     opacity: 1; } }
 
 /*Header, section, article, footer...*/
-body.page-videos .btn {
+.media-page .btn {
   background-color: #455d5f;
   outline: none !important; }
-  body.page-videos .btn:hover, body.page-videos .btn:focus {
+  .media-page .btn:hover, .media-page .btn:focus {
     background-color: #619fa4; }
 
-body.page-videos {
+.media-page {
   position: relative;
   background: #323232; }
-  body.page-videos header {
+  .media-page header {
     position: absolute;
     top: 0;
     left: 0;
@@ -155,98 +158,121 @@ body.page-videos {
     background: transparent;
     color: white; }
     @media screen and (max-width: 767px) {
-      body.page-videos header {
+      .media-page header {
         position: relative; } }
     @media screen and (max-width: 767px) {
-      body.page-videos header .navbar-container {
+      .media-page header .navbar-container {
         margin-bottom: 0; } }
-    body.page-videos header .navbar.affix {
-      padding-bottom: 8px !important;
+    .media-page header .navbar {
+      background: #323232;
+      padding-bottom: 7px !important;
       padding-top: 12px !important;
-      background: rgba(0, 0, 0, 0.5); }
+      border-bottom: 1px solid #3f3f3f;
+      position: fixed;
+      top: 0;
+      width: 100%; }
       @media screen and (max-width: 767px) {
-        body.page-videos header .navbar.affix {
+        .media-page header .navbar {
           padding-bottom: 8px !important;
           padding-top: 8px !important; } }
-    body.page-videos header ul.media-nav-left {
+      .media-page header .navbar:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 40px;
+        width: 100%;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(111, 112, 114, 0.3)), color-stop(10%, rgba(111, 112, 114, 0.2)), to(rgba(111, 112, 114, 0)));
+        /* background: linear-gradient(to bottom,rgba(111,112,114,.3) 0,rgba(111,112,114,.2) 10%,rgba(111,112,114,0) 100%); */
+        -webkit-transition: all .2s linear;
+        transition: all .2s linear;
+        pointer-events: none; }
+      .media-page header .navbar.navbar-unpinned {
+        transform: translateY(0); }
+        .media-page header .navbar.navbar-unpinned:after {
+          opacity: 1; }
+    .media-page header ul.media-nav-left {
       display: inline-block;
       float: left;
       font-weight: 900;
       margin-bottom: 0; }
       @media screen and (max-width: 767px) {
-        body.page-videos header ul.media-nav-left {
+        .media-page header ul.media-nav-left {
           font-size: 16px;
           margin-top: 7px; } }
-      body.page-videos header ul.media-nav-left li {
+      .media-page header ul.media-nav-left li {
         float: left; }
-        body.page-videos header ul.media-nav-left li img.logo-desktop {
+        .media-page header ul.media-nav-left li img.logo-desktop {
           height: 14px;
           margin-bottom: 3px; }
           @media screen and (max-width: 767px) {
-            body.page-videos header ul.media-nav-left li img.logo-desktop {
+            .media-page header ul.media-nav-left li img.logo-desktop {
               display: none; } }
-        body.page-videos header ul.media-nav-left li img.logo-mobile {
+        .media-page header ul.media-nav-left li img.logo-mobile {
           display: none;
           width: 34px;
           height: auto;
           margin-top: -6px; }
           @media screen and (max-width: 767px) {
-            body.page-videos header ul.media-nav-left li img.logo-mobile {
+            .media-page header ul.media-nav-left li img.logo-mobile {
               display: block;
               margin-top: -7px;
               margin-right: 10px; } }
-        body.page-videos header ul.media-nav-left li.separator {
+        .media-page header ul.media-nav-left li.separator {
           font-size: 75%;
           font-weight: 400;
           -webkit-font-smoothing: none;
           padding-top: 3px; }
           @media screen and (max-width: 767px) {
-            body.page-videos header ul.media-nav-left li.separator {
+            .media-page header ul.media-nav-left li.separator {
               display: none; } }
-    body.page-videos header ul.media-nav-right {
+    .media-page header ul.media-nav-right {
       display: inline-block;
       float: right;
       font-weight: 400;
       margin-bottom: 0; }
       @media screen and (max-width: 767px) {
-        body.page-videos header ul.media-nav-right {
+        .media-page header ul.media-nav-right {
           font-size: 16px;
           margin-top: 7px; } }
-      body.page-videos header ul.media-nav-right li {
+      .media-page header ul.media-nav-right li {
         float: left; }
-        body.page-videos header ul.media-nav-right li.separator {
+        .media-page header ul.media-nav-right li.separator {
           font-size: 75%;
           font-weight: 400;
           -webkit-font-smoothing: none;
           padding-top: 3px; }
-    body.page-videos header a {
+    .media-page header a {
       color: white; }
-      body.page-videos header a:hover {
+      .media-page header a:hover {
         text-decoration: none; }
-    body.page-videos header .is-glowing {
-      -webkit-animation: is-glowing 2s ease-in-out infinite alternate;
+    .media-page header .is-glowing {
+      -webkit-animation: is-glowing 4s ease-in-out infinite;
       /* Safari 4+ */
-      -moz-animation: is-glowing 2s ease-in-out infinite alternate;
+      -moz-animation: is-glowing 4s ease-in-out infinite;
       /* Fx 5+ */
-      -o-animation: is-glowing 2s ease-in-out infinite alternate;
+      -o-animation: is-glowing 4s ease-in-out infinite;
       /* Opera 12+ */
-      animation: is-glowing 2s ease-in-out infinite alternate;
+      animation: is-glowing 4s ease-in-out infinite;
       /* IE 10+, Fx 29+ */ }
 
-body.page-videos div.bg-mine-shaft-main-player {
+.media-page .main-content {
   position: relative;
   background: #323232;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 50px; }
   @media screen and (max-width: 767px) {
-    body.page-videos div.bg-mine-shaft-main-player {
+    .media-page .main-content {
       display: none;
-      visibility: hidden; } }
-  body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay {
+      visibility: hidden;
+      margin-top: 0; } }
+  .media-page .main-content div.main-content-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 2; }
-    body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay div.bg-mine-shaft-main-player-overlay-container {
+    .media-page .main-content div.main-content-overlay div.main-content-overlay-container {
       background: transparent;
       position: absolute;
       bottom: 10%;
@@ -258,21 +284,21 @@ body.page-videos div.bg-mine-shaft-main-player {
       -o-transform: translateX(-50%);
       transform: translateX(-50%); }
       @media screen and (max-width: 991px) {
-        body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay div.bg-mine-shaft-main-player-overlay-container {
+        .media-page .main-content div.main-content-overlay div.main-content-overlay-container {
           padding-right: 6em; } }
-    body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay img {
+    .media-page .main-content div.main-content-overlay img {
       width: 100px;
       height: auto;
       margin-bottom: 20px; }
       @media screen and (max-width: 1213px) {
-        body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay img {
+        .media-page .main-content div.main-content-overlay img {
           width: 80px;
           margin-bottom: 10px; } }
       @media screen and (max-width: 991px) {
-        body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay img {
+        .media-page .main-content div.main-content-overlay img {
           width: 60px;
           margin-bottom: 5px; } }
-    body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay h1 {
+    .media-page .main-content div.main-content-overlay h1 {
       font-size: 65px;
       font-family: "Ratio";
       margin-bottom: 10px;
@@ -281,13 +307,13 @@ body.page-videos div.bg-mine-shaft-main-player {
       text-align: left;
       text-shadow: 0px 1px 1px black; }
       @media screen and (max-width: 1213px) {
-        body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay h1 {
+        .media-page .main-content div.main-content-overlay h1 {
           font-size: 48px; } }
       @media screen and (max-width: 991px) {
-        body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay h1 {
+        .media-page .main-content div.main-content-overlay h1 {
           font-size: 36px;
           margin-bottom: 20px; } }
-    body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay h2 {
+    .media-page .main-content div.main-content-overlay h2 {
       font-size: 24px;
       font-family: "Rooney";
       margin-top: 0;
@@ -297,28 +323,28 @@ body.page-videos div.bg-mine-shaft-main-player {
       text-align: left;
       text-shadow: 0px 1px 1px black; }
       @media screen and (max-width: 1213px) {
-        body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay h2 {
+        .media-page .main-content div.main-content-overlay h2 {
           font-size: 20px; } }
       @media screen and (max-width: 991px) {
-        body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay h2 {
+        .media-page .main-content div.main-content-overlay h2 {
           display: none; } }
-    body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay div.bg-mine-shaft-main-player-overlay-container-social {
+    .media-page .main-content div.main-content-overlay div.main-content-overlay-container-social {
       font-size: 28px;
       color: white;
       text-shadow: 0px 1px 1px black; }
       @media screen and (max-width: 991px) {
-        body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay div.bg-mine-shaft-main-player-overlay-container-social {
+        .media-page .main-content div.main-content-overlay div.main-content-overlay-container-social {
           font-size: 22px; } }
-      body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay div.bg-mine-shaft-main-player-overlay-container-social i {
+      .media-page .main-content div.main-content-overlay div.main-content-overlay-container-social i {
         margin-right: 10px;
         cursor: pointer; }
-  body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay2 {
+  .media-page .main-content div.main-content-overlay2 {
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 1;
     display: none; }
-    body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay2 div.bg-mine-shaft-main-player-overlay2-container {
+    .media-page .main-content div.main-content-overlay2 div.main-content-overlay2-container {
       width: 1025px;
       background: transparent;
       position: absolute;
@@ -331,15 +357,15 @@ body.page-videos div.bg-mine-shaft-main-player {
       -o-transform: translateX(-50%);
       transform: translateX(-50%); }
       @media screen and (max-width: 1213px) {
-        body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay2 div.bg-mine-shaft-main-player-overlay2-container {
+        .media-page .main-content div.main-content-overlay2 div.main-content-overlay2-container {
           width: 970px;
           bottom: 25%; } }
       @media screen and (max-width: 991px) {
-        body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay2 div.bg-mine-shaft-main-player-overlay2-container {
+        .media-page .main-content div.main-content-overlay2 div.main-content-overlay2-container {
           width: 750px;
           padding-right: 20em;
           bottom: 26%; } }
-      body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay2 div.bg-mine-shaft-main-player-overlay2-container h3 {
+      .media-page .main-content div.main-content-overlay2 div.main-content-overlay2-container h3 {
         max-width: 500px;
         font-size: 32px;
         font-family: "Ratio";
@@ -350,19 +376,19 @@ body.page-videos div.bg-mine-shaft-main-player {
         font-weight: 300;
         margin-bottom: 15px; }
         @media screen and (max-width: 991px) {
-          body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay2 div.bg-mine-shaft-main-player-overlay2-container h3 {
+          .media-page .main-content div.main-content-overlay2 div.main-content-overlay2-container h3 {
             font-size: 26px; } }
-      body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay2 div.bg-mine-shaft-main-player-overlay2-container div.bg-mine-shaft-main-player-overlay-container2-social {
+      .media-page .main-content div.main-content-overlay2 div.main-content-overlay2-container div.main-content-overlay2-container-social {
         font-size: 28px;
         color: white;
         text-shadow: 0px 1px 1px black; }
         @media screen and (max-width: 991px) {
-          body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay2 div.bg-mine-shaft-main-player-overlay2-container div.bg-mine-shaft-main-player-overlay-container2-social {
+          .media-page .main-content div.main-content-overlay2 div.main-content-overlay2-container div.main-content-overlay2-container-social {
             font-size: 22px; } }
-        body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-overlay2 div.bg-mine-shaft-main-player-overlay2-container div.bg-mine-shaft-main-player-overlay-container2-social i {
+        .media-page .main-content div.main-content-overlay2 div.main-content-overlay2-container div.main-content-overlay2-container-social i {
           margin-right: 10px;
           cursor: pointer; }
-  body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist {
+  .media-page .main-content div.main-content-playlist {
     position: absolute;
     z-index: 4;
     width: 100%;
@@ -376,19 +402,19 @@ body.page-videos div.bg-mine-shaft-main-player {
     transform: translateY(100%);
     transition: all 0.4s; }
     @media screen and (max-width: 1213px) {
-      body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist {
+      .media-page .main-content div.main-content-playlist {
         height: 140px; } }
     @media screen and (max-width: 991px) {
-      body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist {
+      .media-page .main-content div.main-content-playlist {
         height: 110px; } }
-    body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist.is-open {
+    .media-page .main-content div.main-content-playlist.is-open {
       -webkit-transform: translateY(0);
       -moz-transform: translateY(0);
       -ms-transform: translateY(0);
       -o-transform: translateY(0);
       transform: translateY(0);
       transition: all 0.4s; }
-    body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist div.bg-mine-shaft-main-player-playlist-title {
+    .media-page .main-content div.main-content-playlist div.main-content-playlist-title {
       position: absolute;
       top: 0;
       left: 50%;
@@ -400,16 +426,16 @@ body.page-videos div.bg-mine-shaft-main-player {
       background: #1f1f1f;
       padding: 2px 10px;
       cursor: pointer; }
-      body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist div.bg-mine-shaft-main-player-playlist-title:hover p {
+      .media-page .main-content div.main-content-playlist div.main-content-playlist-title:hover p {
         opacity: .8; }
-      body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist div.bg-mine-shaft-main-player-playlist-title p {
+      .media-page .main-content div.main-content-playlist div.main-content-playlist-title p {
         margin: 0;
         font-family: 'Rooney';
         opacity: .6;
         font-size: 20px; }
-        body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist div.bg-mine-shaft-main-player-playlist-title p i {
+        .media-page .main-content div.main-content-playlist div.main-content-playlist-title p i {
           font-size: 90%; }
-      body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist div.bg-mine-shaft-main-player-playlist-title div.bg-mine-shaft-main-player-playlist-title-rtriangle {
+      .media-page .main-content div.main-content-playlist div.main-content-playlist-title div.main-content-playlist-title-rtriangle {
         height: 0;
         width: 0;
         border-bottom: 36px solid #1f1f1f;
@@ -422,7 +448,7 @@ body.page-videos div.bg-mine-shaft-main-player {
         -ms-transform: translateX(98%);
         -o-transform: translateX(98%);
         transform: translateX(98%); }
-      body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist div.bg-mine-shaft-main-player-playlist-title div.bg-mine-shaft-main-player-playlist-title-ltriangle {
+      .media-page .main-content div.main-content-playlist div.main-content-playlist-title div.main-content-playlist-title-ltriangle {
         height: 0;
         width: 0;
         border-bottom: 36px solid #1f1f1f;
@@ -435,38 +461,38 @@ body.page-videos div.bg-mine-shaft-main-player {
         -ms-transform: translateX(-98%);
         -o-transform: translateX(-98%);
         transform: translateX(-98%); }
-    body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist div.bg-mine-shaft-main-player-playlist-container {
+    .media-page .main-content div.main-content-playlist div.main-content-playlist-container {
       height: 100%;
       padding: 15px 100px; }
-      body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist div.bg-mine-shaft-main-player-playlist-container .carousel-inner {
+      .media-page .main-content div.main-content-playlist div.main-content-playlist-container .carousel-inner {
         height: 100%; }
-        body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist div.bg-mine-shaft-main-player-playlist-container .carousel-inner .item {
+        .media-page .main-content div.main-content-playlist div.main-content-playlist-container .carousel-inner .item {
           height: 100%; }
-          body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist div.bg-mine-shaft-main-player-playlist-container .carousel-inner .item li.item-video {
+          .media-page .main-content div.main-content-playlist div.main-content-playlist-container .carousel-inner .item li.item-video {
             height: 100%;
             width: 25%;
             float: left;
             list-style: none;
             padding: 0 10px; }
             @media screen and (max-width: 991px) {
-              body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist div.bg-mine-shaft-main-player-playlist-container .carousel-inner .item li.item-video {
+              .media-page .main-content div.main-content-playlist div.main-content-playlist-container .carousel-inner .item li.item-video {
                 padding: 0 5px; } }
-            body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist div.bg-mine-shaft-main-player-playlist-container .carousel-inner .item li.item-video.is-highlighted div.item-video-container-border {
+            .media-page .main-content div.main-content-playlist div.main-content-playlist-container .carousel-inner .item li.item-video.is-highlighted div.item-video-container-border {
               border: 3px solid white;
               border-radius: 2px; }
               @media screen and (max-width: 991px) {
-                body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist div.bg-mine-shaft-main-player-playlist-container .carousel-inner .item li.item-video.is-highlighted div.item-video-container-border {
+                .media-page .main-content div.main-content-playlist div.main-content-playlist-container .carousel-inner .item li.item-video.is-highlighted div.item-video-container-border {
                   border: 2px solid white; } }
-            body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist div.bg-mine-shaft-main-player-playlist-container .carousel-inner .item li.item-video div.item-video-container {
+            .media-page .main-content div.main-content-playlist div.main-content-playlist-container .carousel-inner .item li.item-video div.item-video-container {
               width: 100%;
               height: 100%;
               background: yellow;
               position: relative; }
-              body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist div.bg-mine-shaft-main-player-playlist-container .carousel-inner .item li.item-video div.item-video-container img {
+              .media-page .main-content div.main-content-playlist div.main-content-playlist-container .carousel-inner .item li.item-video div.item-video-container img {
                 height: 100%;
                 width: 100%;
                 object-fit: cover; }
-              body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist div.bg-mine-shaft-main-player-playlist-container .carousel-inner .item li.item-video div.item-video-container span.caption {
+              .media-page .main-content div.main-content-playlist div.main-content-playlist-container .carousel-inner .item li.item-video div.item-video-container span.caption {
                 position: absolute;
                 width: 100%;
                 bottom: 0;
@@ -484,11 +510,11 @@ body.page-videos div.bg-mine-shaft-main-player {
                 overflow: hidden;
                 text-overflow: ellipsis; }
                 @media screen and (max-width: 991px) {
-                  body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist div.bg-mine-shaft-main-player-playlist-container .carousel-inner .item li.item-video div.item-video-container span.caption {
+                  .media-page .main-content div.main-content-playlist div.main-content-playlist-container .carousel-inner .item li.item-video div.item-video-container span.caption {
                     font-size: 14px;
                     height: 25px;
                     padding: 4px 6px; } }
-              body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist div.bg-mine-shaft-main-player-playlist-container .carousel-inner .item li.item-video div.item-video-container div.item-video-container-border {
+              .media-page .main-content div.main-content-playlist div.main-content-playlist-container .carousel-inner .item li.item-video div.item-video-container div.item-video-container-border {
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -497,24 +523,24 @@ body.page-videos div.bg-mine-shaft-main-player {
                 left: 0;
                 right: 0;
                 z-index: 11; }
-          body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist div.bg-mine-shaft-main-player-playlist-container .carousel-inner .item .carousel-caption {
+          .media-page .main-content div.main-content-playlist div.main-content-playlist-container .carousel-inner .item .carousel-caption {
             display: none; }
-      body.page-videos div.bg-mine-shaft-main-player div.bg-mine-shaft-main-player-playlist div.bg-mine-shaft-main-player-playlist-container .carousel-control {
+      .media-page .main-content div.main-content-playlist div.main-content-playlist-container .carousel-control {
         width: 100px;
         background: transparent; }
 
-body.page-videos div.bg-mine-shaft-main-player div.video-wrapper {
+.media-page .main-content div.video-wrapper {
   width: 100%;
   max-width: 1600px;
   margin: auto;
   position: relative;
   background: gray; }
-  body.page-videos div.bg-mine-shaft-main-player div.video-wrapper:after {
+  .media-page .main-content div.video-wrapper:after {
     /* 16:9 ratio */
-    padding-top: 56.27%;
+    padding-top: 56.25%;
     display: block;
     content: ''; }
-  body.page-videos div.bg-mine-shaft-main-player div.video-wrapper div.video-js {
+  .media-page .main-content div.video-wrapper div.video-js {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -523,10 +549,10 @@ body.page-videos div.bg-mine-shaft-main-player div.video-wrapper {
     right: 0;
     left: 0;
     color: white; }
-    body.page-videos div.bg-mine-shaft-main-player div.video-wrapper div.video-js video {
+    .media-page .main-content div.video-wrapper div.video-js video {
       width: 100%;
       height: auto; }
-    body.page-videos div.bg-mine-shaft-main-player div.video-wrapper div.video-js div.vjs-dock-text {
+    .media-page .main-content div.video-wrapper div.video-js div.vjs-dock-text {
       height: 100%;
       background: -moz-radial-gradient(center, ellipse cover, transparent 0%, black 100%);
       /* FF3.6-15 */
@@ -538,7 +564,7 @@ body.page-videos div.bg-mine-shaft-main-player div.video-wrapper {
       /* IE6-9 fallback on horizontal gradient */
       opacity: 0.5;
       transition: opacity 0.4s; }
-    body.page-videos div.bg-mine-shaft-main-player div.video-wrapper div.video-js div.vjs-control-bar {
+    .media-page .main-content div.video-wrapper div.video-js div.vjs-control-bar {
       z-index: 3;
       -webkit-transform: translateY(0) !important;
       -moz-transform: translateY(0) !important;
@@ -546,7 +572,7 @@ body.page-videos div.bg-mine-shaft-main-player div.video-wrapper {
       -o-transform: translateY(0) !important;
       transform: translateY(0) !important;
       margin: auto;
-      max-width: 1035px;
+      max-width: 1045px;
       background-color: transparent !important;
       color: #ffffff;
       font-size: 20px;
@@ -555,61 +581,61 @@ body.page-videos div.bg-mine-shaft-main-player div.video-wrapper {
       transition: opacity 0.4s !important;
       opacity: 1; }
       @media screen and (max-width: 1213px) {
-        body.page-videos div.bg-mine-shaft-main-player div.video-wrapper div.video-js div.vjs-control-bar {
-          max-width: 975px; } }
+        .media-page .main-content div.video-wrapper div.video-js div.vjs-control-bar {
+          max-width: 990px; } }
       @media screen and (max-width: 991px) {
-        body.page-videos div.bg-mine-shaft-main-player div.video-wrapper div.video-js div.vjs-control-bar {
-          max-width: 760px; } }
-      body.page-videos div.bg-mine-shaft-main-player div.video-wrapper div.video-js div.vjs-control-bar.is-playlist-hidden {
+        .media-page .main-content div.video-wrapper div.video-js div.vjs-control-bar {
+          max-width: 770px; } }
+      .media-page .main-content div.video-wrapper div.video-js div.vjs-control-bar.is-playlist-hidden {
         opacity: 0;
         transition: opacity 0.4s; }
-    body.page-videos div.bg-mine-shaft-main-player div.video-wrapper div.video-js div.vjs-progress-control {
+    .media-page .main-content div.video-wrapper div.video-js div.vjs-progress-control {
       height: 0.37em !important; }
-      body.page-videos div.bg-mine-shaft-main-player div.video-wrapper div.video-js div.vjs-progress-control:hover {
+      .media-page .main-content div.video-wrapper div.video-js div.vjs-progress-control:hover {
         height: 0.37em !important; }
 
-body.page-videos .last-videos div.row {
+.media-page .last-contents div.row {
   display: flex;
   flex-wrap: wrap; }
 
-body.page-videos .last-videos .last-videos-item {
+.media-page .last-contents .last-contents-item {
   padding: 0 15px 0 15px;
   margin-bottom: 30px; }
   @media screen and (max-width: 767px) {
-    body.page-videos .last-videos .last-videos-item {
+    .media-page .last-contents .last-contents-item {
       margin-bottom: 20px; } }
-  body.page-videos .last-videos .last-videos-item:first-child {
+  .media-page .last-contents .last-contents-item:first-child {
     display: none; }
     @media screen and (max-width: 767px) {
-      body.page-videos .last-videos .last-videos-item:first-child {
+      .media-page .last-contents .last-contents-item:first-child {
         display: block; } }
-  body.page-videos .last-videos .last-videos-item div.row {
+  .media-page .last-contents .last-contents-item div.row {
     overflow: auto; }
   @media screen and (max-width: 767px) {
-    body.page-videos .last-videos .last-videos-item .desktop-visible {
+    .media-page .last-contents .last-contents-item .desktop-visible {
       display: none; } }
   @media screen and (min-width: 767px) {
-    body.page-videos .last-videos .last-videos-item .mobile-visible {
+    .media-page .last-contents .last-contents-item .mobile-visible {
       display: none; } }
-  body.page-videos .last-videos .last-videos-item .last-videos-item-header div.video-wrapper {
+  .media-page .last-contents .last-contents-item .last-contents-item-header div.video-wrapper {
     width: 100%;
     margin: auto;
     position: relative;
     background: black;
     display: none; }
-    body.page-videos .last-videos .last-videos-item .last-videos-item-header div.video-wrapper.is-visible {
+    .media-page .last-contents .last-contents-item .last-contents-item-header div.video-wrapper.is-visible {
       display: block; }
-    body.page-videos .last-videos .last-videos-item .last-videos-item-header div.video-wrapper .video-wrapper-loader {
+    .media-page .last-contents .last-contents-item .last-contents-item-header div.video-wrapper .video-wrapper-loader {
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%); }
-    body.page-videos .last-videos .last-videos-item .last-videos-item-header div.video-wrapper:after {
+    .media-page .last-contents .last-contents-item .last-contents-item-header div.video-wrapper:after {
       /* 16:9 ratio */
       padding-top: 56.25%;
       display: block;
       content: ''; }
-    body.page-videos .last-videos .last-videos-item .last-videos-item-header div.video-wrapper div.video-js {
+    .media-page .last-contents .last-contents-item .last-contents-item-header div.video-wrapper div.video-js {
       width: 100%;
       height: 100%;
       position: absolute;
@@ -618,10 +644,10 @@ body.page-videos .last-videos .last-videos-item {
       right: 0;
       left: 0;
       color: white; }
-      body.page-videos .last-videos .last-videos-item .last-videos-item-header div.video-wrapper div.video-js video {
+      .media-page .last-contents .last-contents-item .last-contents-item-header div.video-wrapper div.video-js video {
         width: 100%;
         height: auto; }
-      body.page-videos .last-videos .last-videos-item .last-videos-item-header div.video-wrapper div.video-js div.vjs-dock-text {
+      .media-page .last-contents .last-contents-item .last-contents-item-header div.video-wrapper div.video-js div.vjs-dock-text {
         height: 100%;
         background: -moz-radial-gradient(center, ellipse cover, transparent 0%, black 100%);
         /* FF3.6-15 */
@@ -633,7 +659,7 @@ body.page-videos .last-videos .last-videos-item {
         /* IE6-9 fallback on horizontal gradient */
         opacity: 0.5;
         transition: opacity 0.4s; }
-  body.page-videos .last-videos .last-videos-item .last-videos-item-header .last-videos-item-gradient {
+  .media-page .last-contents .last-contents-item .last-contents-item-header .last-contents-item-gradient {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -650,43 +676,45 @@ body.page-videos .last-videos .last-videos-item {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */
     opacity: 1; }
-  body.page-videos .last-videos .last-videos-item .last-videos-item-header .last-videos-item-play-button {
+  .media-page .last-contents .last-contents-item .last-contents-item-header .last-contents-item-play-button {
     position: absolute;
     width: 30px;
     bottom: 32px;
     left: 15px; }
     @media screen and (max-width: 767px) {
-      body.page-videos .last-videos .last-videos-item .last-videos-item-header .last-videos-item-play-button {
+      .media-page .last-contents .last-contents-item .last-contents-item-header .last-contents-item-play-button {
         width: 50px;
         bottom: 50%;
         left: 50%;
         transform: translate(-50%, 50%); } }
-  body.page-videos .last-videos .last-videos-item .last-videos-item-header .label {
+  .media-page .last-contents .last-contents-item .last-contents-item-header .label {
     background: #619fa4; }
-    body.page-videos .last-videos .last-videos-item .last-videos-item-header .label span {
+    .media-page .last-contents .last-contents-item .last-contents-item-header .label span {
       font-family: 'Ratio';
       font-size: 115%;
       font-weight: 400;
       opacity: 0.8; }
-  @media screen and (max-width: 767px) {
-    body.page-videos .last-videos .last-videos-item .last-videos-item-excerpt {
-      background: #262626;
-      padding: 0 15px 15px 15px; } }
-  body.page-videos .last-videos .last-videos-item .last-videos-item-excerpt h3 {
-    font-weight: 400;
-    line-height: 1.4;
-    margin: 0; }
-    @media screen and (max-width: 1213px) {
-      body.page-videos .last-videos .last-videos-item .last-videos-item-excerpt h3 {
-        font-size: 21px;
-        line-height: 1.4; } }
-    @media screen and (max-width: 991px) {
-      body.page-videos .last-videos .last-videos-item .last-videos-item-excerpt h3 {
-        font-size: 19px;
-        line-height: 1.4; } }
-    body.page-videos .last-videos .last-videos-item .last-videos-item-excerpt h3 span {
-      color: #619fa4; }
-  body.page-videos .last-videos .last-videos-item .last-videos-item-share {
+  .media-page .last-contents .last-contents-item .last-contents-item-excerpt {
+    padding: 0; }
+    @media screen and (max-width: 767px) {
+      .media-page .last-contents .last-contents-item .last-contents-item-excerpt {
+        background: #262626;
+        padding: 0 15px 15px 15px; } }
+    .media-page .last-contents .last-contents-item .last-contents-item-excerpt h3 {
+      font-weight: 400;
+      line-height: 1.4;
+      margin: 0; }
+      @media screen and (max-width: 1213px) {
+        .media-page .last-contents .last-contents-item .last-contents-item-excerpt h3 {
+          font-size: 21px;
+          line-height: 1.4; } }
+      @media screen and (max-width: 991px) {
+        .media-page .last-contents .last-contents-item .last-contents-item-excerpt h3 {
+          font-size: 19px;
+          line-height: 1.4; } }
+      .media-page .last-contents .last-contents-item .last-contents-item-excerpt h3 span {
+        color: #619fa4; }
+  .media-page .last-contents .last-contents-item .last-contents-item-share {
     text-align: center;
     display: none;
     color: white;
@@ -695,76 +723,36 @@ body.page-videos .last-videos .last-videos-item {
     border-top: 1px solid #1d2023;
     box-shadow: inset 0 1px 0 0 #333333; }
     @media screen and (max-width: 767px) {
-      body.page-videos .last-videos .last-videos-item .last-videos-item-share {
+      .media-page .last-contents .last-contents-item .last-contents-item-share {
         background: #262626;
         display: block; } }
-    body.page-videos .last-videos .last-videos-item .last-videos-item-share .last-videos-item-share-box {
-      padding: 5px 0 2px 0;
+    .media-page .last-contents .last-contents-item .last-contents-item-share .last-contents-item-share-box {
+      padding: 7px 0 4px 0;
       border-right: 1px solid #1d2023;
-      box-shadow: inset 1px 0 0 0 #333333; }
-      body.page-videos .last-videos .last-videos-item .last-videos-item-share .last-videos-item-share-box:first-child {
+      box-shadow: inset 1px 0 0 0 #333333;
+      width: calc(100% / 5);
+      float: left; }
+      .media-page .last-contents .last-contents-item .last-contents-item-share .last-contents-item-share-box:first-child {
         box-shadow: none; }
-      body.page-videos .last-videos .last-videos-item .last-videos-item-share .last-videos-item-share-box:last-child {
+      .media-page .last-contents .last-contents-item .last-contents-item-share .last-contents-item-share-box:last-child {
         border-right: 0; }
-      body.page-videos .last-videos .last-videos-item .last-videos-item-share .last-videos-item-share-box .fa {
+      .media-page .last-contents .last-contents-item .last-contents-item-share .last-contents-item-share-box .fa {
         opacity: 0.5; }
-  @media screen and (max-width: 767px) {
-    body.page-videos .last-videos .last-videos-item div.last-videos-body {
-      background: #262626;
-      padding: 10px; } }
-  body.page-videos .last-videos .last-videos-item div.last-videos-body h6.last-videos-body-meta {
-    font-size: 16px;
-    font-family: "Rooney";
-    color: rgba(255, 255, 255, 0.5);
-    font-weight: 300;
-    margin-bottom: 8px; }
-    @media screen and (max-width: 1213px) {
-      body.page-videos .last-videos .last-videos-item div.last-videos-body h6.last-videos-body-meta {
-        font-size: 14px;
-        margin-top: 13px;
-        margin-bottom: 6px; } }
-    @media screen and (max-width: 991px) {
-      body.page-videos .last-videos .last-videos-item div.last-videos-body h6.last-videos-body-meta {
-        margin-top: 10px; } }
-    @media screen and (max-width: 767px) {
-      body.page-videos .last-videos .last-videos-item div.last-videos-body h6.last-videos-body-meta {
-        margin-top: 0; } }
-    body.page-videos .last-videos .last-videos-item div.last-videos-body h6.last-videos-body-meta span {
-      color: #619fa4;
-      font-weight: 600; }
-  body.page-videos .last-videos .last-videos-item div.last-videos-body p.last-videos-body-title {
-    color: white;
-    -webkit-font-smoothing: antialiased;
-    opacity: 0.75;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 30px; }
-    @media screen and (max-width: 1213px) {
-      body.page-videos .last-videos .last-videos-item div.last-videos-body p.last-videos-body-title {
-        font-size: 17px;
-        line-height: 27px; } }
-    @media screen and (max-width: 991px) {
-      body.page-videos .last-videos .last-videos-item div.last-videos-body p.last-videos-body-title {
-        font-size: 16px;
-        line-height: 23px; } }
-  body.page-videos .last-videos .last-videos-item div.last-videos-body p.last-videos-body-lead {
-    line-height: 1.485;
-    margin-bottom: 0; }
 
-body.page-videos .most-viewed li:before {
+.media-page .most-viewed li:before {
   font-family: Tungsten, Tungsten-Medium, Arial,sans-serif; }
 
-body.page-videos .most-viewed li a:hover {
+.media-page .most-viewed li a:hover {
   color: #619fa4; }
 
-body.page-videos div.makeyourown-mobile {
+.media-page div.makeyourown-mobile {
   display: none;
   width: 100%;
   background: #374549; }
   @media screen and (max-width: 767px) {
-    body.page-videos div.makeyourown-mobile {
+    .media-page div.makeyourown-mobile {
       display: block; } }
-  body.page-videos div.makeyourown-mobile select {
+  .media-page div.makeyourown-mobile select {
     padding: 2px 10px;
     width: 100%;
     border: none;
@@ -774,60 +762,60 @@ body.page-videos div.makeyourown-mobile {
     font-family: 'Helvetica Neue', 'Arial', sans-serif;
     font-weight: 400;
     color: #555; }
-  body.page-videos div.makeyourown-mobile hr {
+  .media-page div.makeyourown-mobile hr {
     margin-top: 5px;
     margin-bottom: 20px;
     border-top: 1px solid #6f7072; }
 
-body.page-videos div.makeyourown-desktop {
+.media-page div.makeyourown-desktop {
   padding-bottom: 45px;
   background: #374549; }
   @media screen and (max-width: 767px) {
-    body.page-videos div.makeyourown-desktop {
+    .media-page div.makeyourown-desktop {
       display: none; } }
-  body.page-videos div.makeyourown-desktop .btn {
+  .media-page div.makeyourown-desktop .btn {
     padding-bottom: 5px;
     padding-top: 5px; }
-    body.page-videos div.makeyourown-desktop .btn.is-selected {
+    .media-page div.makeyourown-desktop .btn.is-selected {
       background-color: #619fa4; }
-  body.page-videos div.makeyourown-desktop div.makeyourown-desktop-rubrique {
+  .media-page div.makeyourown-desktop div.makeyourown-desktop-choice1 {
     margin-bottom: 25px; }
-    body.page-videos div.makeyourown-desktop div.makeyourown-desktop-rubrique div.btn-group {
+    .media-page div.makeyourown-desktop div.makeyourown-desktop-choice1 div.btn-group {
       width: 100%; }
-      body.page-videos div.makeyourown-desktop div.makeyourown-desktop-rubrique div.btn-group .btn {
+      .media-page div.makeyourown-desktop div.makeyourown-desktop-choice1 div.btn-group .btn {
         text-transform: initial;
         font-family: Rooney;
         width: calc(100% / 8 - 8px);
         margin-right: 10px; }
         @media screen and (max-width: 991px) {
-          body.page-videos div.makeyourown-desktop div.makeyourown-desktop-rubrique div.btn-group .btn {
+          .media-page div.makeyourown-desktop div.makeyourown-desktop-choice1 div.btn-group .btn {
             width: calc(100% / 4 - 8px); }
-            body.page-videos div.makeyourown-desktop div.makeyourown-desktop-rubrique div.btn-group .btn:nth-child(-n+4) {
+            .media-page div.makeyourown-desktop div.makeyourown-desktop-choice1 div.btn-group .btn:nth-child(-n+4) {
               margin-bottom: 8px; }
-            body.page-videos div.makeyourown-desktop div.makeyourown-desktop-rubrique div.btn-group .btn:nth-child(4) {
+            .media-page div.makeyourown-desktop div.makeyourown-desktop-choice1 div.btn-group .btn:nth-child(4) {
               margin-right: 0; }
-            body.page-videos div.makeyourown-desktop div.makeyourown-desktop-rubrique div.btn-group .btn:nth-child(5) {
+            .media-page div.makeyourown-desktop div.makeyourown-desktop-choice1 div.btn-group .btn:nth-child(5) {
               margin-left: 0; } }
-        body.page-videos div.makeyourown-desktop div.makeyourown-desktop-rubrique div.btn-group .btn:last-child {
+        .media-page div.makeyourown-desktop div.makeyourown-desktop-choice1 div.btn-group .btn:last-child {
           margin-right: 0; }
-  body.page-videos div.makeyourown-desktop div.makeyourown-desktop-time div.btn-group {
+  .media-page div.makeyourown-desktop div.makeyourown-desktop-choice2 div.btn-group {
     width: 100%; }
-    body.page-videos div.makeyourown-desktop div.makeyourown-desktop-time div.btn-group .btn {
+    .media-page div.makeyourown-desktop div.makeyourown-desktop-choice2 div.btn-group .btn {
       text-transform: initial;
       font-family: Rooney;
       width: calc(100% / 6 - 8px);
       margin-right: 10px; }
-      body.page-videos div.makeyourown-desktop div.makeyourown-desktop-time div.btn-group .btn:last-child {
+      .media-page div.makeyourown-desktop div.makeyourown-desktop-choice2 div.btn-group .btn:last-child {
         margin-right: 0; }
 
-body.page-videos div.series {
+.media-page div.series {
   padding-bottom: 70px; }
   @media screen and (max-width: 991px) {
-    body.page-videos div.series div.series-item {
+    .media-page div.series div.series-item {
       margin-bottom: 30px; } }
-  body.page-videos div.series div.series-item .series-item-header {
+  .media-page div.series div.series-item .series-item-header {
     position: relative; }
-    body.page-videos div.series div.series-item .series-item-header .series-item-header-gradient {
+    .media-page div.series div.series-item .series-item-header .series-item-header-gradient {
       position: absolute;
       top: 0;
       right: 0;
@@ -844,15 +832,15 @@ body.page-videos div.series {
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 );
       /* IE6-9 fallback on horizontal gradient */
       opacity: 0.6; }
-    body.page-videos div.series div.series-item .series-item-header .series-item-header-container {
+    .media-page div.series div.series-item .series-item-header .series-item-header-container {
       position: absolute;
       bottom: 0;
       width: 100%;
       padding: 35px 25px; }
       @media screen and (max-width: 1213px) {
-        body.page-videos div.series div.series-item .series-item-header .series-item-header-container {
+        .media-page div.series div.series-item .series-item-header .series-item-header-container {
           padding: 20px 15px; } }
-      body.page-videos div.series div.series-item .series-item-header .series-item-header-container .series-item-header-title {
+      .media-page div.series div.series-item .series-item-header .series-item-header-container .series-item-header-title {
         font-size: 37.5px;
         font-family: "Ratio";
         color: white;
@@ -862,9 +850,9 @@ body.page-videos div.series {
         text-shadow: 0px 1px 0.97px black;
         margin-bottom: -5px; }
         @media screen and (max-width: 1213px) {
-          body.page-videos div.series div.series-item .series-item-header .series-item-header-container .series-item-header-title {
+          .media-page div.series div.series-item .series-item-header .series-item-header-container .series-item-header-title {
             font-size: 30px; } }
-      body.page-videos div.series div.series-item .series-item-header .series-item-header-container .series-item-header-count {
+      .media-page div.series div.series-item .series-item-header .series-item-header-container .series-item-header-count {
         background: #619fa4;
         font-family: 'Rooney';
         color: white;
@@ -893,96 +881,36 @@ footer {
 @-webkit-keyframes is-glowing {
   0% {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.11), 0 0 20px rgba(255, 255, 255, 0.11), 0 0 30px rgba(255, 255, 255, 0.11), 0 0 40px white, 0 0 70px white, 0 0 80px white, 0 0 100px white, 0 0 150px white; }
+  20% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.08), 0 0 20px rgba(255, 255, 255, 0.08), 0 0 30px rgba(255, 255, 255, 0.08), 0 0 40px rgba(255, 255, 255, 0.8), 0 0 70px rgba(255, 255, 255, 0.8), 0 0 80px rgba(255, 255, 255, 0.8), 0 0 100px rgba(255, 255, 255, 0.8), 0 0 150px rgba(255, 255, 255, 0.8); }
   100% {
     text-shadow: 0; } }
 
 @-moz-keyframes is-glowing {
   0% {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.11), 0 0 20px rgba(255, 255, 255, 0.11), 0 0 30px rgba(255, 255, 255, 0.11), 0 0 40px white, 0 0 70px white, 0 0 80px white, 0 0 100px white, 0 0 150px white; }
+  20% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.08), 0 0 20px rgba(255, 255, 255, 0.08), 0 0 30px rgba(255, 255, 255, 0.08), 0 0 40px rgba(255, 255, 255, 0.8), 0 0 70px rgba(255, 255, 255, 0.8), 0 0 80px rgba(255, 255, 255, 0.8), 0 0 100px rgba(255, 255, 255, 0.8), 0 0 150px rgba(255, 255, 255, 0.8); }
   100% {
     text-shadow: 0; } }
 
 @-o-keyframes is-glowing {
   0% {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.11), 0 0 20px rgba(255, 255, 255, 0.11), 0 0 30px rgba(255, 255, 255, 0.11), 0 0 40px white, 0 0 70px white, 0 0 80px white, 0 0 100px white, 0 0 150px white; }
+  20% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.08), 0 0 20px rgba(255, 255, 255, 0.08), 0 0 30px rgba(255, 255, 255, 0.08), 0 0 40px rgba(255, 255, 255, 0.8), 0 0 70px rgba(255, 255, 255, 0.8), 0 0 80px rgba(255, 255, 255, 0.8), 0 0 100px rgba(255, 255, 255, 0.8), 0 0 150px rgba(255, 255, 255, 0.8); }
   100% {
     text-shadow: 0; } }
 
 @keyframes is-glowing {
   0% {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.11), 0 0 20px rgba(255, 255, 255, 0.11), 0 0 30px rgba(255, 255, 255, 0.11), 0 0 40px white, 0 0 70px white, 0 0 80px white, 0 0 100px white, 0 0 150px white; }
+  20% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.08), 0 0 20px rgba(255, 255, 255, 0.08), 0 0 30px rgba(255, 255, 255, 0.08), 0 0 40px rgba(255, 255, 255, 0.8), 0 0 70px rgba(255, 255, 255, 0.8), 0 0 80px rgba(255, 255, 255, 0.8), 0 0 100px rgba(255, 255, 255, 0.8), 0 0 150px rgba(255, 255, 255, 0.8); }
   100% {
     text-shadow: 0; } }
 
 /*Buttons, dropdown...*/
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-progress-control.vjs-control {
-  width: 100% !important; }
-
-.bc-player-BJqobDOb6_default .vjs-progress-control {
-  position: relative;
-  top: 1.3em !important; }
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-menu-button-inline.vjs-slider-active, .bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-menu-button-inline:focus, .bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-menu-button-inline:hover, .bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js.vjs-no-flex .vjs-menu-button-inline {
-  width: 10em !important; }
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-controls-disabled .vjs-big-play-button {
-  display: none !important; }
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-control {
-  width: 3em !important; }
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-menu-button-inline:before {
-  width: 1.5em !important; }
-
-.bc-player-BJqobDOb6_default.vjs-menu-button-inline .vjs-menu {
-  left: 3em !important; }
-
-.bc-player-BJqobDOb6_default.vjs-paused.vjs-has-started.video-js .vjs-big-play-button, .bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js.vjs-ended .vjs-big-play-button, .bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js.vjs-paused .vjs-big-play-button {
-  display: block; }
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-load-progress div, .bc-player-BJqobDOb6_default.vjs-seeking .vjs-big-play-button, .bc-player-BJqobDOb6_default.vjs-waiting .vjs-big-play-button {
-  display: none !important; }
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-mouse-display:after, .bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-play-progress:after {
-  padding: 0 .4em .3em !important; }
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js.vjs-ended .vjs-loading-spinner {
-  display: none !important; }
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js.vjs-ended .vjs-big-play-button, .bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js.vjs-paused .vjs-big-play-button, .bc-player-BJqobDOb6_default.vjs-paused.vjs-has-started.video-js .vjs-big-play-button {
-  display: none; }
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-big-play-button {
-  top: 50% !important;
-  left: 50% !important;
-  margin-left: -1.5em !important;
-  margin-top: -1em !important; }
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-big-play-button {
-  background-color: rgba(0, 0, 0, 0.35) !important;
-  font-size: 3.5em !important;
-  border-radius: 50% !important;
-  height: 2em !important;
-  line-height: 2em !important;
-  margin-top: -1em !important; }
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js:hover .vjs-big-play-button, .bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-big-play-button:focus, .bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-big-play-button:active {
-  background-color: rgba(0, 0, 0, 0.35) !important; }
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-loading-spinner {
-  border-color: rgba(255, 255, 255, 0.7) !important; }
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-control-bar2 {
-  background-color: transparent !important; }
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-control-bar {
-  background-color: transparent !important;
-  color: #ffffff !important;
-  font-size: 18px !important; }
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-play-progress, .bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-volume-level {
-  background-color: white !important; }
-
 .bc-player-BJqobDOb6_default.video-js .vjs-big-play-button {
   height: 2em !important;
   width: 2em !important;
@@ -992,46 +920,24 @@ footer {
   border: 2px solid white !important;
   display: none; }
 
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-icon-play:before, .video-js .vjs-big-play-button:before {
-  font-size: 50px !important; }
+.bc-player-BJqobDOb6_default .vjs-progress-control {
+  position: relative;
+  top: 1.3em !important; }
 
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-progress-holder {
-  font-size: 1.7em !important;
-  width: 100% !important; }
+.bc-player-BJqobDOb6_default.vjs-menu-button-inline .vjs-menu {
+  left: 3em !important; }
 
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-load-progress {
-  background: rgba(255, 255, 255, 0.5) !important; }
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-control:focus:before, .video-js .vjs-control:hover:before, .video-js .vjs-control:focus {
-  text-shadow: 0em 0em .7em white; }
+.bc-player-BJqobDOb6_default.vjs-paused.vjs-has-started.video-js .vjs-big-play-button, .main-content .bc-player-BJqobDOb6_default.video-js.vjs-ended .vjs-big-play-button, .main-content .bc-player-BJqobDOb6_default.video-js.vjs-paused .vjs-big-play-button {
+  display: block; }
 
 .bc-player-BJqobDOb6_default.vjs-menu-button-inline .vjs-menu {
   left: 3em; }
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-time-control {
-  padding: 0; }
-
-.bg-mine-shaft-main-player .bc-player-BJqobDOb6_default.video-js .vjs-time-control.vjs-duration {
-  margin-right: 20px; }
 
 .bc-player-BJqobDOb6_default .vjs-time-control.vjs-current-time {
   margin: 0; }
 
 .bc-player-BJqobDOb6_default .vjs-poster {
   background-color: transparent; }
-
-.last-videos .vjs-play-progress {
-  background-color: #00becc !important; }
-
-.last-videos .vjs-progress-control {
-  padding-left: 10px;
-  height: .3em !important; }
-
-.last-videos .video-js .vjs-progress-holder .vjs-play-progress, .video-js .vjs-progress-holder .vjs-load-progress, .video-js .vjs-progress-holder .vjs-load-progress div {
-  background: #769496; }
-
-.last-videos .vjs-volume-bar .vjs-volume-level {
-  background-color: #00becc !important; }
 
 .video-js .vjs-progress-control:hover .vjs-time-tooltip, .video-js .vjs-progress-control:hover .vjs-mouse-display:after, .video-js .vjs-progress-control:hover .vjs-play-progress:after {
   font-family: 'Ratio'; }
@@ -1070,6 +976,99 @@ footer {
 
 .bc-player-BJqobDOb6_default.video-js.vjs-ended .vjs-big-play-button {
   display: none; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-progress-control.vjs-control {
+  width: 100% !important; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-menu-button-inline.vjs-slider-active, .main-content .bc-player-BJqobDOb6_default.video-js .vjs-menu-button-inline:focus, .main-content .bc-player-BJqobDOb6_default.video-js .vjs-menu-button-inline:hover, .main-content .bc-player-BJqobDOb6_default.video-js.vjs-no-flex .vjs-menu-button-inline {
+  width: 10em !important; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-controls-disabled .vjs-big-play-button {
+  display: none !important; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-play-control {
+  margin-right: -1em !important; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-control .vjs-mute-control {
+  margin-right: -0.5em; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-menu-button-inline:before {
+  width: 1.5em !important; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-load-progress div, .bc-player-BJqobDOb6_default.vjs-seeking .vjs-big-play-button, .bc-player-BJqobDOb6_default.vjs-waiting .vjs-big-play-button {
+  display: none !important; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-mouse-display:after, .main-content .bc-player-BJqobDOb6_default.video-js .vjs-play-progress:after {
+  padding: 0 .4em .3em !important; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js.vjs-ended .vjs-loading-spinner {
+  display: none !important; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js.vjs-ended .vjs-big-play-button, .main-content .bc-player-BJqobDOb6_default.video-js.vjs-paused .vjs-big-play-button, .bc-player-BJqobDOb6_default.vjs-paused.vjs-has-started.video-js .vjs-big-play-button {
+  display: none; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-big-play-button {
+  top: 50% !important;
+  left: 50% !important;
+  margin-left: -1.5em !important;
+  margin-top: -1em !important; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-big-play-button {
+  background-color: rgba(0, 0, 0, 0.35) !important;
+  font-size: 3.5em !important;
+  border-radius: 50% !important;
+  height: 2em !important;
+  line-height: 2em !important;
+  margin-top: -1em !important; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js:hover .vjs-big-play-button, .main-content .bc-player-BJqobDOb6_default.video-js .vjs-big-play-button:focus, .main-content .bc-player-BJqobDOb6_default.video-js .vjs-big-play-button:active {
+  background-color: rgba(0, 0, 0, 0.35) !important; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-loading-spinner {
+  border-color: rgba(255, 255, 255, 0.7) !important; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-control-bar2 {
+  background-color: transparent !important; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-control-bar {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  font-size: 18px !important; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-play-progress, .main-content .bc-player-BJqobDOb6_default.video-js .vjs-volume-level {
+  background-color: white !important; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-icon-play:before, .video-js .vjs-big-play-button:before {
+  font-size: 50px !important; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-progress-holder {
+  font-size: 1.7em !important;
+  width: 100% !important; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-load-progress {
+  background: rgba(255, 255, 255, 0.5) !important; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-control:focus:before, .video-js .vjs-control:hover:before, .video-js .vjs-control:focus {
+  text-shadow: 0em 0em .7em white; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-time-control {
+  padding: 0; }
+
+.main-content .bc-player-BJqobDOb6_default.video-js .vjs-time-control.vjs-duration {
+  margin-right: 20px; }
+
+.last-contents .vjs-play-progress {
+  background-color: #00becc !important; }
+
+.last-contents .vjs-progress-control {
+  padding-left: 10px;
+  height: .3em !important; }
+
+.last-contents .video-js .vjs-progress-holder .vjs-play-progress, .video-js .vjs-progress-holder .vjs-load-progress, .video-js .vjs-progress-holder .vjs-load-progress div {
+  background: #769496; }
+
+.last-contents .vjs-volume-bar .vjs-volume-level {
+  background-color: #00becc !important; }
 
 /*Galleries*/
 div.brand-nav {

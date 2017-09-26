@@ -2,60 +2,58 @@ jQuery(document).ready(function($)
 {
 	var myPlayer = videojs('mainplayer');
 	var $myPlayerControlBar = $('.vjs-control-bar');
-	var $bgMineShaftMainPlayerOverlay = $('.bg-mine-shaft-main-player-overlay');
-	var $bgMineShaftMainPlayerOverlay2 = $('.bg-mine-shaft-main-player-overlay2');
-	var $shareFacebook = $('.share-facebook');
-	var $shareTwitter = $('.share-twitter');
-	var $shareLinkedin = $('.share-linkedin');
-	var $shareEmail = $('.share-email');
-	var $playlist = $('.bg-mine-shaft-main-player-playlist');
-	var $playlistToggler = $('.bg-mine-shaft-main-player-playlist').find('.bg-mine-shaft-main-player-playlist-title');
+	var $mainContentOverlay = $('.main-content-overlay');
+	var $mainContentOverlay2 = $('.main-content-overlay2');
+	//var $shareFacebook = $('.share-facebook');
+	//var $shareTwitter = $('.share-twitter');
+	//var $shareLinkedin = $('.share-linkedin');
+	//var $shareEmail = $('.share-email');
+	var $playlist = $('.main-content-playlist');
+	var $playlistToggler = $('.main-content-playlist').find('.main-content-playlist-title');
 	var $playlistTogglerIcon = $playlistToggler.find('i');
 
-    $($bgMineShaftMainPlayerOverlay).click(function(){ 
+    $($mainContentOverlay).click(function(){ 
 		myPlayer.play();
 	});
 
-	$($bgMineShaftMainPlayerOverlay2).click(function(e) { 
+	$($mainContentOverlay2).click(function(e) { 
 		myPlayer.play().trigger('mousedown').trigger('mouseup');
 	});
 
 	myPlayer.on('pause', function(){ 
-		$bgMineShaftMainPlayerOverlay2.fadeIn();
+		$mainContentOverlay2.fadeIn();
+		//$('.navbar-default').show();
 	}); 
 
 	myPlayer.on('play', function(){ 
-		$bgMineShaftMainPlayerOverlay.hide();
-		$bgMineShaftMainPlayerOverlay2.fadeOut();
+		$mainContentOverlay.hide();
+		$mainContentOverlay2.fadeOut();
+		//$('.navbar-default').hide();
 	});
 
-	// myPlayer.on('useractive', function(){
-	// 	console.log('useractive: Called !!!');
+
+	
+	
+
+	// $($shareFacebook).click(function(e) { 
+	// 	alert('Pouet pouet facebook');
+	// 	event.stopPropagation();
 	// });
 
-	// myPlayer.on('userinactive', function(){
-	// 	console.log('userinactive: Called !!!');
+	// $($shareTwitter).click(function(e) { 
+	// 	alert('Pouet pouet twitter');
+	// 	event.stopPropagation();
 	// });
 
-	$($shareFacebook).click(function(e) { 
-		alert('Pouet pouet facebook');
-		event.stopPropagation();
-	});
+	// $($shareLinkedin).click(function(e) { 
+	// 	alert('Pouet pouet linkedin');
+	// 	event.stopPropagation();
+	// });
 
-	$($shareTwitter).click(function(e) { 
-		alert('Pouet pouet twitter');
-		event.stopPropagation();
-	});
-
-	$($shareLinkedin).click(function(e) { 
-		alert('Pouet pouet linkedin');
-		event.stopPropagation();
-	});
-
-	$($shareEmail).click(function(e) { 
-		alert('Pouet pouet email');
-		event.stopPropagation();
-	});
+	// $($shareEmail).click(function(e) { 
+	// 	alert('Pouet pouet email');
+	// 	event.stopPropagation();
+	// });
 
 
 	/////////////////////////////////////////////////////////////////
@@ -90,35 +88,35 @@ jQuery(document).ready(function($)
 	// MAKEYOUROWN WIDGET DESKTOP
 	/////////////////////////////////////////////////////////////////
 	var $makeYourOwnDesktop = $('.makeyourown-desktop');
-	var $makeYourOwnDesktopRubrique = $makeYourOwnDesktop.find('.makeyourown-desktop-rubrique');
-	var $makeYourOwnDesktopRubriqueButtons = $makeYourOwnDesktopRubrique.find('button');
-	var $makeYourOwnDesktopTime = $makeYourOwnDesktop.find('.makeyourown-desktop-time');
-	var $makeYourOwnDesktopTimeButtons = $makeYourOwnDesktopTime.find('button');
+	var $makeYourOwnDesktopChoice1 = $makeYourOwnDesktop.find('.makeyourown-desktop-choice1');
+	var $makeYourOwnDesktopChoice1Buttons = $makeYourOwnDesktopChoice1.find('button');
+	var $makeYourOwnDesktopChoice2 = $makeYourOwnDesktop.find('.makeyourown-desktop-choice2');
+	var $makeYourOwnDesktopChoice2Buttons = $makeYourOwnDesktopChoice2.find('button');
 
-	$makeYourOwnDesktopTime.hide();
+	$makeYourOwnDesktopChoice2.hide();
 
-	$($makeYourOwnDesktopRubriqueButtons).click(function(e) { 
-		$makeYourOwnDesktopRubriqueButtons.removeClass('is-selected');
+	$($makeYourOwnDesktopChoice1Buttons).click(function(e) { 
+		$makeYourOwnDesktopChoice1Buttons.removeClass('is-selected');
 		$(this).addClass('is-selected');
-		$makeYourOwnDesktopTime.fadeIn();
+		$makeYourOwnDesktopChoice2.fadeIn();
 	});
 
-	$($makeYourOwnDesktopTimeButtons).click(function(e) { 
-		$makeYourOwnDesktopTimeButtons.removeClass('is-selected');
+	$($makeYourOwnDesktopChoice2Buttons).click(function(e) { 
+		$makeYourOwnDesktopChoice2Buttons.removeClass('is-selected');
 		$(this).addClass('is-selected');
 
 		// setTimeout(function(){
-		// 	$makeYourOwnDesktopRubriqueButtons.removeClass('is-selected');
-		// 	$makeYourOwnDesktopTimeButtons.removeClass('is-selected');
-		// 	$makeYourOwnDesktopTime.hide();
-  //      	}, 1000);
+		// 	$makeYourOwnDesktopChoice1Buttons.removeClass('is-selected');
+		// 	$makeYourOwnDesktopChoice2Buttons.removeClass('is-selected');
+		// 	$makeYourOwnDesktopChoice2.hide();
+  		//     }, 1000);
 
 	});
 
 	/////////////////////////////////////////////////////////////////
 	// MINI-PLAYERS
 	/////////////////////////////////////////////////////////////////
-	$('.last-videos-item-header').click(function(e) { 
+	$('.last-contents-item-header').click(function(e) { 
 		
 		if ($(window).width() > 752 )
 		{

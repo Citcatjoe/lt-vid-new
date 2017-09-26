@@ -29,7 +29,7 @@
 	<body style="padding-top: {{ navBarOffset }};">
 		{{ block('bar_brand') }}
 
-		<body itemscope itemtype="http://schema.org/WebPage" class="page-videos">
+		<body itemscope itemtype="http://schema.org/WebPage" class="media-page media-page-video">
 		    <a href="#main-content" class="visually-hidden focusable">Aller au contenu principal</a>
 		    <script>
 		        dataLayer = [{
@@ -152,8 +152,10 @@
 		                                	<div class="js-priority-wrapper-letemps nav-inner"></div>
 											 <ul class="media-nav-left">
 		                                    	<li>
-		                                    		<img src="img/logo-lt-blanc.svg" alt="Logo Le Temps" class="logo-desktop">
-		                                    		<img src="img/logo-square-media.svg" alt="Logo Le Temps" class="logo-mobile">
+		                                    		<a href="#">
+			                                    		<img src="img/logo-lt-blanc.svg" alt="Logo Le Temps" class="logo-desktop">
+			                                    		<img src="img/logo-square-media.svg" alt="Logo Le Temps" class="logo-mobile">
+			                                    	</a>
 		                                    	</li>
 		                                    	<li class="separator">
 		                                    		&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -188,28 +190,30 @@
 		        </div>
 		    </header> 
 
-		    <div class="bg-mine-shaft bg-mine-shaft-main-player">
-		    	<div class="bg-mine-shaft-main-player-overlay">
-		    		<div class="bg-mine-shaft-main-player-overlay-container container">
+		    <div class="bg-mine-shaft main-content">
+		    	<div class="main-content-overlay">
+		    		<div class="main-content-overlay-container container">
 		    			<img src="img/play-button.png" alt="">
 		    			<h1>Le «self-branding» selon l'artiste-tatoueur Maxime Büchi</h1>
 		    			<h2>Dans le cadre d'un workshop donné à l'ECAL, le Lausannois installé à Londres explique à de jeunes créatifs comment promouvoir leur image sur les réseaux sociaux</h2>
-		    			<div class="bg-mine-shaft-main-player-overlay-container-social">
+		    			<div class="main-content-overlay-container-social">
 		    				<i class="fa fa-facebook share-facebook" aria-hidden="true"></i>
 		    				<i class="fa fa-twitter share-twitter" aria-hidden="true"></i>
 		    				<i class="fa fa-linkedin share-linkedin" aria-hidden="true"></i>
-		    				<i class="fa fa-paper-plane share-email" aria-hidden="true"></i>
+		    				<i class="fa fa-whatsapp share-whatsapp" aria-hidden="true"></i>
+		    				<i class="fa fa-envelope share-email" aria-hidden="true"></i>
 		    			</div>
 		    		</div>
 		    	</div>
-		    	<div class="bg-mine-shaft-main-player-overlay2">
-		    		<div class="bg-mine-shaft-main-player-overlay2-container container">
+		    	<div class="main-content-overlay2">
+		    		<div class="main-content-overlay2-container container">
 		    			<h3>Le «self-branding» selon l'artiste-tatoueur Maxime Büchi</h3>
-		    			<div class="bg-mine-shaft-main-player-overlay-container2-social">
+		    			<div class="main-content-overlay2-container-social">
 		    				<i class="fa fa-facebook share-facebook" aria-hidden="true"></i>
 		    				<i class="fa fa-twitter share-twitter" aria-hidden="true"></i>
 		    				<i class="fa fa-linkedin share-linkedin" aria-hidden="true"></i>
-		    				<i class="fa fa-paper-plane share-email" aria-hidden="true"></i>
+		    				<i class="fa fa-whatsapp share-whatsapp" aria-hidden="true"></i>
+		    				<i class="fa fa-envelope share-email" aria-hidden="true"></i>
 		    			</div>
 		    		</div>
 		    	</div>
@@ -229,14 +233,14 @@
 					<script src="//players.brightcove.net/5104226614001/BJqobDOb6_default/index.min.js"></script>
 		    	</div>
 
-				<div class="bg-mine-shaft-main-player-playlist">
-					<div class="bg-mine-shaft-main-player-playlist-title">
+				<div class="main-content-playlist">
+					<div class="main-content-playlist-title">
 						<p>Booktubes&nbsp;<i class="fa fa-caret-up" aria-hidden="true"></i></p>
-						<div class="bg-mine-shaft-main-player-playlist-title-rtriangle"></div>
-						<div class="bg-mine-shaft-main-player-playlist-title-ltriangle"></div>
+						<div class="main-content-playlist-title-rtriangle"></div>
+						<div class="main-content-playlist-title-ltriangle"></div>
 					</div>
 
-					<div id="playlist-carousel" class="bg-mine-shaft-main-player-playlist-container container carousel slide"  data-ride="carousel">
+					<div id="playlist-carousel" class="main-content-playlist-container container carousel slide"  data-ride="carousel">
 						<!-- Wrapper for slides -->
 						<div class="carousel-inner" role="listbox">
 
@@ -306,18 +310,16 @@
 				</div>
 			</div>
 
-
-
-		    <div class="bg-mine-shaft">
+		    <div class="bg-mine-shaft last-contents">
 		        <main class="container">
 		        	<div class="spacer spacer-sm"></div>
 		        	<div class="row">
-		        		<div class="col-lg-9 last-videos">
+		        		<div class="col-lg-9">
 		                    <h2 class="section-title">Dernières vidéos</h2>
 		                    <div class="row">
 
-		                    	<div class="col-sm-6 col-md-6 last-videos-item">
-									<!-- <div class="picture-label last-videos-item-header">
+		                    	<div class="col-sm-6 col-md-6 last-contents-item">
+									<div class="picture-label last-contents-item-header">
 										<div class="video-wrapper">
 											<div class="sk-fading-circle video-wrapper-loader">
 											  <div class="sk-circle1 sk-circle"></div>
@@ -344,14 +346,14 @@
 												<figcaption itemprop="description">n/a
 												</figcaption>
 											</figure>
-											<div class="last-videos-item-gradient"></div>
+											<div class="last-contents-item-gradient"></div>
 											<span class="label label-primary">  
 												First love <span>– 01:32</span>
 											</span>
-											<img src="img/play-button.svg" alt="" class="last-videos-item-play-button">
+											<img src="img/play-button.svg" alt="" class="last-contents-item-play-button">
 										</div>
-									</div> -->
-									<div class="picture-label last-videos-item-header">
+									</div>
+									<!-- <div class="picture-label last-contents-item-header">
 										<div class="video-wrapper is-visible">
 								    		<video 	id="mainplayer"
 								    				poster="img/_maxime.jpg"
@@ -368,24 +370,25 @@
 											</video>
 											<script src="//players.brightcove.net/5104226614001/BJqobDOb6_default/index.min.js"></script>
 								    	</div>
-									</div>
-									<div class="article-excerpt last-videos-item-excerpt">
+									</div> -->
+									<div class="article-excerpt last-contents-item-excerpt">
 										<div class="spacer spacer-xs"></div>
 										<h3 class="h5">
 											<span>Science</span>
 											 – Le National s'attaque à l'initiative Rasa et ses contre-projets
 										</h3>
 									</div>
-									<div class="row last-videos-item-share">
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+									<div class="row last-contents-item-share">
+										<div class="last-contents-item-share-box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-envelope" aria-hidden="true"></i></div>
 									</div>
 		                    	</div>
 
-		                    	<div class="col-sm-6 col-md-6 last-videos-item">
-									<div class="picture-label last-videos-item-header">
+		                    	<div class="col-sm-6 col-md-6 last-contents-item">
+									<div class="picture-label last-contents-item-header">
 										<div class="video-wrapper"> 
 											<div class="sk-fading-circle video-wrapper-loader">
 											  <div class="sk-circle1 sk-circle"></div>
@@ -412,14 +415,14 @@
 												<figcaption itemprop="description">n/a
 												</figcaption>
 											</figure>
-											<div class="last-videos-item-gradient"></div>
+											<div class="last-contents-item-gradient"></div>
 											<span class="label label-primary">  
 												Immigration <span>– 01:32</span>
 											</span>
-											<img src="img/play-button.svg" alt="" class="last-videos-item-play-button">
+											<img src="img/play-button.svg" alt="" class="last-contents-item-play-button">
 										</div>
 									</div>
-									<!-- <div class="picture-label last-videos-item-header">
+									<!-- <div class="picture-label last-contents-item-header">
 										<div class="video-wrapper">
 								    		<video 	id="mainplayer"
 								    				poster="img/_maxime.jpg"
@@ -437,22 +440,23 @@
 											<script src="//players.brightcove.net/5104226614001/BJqobDOb6_default/index.min.js"></script>
 								    	</div>
 									</div> -->
-									<div class="article-excerpt last-videos-item-excerpt">
+									<div class="article-excerpt last-contents-item-excerpt">
 										<div class="spacer spacer-xs"></div>
 										<h3 class="h5">
 											<span>Science</span>
 											 – Le National s'attaque à l'initiative Rasa et ses contre-projets
 										</h3>
 									</div>
-									<div class="row last-videos-item-share">
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+									<div class="row last-contents-item-share">
+										<div class="last-contents-item-share-box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-envelope" aria-hidden="true"></i></div>
 									</div>
 		                    	</div>
 
-		                    	<div class="col-sm-6 col-md-6 last-videos-item makeyourown-mobile bg-media">
+		                    	<div class="col-sm-6 col-md-6 last-contents-item makeyourown-mobile bg-media">
 									<h2 class="section-title"><i class="fa fa-list" aria-hidden="true" style="font-size: 60%; opacity: 0.75;"></i> Votre playliste sur mesure</h2>
 		                    		<p>Composez votre playlist en sélectionnant une rubrique puis une durée</p>
 										<!-- <div class="spacer spacer-sm"></div> -->
@@ -489,8 +493,8 @@
 
 		                    	<!-- <div class="clearfix visible-sm-block"></div> -->
 
-		                    	<div class="col-sm-6 col-md-6 last-videos-item">
-									<div class="picture-label last-videos-item-header">
+		                    	<div class="col-sm-6 col-md-6 last-contents-item">
+									<div class="picture-label last-contents-item-header">
 										<div class="video-wrapper">
 											<div class="sk-fading-circle video-wrapper-loader">
 											  <div class="sk-circle1 sk-circle"></div>
@@ -517,14 +521,14 @@
 												<figcaption itemprop="description">n/a
 												</figcaption>
 											</figure>
-											<div class="last-videos-item-gradient"></div>
+											<div class="last-contents-item-gradient"></div>
 											<span class="label label-primary">  
 												Immigration <span>– 01:32</span>
 											</span>
-											<img src="img/play-button.svg" alt="" class="last-videos-item-play-button">
+											<img src="img/play-button.svg" alt="" class="last-contents-item-play-button">
 										</div>
 									</div>
-									<!-- <div class="picture-label last-videos-item-header">
+									<!-- <div class="picture-label last-contents-item-header">
 										<div class="video-wrapper">
 								    		<video 	id="mainplayer"
 								    				poster="img/_maxime.jpg"
@@ -542,25 +546,26 @@
 											<script src="//players.brightcove.net/5104226614001/BJqobDOb6_default/index.min.js"></script>
 								    	</div>
 									</div> -->
-									<div class="article-excerpt last-videos-item-excerpt">
+									<div class="article-excerpt last-contents-item-excerpt">
 										<div class="spacer spacer-xs"></div>
 										<h3 class="h5">
 											<span>Science</span>
 											 – Le National s'attaque à l'initiative Rasa et ses contre-projets
 										</h3>
 									</div>
-									<div class="row last-videos-item-share">
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+									<div class="row last-contents-item-share">
+										<div class="last-contents-item-share-box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-envelope" aria-hidden="true"></i></div>
 									</div>
 		                    	</div>
 								
 		                    	<!-- <div class="clearfix visible-lg-block"></div> -->
 
-		                    	<div class="col-sm-6 col-md-6 last-videos-item">
-									<div class="picture-label last-videos-item-header">
+		                    	<div class="col-sm-6 col-md-6 last-contents-item">
+									<div class="picture-label last-contents-item-header">
 										<div class="video-wrapper">
 											<div class="sk-fading-circle video-wrapper-loader">
 											  <div class="sk-circle1 sk-circle"></div>
@@ -587,14 +592,14 @@
 												<figcaption itemprop="description">n/a
 												</figcaption>
 											</figure>
-											<div class="last-videos-item-gradient"></div>
+											<div class="last-contents-item-gradient"></div>
 											<span class="label label-primary">  
 												Immigration <span>– 01:32</span>
 											</span>
-											<img src="img/play-button.svg" alt="" class="last-videos-item-play-button">
+											<img src="img/play-button.svg" alt="" class="last-contents-item-play-button">
 										</div>
 									</div>
-									<!-- <div class="picture-label last-videos-item-header">
+									<!-- <div class="picture-label last-contents-item-header">
 										<div class="video-wrapper">
 								    		<video 	id="mainplayer"
 								    				poster="img/_maxime.jpg"
@@ -612,23 +617,24 @@
 											<script src="//players.brightcove.net/5104226614001/BJqobDOb6_default/index.min.js"></script>
 								    	</div>
 									</div> -->
-									<div class="article-excerpt last-videos-item-excerpt">
+									<div class="article-excerpt last-contents-item-excerpt">
 										<div class="spacer spacer-xs"></div>
 										<h3 class="h5">
 											<span>Science</span>
 											 – Le National s'attaque à l'initiative Rasa et ses contre-projets
 										</h3>
 									</div>
-									<div class="row last-videos-item-share">
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+									<div class="row last-contents-item-share">
+										<div class="last-contents-item-share-box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-envelope" aria-hidden="true"></i></div>
 									</div>
 		                    	</div>
 
-		                    	<div class="col-sm-6 col-md-6 last-videos-item">
-									<div class="picture-label last-videos-item-header">
+		                    	<div class="col-sm-6 col-md-6 last-contents-item">
+									<div class="picture-label last-contents-item-header">
 										<div class="video-wrapper">
 											<div class="sk-fading-circle video-wrapper-loader">
 											  <div class="sk-circle1 sk-circle"></div>
@@ -655,14 +661,14 @@
 												<figcaption itemprop="description">n/a
 												</figcaption>
 											</figure>
-											<div class="last-videos-item-gradient"></div>
+											<div class="last-contents-item-gradient"></div>
 											<span class="label label-primary">  
 												Immigration <span>– 01:32</span>
 											</span>
-											<img src="img/play-button.svg" alt="" class="last-videos-item-play-button">
+											<img src="img/play-button.svg" alt="" class="last-contents-item-play-button">
 										</div>
 									</div>
-									<!-- <div class="picture-label last-videos-item-header">
+									<!-- <div class="picture-label last-contents-item-header">
 										<div class="video-wrapper">
 								    		<video 	id="mainplayer"
 								    				poster="img/_maxime.jpg"
@@ -680,23 +686,24 @@
 											<script src="//players.brightcove.net/5104226614001/BJqobDOb6_default/index.min.js"></script>
 								    	</div>
 									</div> -->
-									<div class="article-excerpt last-videos-item-excerpt">
+									<div class="article-excerpt last-contents-item-excerpt">
 										<div class="spacer spacer-xs"></div>
 										<h3 class="h5">
 											<span>Science</span>
 											 – Le National s'attaque à l'initiative Rasa et ses contre-projets
 										</h3>
 									</div>
-									<div class="row last-videos-item-share">
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+									<div class="row last-contents-item-share">
+										<div class="last-contents-item-share-box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-envelope" aria-hidden="true"></i></div>
 									</div>
 		                    	</div>
 
-		                    	<div class="col-sm-6 col-md-6 last-videos-item">
-									<div class="picture-label last-videos-item-header">
+		                    	<div class="col-sm-6 col-md-6 last-contents-item">
+									<div class="picture-label last-contents-item-header">
 										<div class="video-wrapper">
 											<div class="sk-fading-circle video-wrapper-loader">
 											  <div class="sk-circle1 sk-circle"></div>
@@ -723,14 +730,14 @@
 												<figcaption itemprop="description">n/a
 												</figcaption>
 											</figure>
-											<div class="last-videos-item-gradient"></div>
+											<div class="last-contents-item-gradient"></div>
 											<span class="label label-primary">  
 												Immigration <span>– 01:32</span>
 											</span>
-											<img src="img/play-button.svg" alt="" class="last-videos-item-play-button">
+											<img src="img/play-button.svg" alt="" class="last-contents-item-play-button">
 										</div>
 									</div>
-									<!-- <div class="picture-label last-videos-item-header">
+									<!-- <div class="picture-label last-contents-item-header">
 										<div class="video-wrapper">
 								    		<video 	id="mainplayer"
 								    				poster="img/_maxime.jpg"
@@ -748,23 +755,24 @@
 											<script src="//players.brightcove.net/5104226614001/BJqobDOb6_default/index.min.js"></script>
 								    	</div>
 									</div> -->
-									<div class="article-excerpt last-videos-item-excerpt">
+									<div class="article-excerpt last-contents-item-excerpt">
 										<div class="spacer spacer-xs"></div>
 										<h3 class="h5">
 											<span>Science</span>
 											 – Le National s'attaque à l'initiative Rasa et ses contre-projets
 										</h3>
 									</div>
-									<div class="row last-videos-item-share">
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+									<div class="row last-contents-item-share">
+										<div class="last-contents-item-share-box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-envelope" aria-hidden="true"></i></div>
 									</div>
 		                    	</div>
 
-		                    	<div class="col-sm-6 col-md-6 last-videos-item">
-									<div class="picture-label last-videos-item-header">
+		                    	<div class="col-sm-6 col-md-6 last-contents-item">
+									<div class="picture-label last-contents-item-header">
 										<div class="video-wrapper">
 											<div class="sk-fading-circle video-wrapper-loader">
 											  <div class="sk-circle1 sk-circle"></div>
@@ -791,14 +799,14 @@
 												<figcaption itemprop="description">n/a
 												</figcaption>
 											</figure>
-											<div class="last-videos-item-gradient"></div>
+											<div class="last-contents-item-gradient"></div>
 											<span class="label label-primary">  
 												Immigration <span>– 01:32</span>
 											</span>
-											<img src="img/play-button.svg" alt="" class="last-videos-item-play-button">
+											<img src="img/play-button.svg" alt="" class="last-contents-item-play-button">
 										</div>
 									</div>
-									<!-- <div class="picture-label last-videos-item-header">
+									<!-- <div class="picture-label last-contents-item-header">
 										<div class="video-wrapper">
 								    		<video 	id="mainplayer"
 								    				poster="img/_maxime.jpg"
@@ -816,23 +824,24 @@
 											<script src="//players.brightcove.net/5104226614001/BJqobDOb6_default/index.min.js"></script>
 								    	</div>
 									</div> -->
-									<div class="article-excerpt last-videos-item-excerpt">
+									<div class="article-excerpt last-contents-item-excerpt">
 										<div class="spacer spacer-xs"></div>
 										<h3 class="h5">
 											<span>Science</span>
 											 – Le National s'attaque à l'initiative Rasa et ses contre-projets
 										</h3>
 									</div>
-									<div class="row last-videos-item-share">
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+									<div class="row last-contents-item-share">
+										<div class="last-contents-item-share-box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-envelope" aria-hidden="true"></i></div>
 									</div>
 		                    	</div>
 
-		                    	<div class="col-sm-6 col-md-6 last-videos-item">
-									<div class="picture-label last-videos-item-header">
+		                    	<div class="col-sm-6 col-md-6 last-contents-item">
+									<div class="picture-label last-contents-item-header">
 										<div class="video-wrapper">
 											<div class="sk-fading-circle video-wrapper-loader">
 											  <div class="sk-circle1 sk-circle"></div>
@@ -859,14 +868,14 @@
 												<figcaption itemprop="description">n/a
 												</figcaption>
 											</figure>
-											<div class="last-videos-item-gradient"></div>
+											<div class="last-contents-item-gradient"></div>
 											<span class="label label-primary">  
 												Immigration <span>– 01:32</span>
 											</span>
-											<img src="img/play-button.svg" alt="" class="last-videos-item-play-button">
+											<img src="img/play-button.svg" alt="" class="last-contents-item-play-button">
 										</div>
 									</div>
-									<!-- <div class="picture-label last-videos-item-header">
+									<!-- <div class="picture-label last-contents-item-header">
 										<div class="video-wrapper">
 								    		<video 	id="mainplayer"
 								    				poster="img/_maxime.jpg"
@@ -884,23 +893,24 @@
 											<script src="//players.brightcove.net/5104226614001/BJqobDOb6_default/index.min.js"></script>
 								    	</div>
 									</div> -->
-									<div class="article-excerpt last-videos-item-excerpt">
+									<div class="article-excerpt last-contents-item-excerpt">
 										<div class="spacer spacer-xs"></div>
 										<h3 class="h5">
 											<span>Science</span>
 											 – Le National s'attaque à l'initiative Rasa et ses contre-projets
 										</h3>
 									</div>
-									<div class="row last-videos-item-share">
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+									<div class="row last-contents-item-share">
+										<div class="last-contents-item-share-box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-envelope" aria-hidden="true"></i></div>
 									</div>
 		                    	</div>
 
-		                    	<div class="col-sm-6 col-md-6 last-videos-item">
-									<div class="picture-label last-videos-item-header">
+		                    	<div class="col-sm-6 col-md-6 last-contents-item">
+									<div class="picture-label last-contents-item-header">
 										<div class="video-wrapper">
 											<div class="sk-fading-circle video-wrapper-loader">
 											  <div class="sk-circle1 sk-circle"></div>
@@ -927,14 +937,14 @@
 												<figcaption itemprop="description">n/a
 												</figcaption>
 											</figure>
-											<div class="last-videos-item-gradient"></div>
+											<div class="last-contents-item-gradient"></div>
 											<span class="label label-primary">  
 												Immigration <span>– 01:32</span>
 											</span>
-											<img src="img/play-button.svg" alt="" class="last-videos-item-play-button">
+											<img src="img/play-button.svg" alt="" class="last-contents-item-play-button">
 										</div>
 									</div>
-									<!-- <div class="picture-label last-videos-item-header">
+									<!-- <div class="picture-label last-contents-item-header">
 										<div class="video-wrapper">
 								    		<video 	id="mainplayer"
 								    				poster="img/_maxime.jpg"
@@ -952,18 +962,19 @@
 											<script src="//players.brightcove.net/5104226614001/BJqobDOb6_default/index.min.js"></script>
 								    	</div>
 									</div> -->
-									<div class="article-excerpt last-videos-item-excerpt">
+									<div class="article-excerpt last-contents-item-excerpt">
 										<div class="spacer spacer-xs"></div>
 										<h3 class="h5">
 											<span>Science</span>
 											 – Le National s'attaque à l'initiative Rasa et ses contre-projets
 										</h3>
 									</div>
-									<div class="row last-videos-item-share">
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-										<div class="col-xs-3 last-videos-item-share-box"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+									<div class="row last-contents-item-share">
+										<div class="last-contents-item-share-box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+										<div class="last-contents-item-share-box"><i class="fa fa-envelope" aria-hidden="true"></i></div>
 									</div>
 		                    	</div>
 		                    	
@@ -1022,7 +1033,7 @@
 		        		<div class="col-sm-12 last-videos">
 		                    <h2 class="section-title"><i class="fa fa-list" aria-hidden="true" style="font-size: 60%; opacity: 0.75;"></i> Votre playliste sur mesure</h2>
 		                    <p>Composez votre playlist en sélectionnant une rubrique puis une durée</p>
-			                    <div class="row makeyourown-desktop-rubrique">
+			                    <div class="row makeyourown-desktop-choice1">
 			                    	<div class="col-sm-12">
 			                    		<div class="btn-group" role="group" aria-label="...">
 					                    	<button class="btn btn-primary" type="submit">MONDE</button>
@@ -1036,7 +1047,7 @@
 				                    	</div>
 				                    </div>
 			                    </div>
-			                    <div class="row makeyourown-desktop-time">
+			                    <div class="row makeyourown-desktop-choice2">
 			                    	<div class="col-sm-12">
 			                    		<div class="btn-group" role="group" aria-label="...">
 					                    	<button class="btn btn-primary" type="submit">5 minutes</button>
@@ -1053,11 +1064,11 @@
 		        </main>
 		    </div>
 
-		    <div class="bg-mine-shaft">
+		    <div class="bg-mine-shaft series">
 		        <main class="container">
 		        	<div class="spacer spacer-sm"></div>
 		        	<div class="row">
-		        		<div class="col-sm-12 series">
+		        		<div class="col-sm-12">
 		                    <h2 class="section-title">Nos séries</h2>
 		                    <div class="row">
 
