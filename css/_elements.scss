@@ -260,6 +260,7 @@ $media-color: #619fa4;
                 width: 100px;
                 height: auto;
                 margin-bottom: 20px;
+                cursor: pointer;
 
                 @media screen and (max-width: 1213px) {
                     width: 80px;
@@ -492,6 +493,7 @@ $media-color: #619fa4;
                             list-style: none;
                             padding: 0 10px;
                             // position: relative;
+                            cursor: pointer;
 
                             @media screen and (max-width: 991px) {
                                 padding: 0 5px;
@@ -583,6 +585,7 @@ $media-color: #619fa4;
     }
 }
 
+//MAIN PLAYER
 .media-page //body
 {
     .main-content
@@ -591,7 +594,6 @@ $media-color: #619fa4;
         {
             width: 100%;
             max-width: 1600px;
-           // max-height: calc(100vh - 185px);
             margin: auto;
             position: relative;
             background: gray;
@@ -634,8 +636,7 @@ $media-color: #619fa4;
                 div.vjs-control-bar
                 {
                     z-index: 3;
-                     @include transform(translateY(0) !important); 
-                    // width: 100%;
+                    @include transform(translateY(0) !important); 
                     margin: auto;
                     max-width: 1045px;
                     background-color: rgba(0,0,0,0) !important;
@@ -675,22 +676,15 @@ $media-color: #619fa4;
     }
 }
 
-//LAST-VIDEO + MOST VIEWED
+//LAST VIDEOS
 .media-page //body
 {
     .last-contents
     {
         div.row { display: flex;  flex-wrap: wrap; }
 
-        .last-contents-item
+        .last-contents-wrapper
         {
-            padding: 0 15px 0 15px;
-            margin-bottom: 30px;
-
-            @media screen and (max-width: 767px) {
-              margin-bottom: 20px;
-            }
-
             &:first-child 
             { 
                 display: none;
@@ -699,12 +693,26 @@ $media-color: #619fa4;
                   display: block;
                 }
             }
+        }
 
+        .last-contents-item
+        {
+            margin-bottom: 30px;
+            cursor: pointer;
+
+            @media screen and (max-width: 767px) {
+              margin-bottom: 20px;
+            } 
+
+            &:hover 
+            { 
+                .last-contents-item-gradient { opacity: .9 !important; } 
+
+            }
 
             div.row { overflow: auto; }
             .desktop-visible { @media screen and (max-width: 767px) { display: none; } }
             .mobile-visible { @media screen and (min-width: 767px) { display: none; } }
-
 
             .last-contents-item-header
             {
@@ -836,6 +844,8 @@ $media-color: #619fa4;
                     span 
                     {
                         color: $media-color;
+
+                        &:hover { text-decoration: underline; }
                     }
                 }
             }
@@ -857,7 +867,7 @@ $media-color: #619fa4;
 
                 .last-contents-item-share-box
                 {
-                    padding: 7px 0 4px 0;
+                    padding: 10px 0 7px 0;
                     border-right: 1px solid #1d2023;
                     box-shadow: inset 1px 0 0 0 #333333;
                     width: calc(100% / 5);
@@ -876,69 +886,6 @@ $media-color: #619fa4;
                     .fa { opacity: 0.5; }
                 }
             }
-
-            // div.last-videos-body
-            // {
-            //     @media screen and (max-width: 767px) {
-            //       background: #262626;
-            //       padding: 10px;
-            //     }
-
-            //     h6.last-videos-body-meta
-            //     {
-            //         font-size: 16px;
-            //         font-family: "Rooney";
-            //         color: rgba(255, 255, 255, 0.5);
-            //         font-weight: 300;
-            //         margin-bottom: 8px;
-
-            //         @media screen and (max-width: 1213px) {
-            //           font-size: 14px;
-            //           margin-top: 13px;
-            //           margin-bottom: 6px;
-            //         }
-
-            //         @media screen and (max-width: 991px) {
-            //           margin-top: 10px;
-            //         }
-
-            //         @media screen and (max-width: 767px) {
-            //           margin-top: 0;
-            //         }
-
-            //         span 
-            //         {
-            //             color: $media-color;
-            //             font-weight: 600;
-            //         }
-            //     }
-
-            //     p.last-videos-body-title
-            //     {
-            //         color: rgba(255, 255, 255, 1);
-            //         -webkit-font-smoothing: antialiased; 
-            //         opacity: 0.75;
-            //           font-size: 19px;
-            //           font-weight: 400;
-            //           line-height: 30px;
-
-            //         @media screen and (max-width: 1213px) {
-            //           font-size: 17px;
-            //           line-height: 27px;
-            //         }
-
-            //         @media screen and (max-width: 991px) {
-            //           font-size: 16px;
-            //           line-height: 23px;
-            //         }
-            //     }
-
-            //     p.last-videos-body-lead
-            //     {
-            //         line-height: 1.485;
-            //         margin-bottom: 0;
-            //     }
-            // }
         }
     }
 
@@ -1082,10 +1029,20 @@ $media-color: #619fa4;
     div.series
     {
         padding-bottom: 70px; 
+
         div.series-item
         {
+            cursor: pointer;
+            margin-bottom: 30px;
+
+            &:hover 
+            {
+                .series-item-header-gradient { opacity: .5 !important; }
+                .series-item-header-title { text-decoration: underline; }
+            }
+
             @media screen and (max-width: 991px) {
-                margin-bottom: 30px;
+                
             }
 
             .series-item-header
