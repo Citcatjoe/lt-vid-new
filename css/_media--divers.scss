@@ -1,0 +1,90 @@
+//COULEURS
+$media-color: #619fa4;
+$bg-mine-shaft-color: #323232;
+$bg-mine-shaft-darker-color: darken( $bg-mine-shaft-color, 5 );
+
+// POUR MASQUER LE HEADER QUI EST EN FAIT CELUI DU LABS
+div.brand-nav
+{
+    display: none;
+}
+
+// ICONE GAUCHE SLIDER BOOTSTRAP
+.glyphicon-chevron-left:before, .pswp__button--arrow--left:after
+{
+    font-family: FontAwesome;
+    content: "\f053";
+}
+
+// ICONE DROITE SLIDER BOOTSTRAP
+.glyphicon-chevron-right:before, .pswp__button--arrow--right:after
+{
+    font-family: FontAwesome;
+    content: "\f054";
+}
+
+// DELETE LE TOUR BLEU AUTOUR DES ELEMENTS FOCUS 
+*:focus
+{
+    outline: 0;
+}
+
+// NOUVEAUX BOUTONS MEDIA
+.btn-secondary
+{
+    background-color: darken( desaturate( $media-color, 11 ), 19 );
+    outline: none !important;
+    color: white;
+
+    &:hover, &:focus
+    {
+        background-color: $media-color;
+        color: white;
+
+    }
+}
+
+// QUELQUES PETITES RETOUCHES DE LAYOUT
+.media-page //body
+{
+    .last-contents
+    {
+        div.row { display: flex;  flex-wrap: wrap; }
+
+        .last-contents-wrapper
+        {
+            &:first-child 
+            { 
+                display: none;
+
+                @media screen and (max-width: 767px) {
+                  display: block;
+                }
+            }
+        }
+    }
+
+    .most-viewed
+    {
+        li 
+        {
+            &:before
+            {
+                font-family: Tungsten, Tungsten-Medium, Arial,sans-serif;
+            }
+
+            a
+            {
+                &:hover
+                {
+                    color: $media-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

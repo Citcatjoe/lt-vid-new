@@ -1,0 +1,75 @@
+div.series-item
+{
+    cursor: pointer;
+    margin-bottom: 30px;
+
+    &:hover 
+    {
+        .series-item-header-gradient { opacity: .5 !important; }
+        .series-item-header-title { text-decoration: underline; }
+    }
+
+    @media screen and (max-width: 991px) {
+        
+    }
+
+    .series-item-header
+    {
+        position: relative;
+
+        .series-item-header-gradient
+        {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,8) 100%); /* FF3.6-15 */ 
+            background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,8) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            opacity: 0.6;
+        }
+
+        .series-item-header-container
+        {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 35px 25px;
+
+            @media screen and (max-width: 1213px) {
+              padding: 20px 15px;
+            } 
+
+            .series-item-header-title
+            {
+                font-size: 37.5px;
+                font-family: "Ratio";
+                color: white;
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 1.1;
+                text-shadow: 0px 1px 0.97px rgba(0, 0, 0, 1);
+                margin-bottom: -5px;
+                 
+                @media screen and (max-width: 1213px) {
+                  font-size: 30px;
+                }   
+
+            }
+
+             .series-item-header-count
+            {
+                background: $media-color;
+                font-family: 'Rooney';
+                color: white;
+                font-weight: 900;
+                padding:1px 5px 3px 5px;
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -437,9 +437,43 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-sm-6 col-md-6 last-contents-item makeyourown-mobile bg-media">
+                                    <h2 class="section-title"><i class="fa fa-list" aria-hidden="true" style="font-size: 60%; opacity: 0.75;"></i> Votre playliste sur mesure</h2>
+                                    <p>Composez votre playlist en sélectionnant une rubrique puis une durée</p>
+                                        <!-- <div class="spacer spacer-sm"></div> -->
+                                        <!-- <p>Quelle rubrique vous intéresse?</p> -->
+                                        <select class="makeyourown-mobile-rubrique">
+                                            <option selected disabled hidden>Choix de la rubrique</option>
+                                            <option value="monde">Monde</option>
+                                            <option value="suisse">Suisse</option>
+                                            <option value="economie">Économie</option>
+                                            <option value="culture">Culture</option>
+                                            <option value="science">Science</option>
+                                            <option value="sport">Sport</option>
+                                            <option value="societe">Société</option>
+                                            <option value="lifestyle">Lifestyle</option>
+                                        </select>
+                                        <hr>
+                                        <!-- <p>Combien de temps avez-vous à disposition?</p> -->
+                                        <select class="makeyourown-mobile-time">
+                                            <option selected disabled hidden>Choix de la durée</option>
+                                            <option value="monde">5 minutes</option>
+                                            <option value="suisse">10 minutes</option>
+                                            <option value="economie">15 minutes</option>
+                                            <option value="culture">20 minutes</option>
+                                            <option value="science">25 minutes</option>
+                                            <option value="sport">30 minutes</option>
+                                        </select>
+
+                                        <div class="text-center">
+                                            <div class="spacer spacer-sm"></div>
+                                            <a class="btn btn-secondary" href="/images/video">Composer</a>
+                                            <div class="spacer spacer-md"></div>
+                                        </div>
+                                </div>
                                 <div class="col-sm-6 col-md-6 last-contents-wrapper">
                                     <div class="last-contents-item">
-                                        <div class="picture-label last-contents-item-header">
+                                        <!-- <div class="picture-label last-contents-item-header">
                                             <div class="video-wrapper">
                                                 <div class="sk-fading-circle video-wrapper-loader">
                                                     <div class="sk-circle1 sk-circle"></div>
@@ -472,8 +506,8 @@
                                                 </span>
                                                 <img src="img/play-button.svg" alt="" class="last-contents-item-play-button">
                                             </div>
-                                        </div>
-                                        <!-- <div class="picture-label last-contents-item-header">
+                                        </div> -->
+                                        <div class="picture-label last-contents-item-header">
                                             <div class="video-wrapper is-visible">
                                                   <video  id="mainplayer"
                                                       poster="img/_maxime.jpg"
@@ -490,7 +524,7 @@
                                               </video>
                                               <script src="//players.brightcove.net/5104226614001/BJqobDOb6_default/index.min.js"></script>
                                                 </div>
-                                            </div> -->
+                                        </div>
                                         <div class="article-excerpt last-contents-item-excerpt">
                                             <div class="spacer spacer-xs"></div>
                                             <h3 class="h5">
@@ -929,81 +963,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 col-md-6 last-contents-wrapper">
-                                    <div class="last-contents-item">
-                                        <div class="picture-label last-contents-item-header">
-                                            <div class="video-wrapper">
-                                                <div class="sk-fading-circle video-wrapper-loader">
-                                                    <div class="sk-circle1 sk-circle"></div>
-                                                    <div class="sk-circle2 sk-circle"></div>
-                                                    <div class="sk-circle3 sk-circle"></div>
-                                                    <div class="sk-circle4 sk-circle"></div>
-                                                    <div class="sk-circle5 sk-circle"></div>
-                                                    <div class="sk-circle6 sk-circle"></div>
-                                                    <div class="sk-circle7 sk-circle"></div>
-                                                    <div class="sk-circle8 sk-circle"></div>
-                                                    <div class="sk-circle9 sk-circle"></div>
-                                                    <div class="sk-circle10 sk-circle"></div>
-                                                    <div class="sk-circle11 sk-circle"></div>
-                                                    <div class="sk-circle12 sk-circle"></div>
-                                                </div>
-                                            </div>
-                                            <div class="picture-wrapper">
-                                                <figure class="picture picture-card">
-                                                    <picture>
-                                                        <source srcset="img/_maxime.jpg 1x" media="all and (min-width: 992px)" type="image/jpeg">
-                                                        <source srcset="img/_maxime.jpg 1x" media="(min-width: 0px)" type="image/jpeg">
-                                                        <img class="picture img-responsive" src="img/_maxime.jpg" alt="">
-                                                    </picture>
-                                                    <figcaption itemprop="description">n/a
-                                                    </figcaption>
-                                                </figure>
-                                                <div class="last-contents-item-gradient"></div>
-                                                <span class="label label-primary">  
-                                                First love <span>– 01:32</span>
-                                                </span>
-                                                <img src="img/play-button.svg" alt="" class="last-contents-item-play-button">
-                                            </div>
-                                        </div>
-                                        <!-- <div class="picture-label last-contents-item-header">
-                                            <div class="video-wrapper is-visible">
-                                                  <video  id="mainplayer"
-                                                      poster="img/_maxime.jpg"
-                                                      data-account="5104226614001" 
-                                                  data-player="BJqobDOb6" 
-                                                  data-embed="default" 
-                                                  data-application-id 
-                                                  preload="auto"
-                                                  class="video-js" 
-                                                  playsinline
-                                                  webkit-playsinline 
-                                                  controls>
-                                                  <source src="https://player.vimeo.com/external/216199557.hd.mp4?s=d81bc6fb098d190f94234ba22871230095053f65&profile_id=119" type="video/mp4">
-                                              </video>
-                                              <script src="//players.brightcove.net/5104226614001/BJqobDOb6_default/index.min.js"></script>
-                                                </div>
-                                            </div> -->
-                                        <div class="article-excerpt last-contents-item-excerpt">
-                                            <div class="spacer spacer-xs"></div>
-                                            <h3 class="h5">
-                                                <span>Science</span>
-                                                – Le National s'attaque à l'initiative Rasa et ses contre-projets
-                                            </h3>
-                                        </div>
-                                        <div class="last-contents-item-share">
-                                            <div class="last-contents-item-share-box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-                                            <div class="last-contents-item-share-box"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-                                            <div class="last-contents-item-share-box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                                            <div class="last-contents-item-share-box"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
-                                            <div class="last-contents-item-share-box"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                                        </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="text-center">
+                                        <div class="spacer spacer-sm"></div>
+                                        <a class="btn btn-secondary" href="/images/video">Charger plus de vidéos</a>
+                                        <div class="spacer spacer-md"></div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="text-center">
-                                <div class="spacer spacer-sm"></div>
-                                <a class="btn btn-secondary" href="/images/video">Charger plus de vidéos</a>
-                                <div class="spacer spacer-md"></div>
                             </div>
                         </div>
                         <div class="col-lg-3 most-viewed">
@@ -1155,6 +1123,15 @@
                                         </figure>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="text-center">
+                                <div class="spacer spacer-sm"></div>
+                                <a class="btn btn-secondary" href="/images/video">Charger plus de séries</a>
+                                <div class="spacer spacer-md"></div>
                             </div>
                         </div>
                     </div>

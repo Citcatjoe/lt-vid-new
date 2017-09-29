@@ -1,0 +1,114 @@
+.media-page //body
+{
+    div.makeyourown-mobile
+    {
+        display: none;
+        width: 100%;
+        background: darken( desaturate( adjust-hue( $media-color, 9deg ), 13 ), 26 );
+
+        @media screen and (max-width: 767px) {
+          display: block;
+        }
+
+        select 
+        {
+            padding: 2px 10px;
+            width: 100%;
+            border: none;
+            font-size: 16px;
+            height: 34px;
+            margin-bottom: 15px;
+            font-family: 'Helvetica Neue', 'Arial', sans-serif;
+            font-weight: 400;
+            color: #555;
+        }
+
+        hr 
+        {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border-top: 1px solid #6f7072;
+        }
+    } 
+}
+
+.media-page //body
+{
+    div.makeyourown-desktop
+    {
+        padding-bottom: 45px;
+        background: darken( desaturate( adjust-hue( $media-color, 9deg ), 13 ), 26 );
+
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+
+        .btn 
+        {
+            padding-bottom: 5px;
+            padding-top: 5px;
+
+            &.is-selected
+            {
+                background-color: $media-color;
+            }
+        }
+
+        div.makeyourown-desktop-choice1
+        {
+            margin-bottom: 25px;
+
+            div.btn-group
+            {
+                width: 100%;
+
+                .btn 
+                {
+                    text-transform: initial;
+                    font-family: Rooney;
+                    width: calc(100% / 8 - 8px);
+                    margin-right: 10px;
+
+                    @media screen and (max-width: 991px) {
+                        width: calc(100% / 4 - 8px);
+
+                        &:nth-child(-n+4)
+                        {
+                            margin-bottom: 8px;
+                        }
+
+                        &:nth-child(4)
+                        {
+                            margin-right: 0;
+                        }
+
+                        &:nth-child(5)
+                        {
+                             margin-left: 0;
+                        }
+                    }
+
+                    &:last-child { margin-right: 0; }
+                }
+            }
+        }
+
+        div.makeyourown-desktop-choice2
+        {
+            div.btn-group
+            {
+                width: 100%;
+
+                .btn 
+                {
+                    text-transform: initial;
+                    font-family: Rooney;
+                    width: calc(100% / 6 - 8px);
+                    margin-right: 10px;
+
+                    &:last-child { margin-right: 0; }
+                }
+            }
+        }
+    }
+}

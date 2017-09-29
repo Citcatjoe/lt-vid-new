@@ -6,47 +6,20 @@
 @import "bourbon/bourbon"; /*Bourbon mixins*/         
 
 //=====================================================================//
-// RESET
+// THINGS
 //=====================================================================//
-// @import url("reset.css"); /*PROCOM reset styles*/ included in LT navbar
-@import "barbarian_reset"; /*Boxes settings*/            
+@import "media--divers"; /*Buttons, dropdown...*/
+@import "media--home-block-new-styles"; /*Colors, breakpoints...*/ 
+@import "media--header";
+@import "media--main-content";
+@import "media--loader";
+@import "media--last-content--item";  
+@import "media--make-your-own";
+@import "media--series-item";
+@import "media--footer";
+@import "video-players"; /*Galleries*/  
 
 //=====================================================================//
-// USEFULL STUFF
-//=====================================================================//
-@import "block-wrapper--media"; /*Colors, breakpoints...*/ 
-@import "typography"; /*text relatives*/ 
-@import "helpers"; /*/HTML5 Boilerplate) Clearfix, hidden, visuallyhidden, invisible...*/   
-@import "loader";
-@import "media--last-content--item";
-
-//=====================================================================//
-// GENERAL LAYOUT
-//=====================================================================//
-@import "layout"; /*Header, section, article, footer...*/
-
-//=====================================================================//
-// ELEMENTS
-//=====================================================================//
-@import "elements"; /*Buttons, dropdown...*/
-@import "gallery"; /*Galleries*/  
-
-//=====================================================================//
-// FIX
+// DIRTY FIX
 //=====================================================================//
 @import "shame";
-
-
-
-
-
-
-
-
-
-
-
-//=====================================================================//
-// PRINT
-//=====================================================================//
-@import "print";

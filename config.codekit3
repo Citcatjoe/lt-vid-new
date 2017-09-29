@@ -29,7 +29,7 @@
 		"oAP": "\/composer.phar",
 		"oF": 0
 		},
-	"\/css\/_barbarian_reset.scss": {
+	"\/css\/_media--divers.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -37,12 +37,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/css\/_barbarian_reset.css",
+		"oAP": "\/css\/_media--divers.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/_block-wrapper--media.scss": {
+	"\/css\/_media--footer.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -50,12 +50,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/css\/_block-wrapper--media.css",
+		"oAP": "\/css\/_media--footer.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/_elements.scss": {
+	"\/css\/_media--header.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -63,12 +63,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/css\/_elements.css",
+		"oAP": "\/css\/_media--header.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/_gallery.scss": {
+	"\/css\/_media--home-block-new-styles.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -76,46 +76,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/css\/_gallery.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/css\/_helpers.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/css\/_helpers.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/css\/_layout.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/css\/_layout.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/css\/_loader.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/css\/_loader.css",
+		"oAP": "\/css\/_media--home-block-new-styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -133,7 +94,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/_print.scss": {
+	"\/css\/_media--loader.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -141,7 +102,46 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/css\/_print.css",
+		"oAP": "\/css\/_media--loader.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/_media--main-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/css\/_media--main-content.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/_media--make-your-own.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/css\/_media--make-your-own.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/_media--series-item.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/css\/_media--series-item.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -159,7 +159,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/_typography.scss": {
+	"\/css\/_video-players.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -167,7 +167,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/css\/_typography.css",
+		"oAP": "\/css\/_video-players.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1186,16 +1186,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/loader-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/loader-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"\/css\/main.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1224,240 +1214,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"\/css\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/style-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/css\/untitled-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/untitled-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/css\/untitled.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/untitled-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/fonts\/acta-book.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/acta-book.eot",
-		"oF": 0
-		},
-	"\/fonts\/acta-book.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/acta-book.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/acta-book.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/acta-book.ttf",
-		"oF": 0
-		},
-	"\/fonts\/acta-book.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/acta-book.woff",
-		"oF": 0
-		},
-	"\/fonts\/acta-book.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/acta-book.woff2",
-		"oF": 0
-		},
-	"\/fonts\/stag-bold.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-bold.eot",
-		"oF": 0
-		},
-	"\/fonts\/stag-bold.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-bold.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/stag-bold.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-bold.ttf",
-		"oF": 0
-		},
-	"\/fonts\/stag-bold.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-bold.woff",
-		"oF": 0
-		},
-	"\/fonts\/stag-bold.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-bold.woff2",
-		"oF": 0
-		},
-	"\/fonts\/stag-book.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-book.eot",
-		"oF": 0
-		},
-	"\/fonts\/stag-book.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-book.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/stag-book.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-book.ttf",
-		"oF": 0
-		},
-	"\/fonts\/stag-book.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-book.woff",
-		"oF": 0
-		},
-	"\/fonts\/stag-book.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-book.woff2",
-		"oF": 0
-		},
-	"\/fonts\/stag-bookitalic.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-bookitalic.eot",
-		"oF": 0
-		},
-	"\/fonts\/stag-bookitalic.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-bookitalic.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/stag-bookitalic.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-bookitalic.ttf",
-		"oF": 0
-		},
-	"\/fonts\/stag-bookitalic.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-bookitalic.woff",
-		"oF": 0
-		},
-	"\/fonts\/stag-bookitalic.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-bookitalic.woff2",
-		"oF": 0
-		},
-	"\/fonts\/stag-light.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-light.eot",
-		"oF": 0
-		},
-	"\/fonts\/stag-light.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-light.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/stag-light.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-light.ttf",
-		"oF": 0
-		},
-	"\/fonts\/stag-light.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-light.woff",
-		"oF": 0
-		},
-	"\/fonts\/stag-light.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-light.woff2",
-		"oF": 0
-		},
-	"\/fonts\/stag-semibold.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-semibold.eot",
-		"oF": 0
-		},
-	"\/fonts\/stag-semibold.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-semibold.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/stag-semibold.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-semibold.ttf",
-		"oF": 0
-		},
-	"\/fonts\/stag-semibold.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-semibold.woff",
-		"oF": 0
-		},
-	"\/fonts\/stag-semibold.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/stag-semibold.woff2",
-		"oF": 0
 		},
 	"\/home.html.twig": {
 		"ft": 8192,
@@ -1861,26 +1617,6 @@
 		"oAP": "\/indexLT.php",
 		"oF": 0
 		},
-	"\/js\/animation.gsap.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/animation.gsap-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/anime.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/anime.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/js\/debug.addIndicators.min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1891,72 +1627,12 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/js\/handlebars-v4.0.4.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/handlebars-v4.0.4-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/header.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/header-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/imagesloaded.pkgd.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/imagesloaded.pkgd.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/jquery.fitvids.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/jquery.fitvids-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/jquery.progressScroll.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/jquery.progressScroll-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/js\/jquery.ScrollMagic.min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/jquery.ScrollMagic.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/lazyload.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/lazyload-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1981,26 +1657,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/js\/tilt.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/tilt-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/timeline.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/timeline-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/js\/viewport.js": {
 		"ft": 64,
 		"ma": 0,
@@ -2010,14 +1666,6 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
-		},
-	"\/json\/data.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/json\/data-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
 		},
 	"\/prod\/article-card.psd": {
 		"ft": 8192,
