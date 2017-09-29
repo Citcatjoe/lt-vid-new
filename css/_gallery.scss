@@ -45,11 +45,11 @@
 
 // TOOLTIPS CURSOR + CURRENT TIME (BIG AND SMALL PLAYERS)
 .video-js .vjs-time-tooltip, .video-js .vjs-mouse-display:after, .video-js .vjs-play-progress:after
-{ background-color: #ffffff; color: $bg-color; }
+{ background-color: #ffffff; color: $bg-mine-shaft-color; }
 
 // TOOLTIP CURSOR (BIG AND SMALL PLAYERS)
 .vjs-mouse-display .vjs-time-tooltip, .video-js .vjs-progress-control .vjs-mouse-display:after
-{ background-color: $bg-color; color: #ffffff; }
+{ background-color: $bg-mine-shaft-color; color: #ffffff; }
 
 // ELEMENTS STATES RESTYLE (BIG AND SMALL PLAYERS)
 .bc-player-BJqobDOb6_default.video-js.vjs-playing div.vjs-dock-text

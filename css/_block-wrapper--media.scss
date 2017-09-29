@@ -1,0 +1,46 @@
+$media-color: #619fa4;
+$bg-mine-shaft-color: #323232;
+$bg-mine-shaft-darker-color: darken( $bg-mine-shaft-color, 5 );
+
+
+.block-wrapper--media
+{
+	.block-title-right 
+	{ 
+		background: $bg-mine-shaft-color; 
+		
+		a 
+		{
+			color: $media-color;
+		}	
+	} 
+	.last-contents-item
+	{
+		.last-contents-item-excerpt
+		{
+			background: $bg-mine-shaft-darker-color;
+			padding: 0 15px 0 15px;
+			height: 185px;
+			
+			h3
+			{
+				font-size: 34px;
+				font-weight: 500;
+				line-height: 1.1;
+			}	
+		}
+
+		&.last-contents-item-small
+		{
+			.last-contents-item-excerpt
+			{
+				height: 86px;
+				
+				h3
+				{
+					font-size: 19px;
+				}
+			}
+		}
+	}
+}

@@ -42,7 +42,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/_base.scss": {
+	"\/css\/_block-wrapper--media.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -50,7 +50,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/css\/_base.css",
+		"oAP": "\/css\/_block-wrapper--media.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -116,6 +116,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/css\/_loader.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/_media--last-content--item.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/css\/_media--last-content--item.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1446,6 +1459,12 @@
 		"oAP": "\/fonts\/stag-semibold.woff2",
 		"oF": 0
 		},
+	"\/home.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/home.html.twig",
+		"oF": 0
+		},
 	"\/img\/_chicken_sm.gif": {
 		"ft": 4194304,
 		"iS": 931305,
@@ -1836,10 +1855,10 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
-	"\/indexHome.php": {
+	"\/indexLT.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/indexHome.php",
+		"oAP": "\/indexLT.php",
 		"oF": 0
 		},
 	"\/js\/animation.gsap.js": {
