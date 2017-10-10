@@ -1599,6 +1599,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/total-portfolio-page.jpg": {
+		"ft": 16384,
+		"iS": 133352,
+		"oA": 0,
+		"oAP": "\/img\/total-portfolio-page.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/index.html.twig": {
 		"ft": 8192,
 		"oA": 2,
@@ -1611,10 +1621,10 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
-	"\/indexLT.php": {
+	"\/indexH.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/indexLT.php",
+		"oAP": "\/indexH.php",
 		"oF": 0
 		},
 	"\/js\/debug.addIndicators.min.js": {
